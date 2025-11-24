@@ -15,6 +15,8 @@
 
 从军训的烈日暴晒，再到各种奇妙的邂逅，一段充满欢笑与悸动的大学生活就此展开。
 
+**快速上手**：[AI工作流指南 - 雪之恋开发维基](https://aquasofts.github.io/Snow-Love-Docs/workflow/)
+
 ## ⚠️ 版权与素材免责声明 (Copyright Notice) 
 
 **请在下载或Fork本项目前仔细阅读以下内容：**
