@@ -1,0 +1,45 @@
+# 忽略游戏存档 
+/game/saves/
+
+# 忽略 Ren'Py 缓存
+/game/cache/
+
+# 忽略版权音频素材 没有版权！！！
+/game/audio/
+
+# 忽略打包生成的发布版文件夹 (就是那些几百兆的 *-dists)
+/*-dists/
+
+# 忽略安卓密钥和配置
+*.keystore
+/android.keystore
+/.android.json
+/rapt/
+/local.properties
+
+# 编译后的脚本文件 (通常建议保留以维持存档兼容性)
+/game/**/*.rpyc
+/game/**/*.rpymc
+
+# 备份文件和临时文件
+/game/**/*.bak
+/game/**/*.new
+/game/**/*.old
+/game/**/*.txt.bak
+
+/errors.txt
+/files.txt
+/image_cache.txt
+/log.txt
+/save_dump.txt
+/traceback.txt
+/profile.txt
+
+# 启动器生成的文件
+/dialogue.tab
+/dialogue.txt
+/strings.json
+
+# 系统缓存文件 (Mac/Windows)
+.DS_Store
+Thumbs.db

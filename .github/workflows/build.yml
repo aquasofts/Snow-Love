@@ -1,0 +1,28 @@
+name: 自动构建 Galgame
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build-renpy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build Visual Novel
+        uses: ProjectAliceDev/renpy-build-action@v1.2.0
+        with:
+          sdk-version: '8.5.0' 
+          project-dir: '.'
+          name: 'SnowLove'
+          build-channels: 'pc'
+          
+      - name: Upload Build Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: SnowLove-Build
+          path: "*-dists"
+          retention-days: 5
