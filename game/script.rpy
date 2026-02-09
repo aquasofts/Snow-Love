@@ -266,6 +266,7 @@ label start:
 
     show suzhi casual angry at center with dissolve
 
+    voice "voice/suzhi/suzhi_061.ogg"
     s "你走路不看路的吗？"
 
     m "（揉着肩膀）抱歉抱歉，刚才光顾着看那边的猴山了……"
@@ -275,13 +276,16 @@ label start:
 
     "我捡起挂件，递了过去。"
 
+    voice "voice/suzhi/suzhi_008.ogg"
     s "（一把夺过，仔细检查了一下）……啧，还好没摔坏。这可是限量版的。"
 
     m "那个，真的不好意思。我不是故意的。"
 
     show suzhi casual normal
 
+    voice "voice/suzhi/suzhi_007.ogg"
     s "（叹气）算了，看在你态度诚恳的份上。"
+    voice "voice/suzhi/suzhi_095.ogg"
     s "这里人多，下次小心点。长这么大个子，别像个没头苍蝇似的。"
 
     m "（苦笑）是是是，受教了。"
@@ -349,6 +353,7 @@ label start:
     
     play music bgm_march fadein 1.0
 
+    voice "voice/jiaoguan/jiaoguan_023.ogg"
     j "全体都有！立正——！向右看齐！"
 
     m "（嘶……这九月的太阳怎么比昨天还毒。）"
@@ -357,6 +362,7 @@ label start:
     "我急匆匆地跑入队伍末尾。"
 
     m "报告！"
+    voice "voice/jiaoguan/jiaoguan_019.ogg"
     j "入列！下次早点！"
     m "是！"
 
@@ -377,6 +383,7 @@ label start:
     stop music
     scene cg eye_contact with flash
 
+    voice "voice/suzhi/suzhi_004.ogg"
     s "……是你？！"
     m "……是你？！"
 
@@ -386,14 +393,17 @@ label start:
     show suzhi camo surprised at center
     with fade
 
+    voice "voice/suzhi/suzhi_023.ogg"
     s "（惊讶地指着我）那个动物园的冒失鬼？"
     m "（惊讶地指着她）那个脾气很冲的……"
 
+    voice "voice/jiaoguan/jiaoguan_060.ogg"
     j "那边那两个！干什么呢！眉来眼去的！出列！"
 
     show suzhi camo embarrassed with vpunch
 
     m "（尴尬地小声说）完蛋……"
+    voice "voice/suzhi/suzhi_103.ogg"
     s "（咬牙切齿地小声说）都怪你……"
 
     m "（我做梦也没想到。）"
@@ -424,7 +434,9 @@ label chapter_2:
     m "(这就是长春工程学院的军训吗？传说中的“土木铁军”第一课，果然名不虚传。)"
 
     show instructor cold at center with dissolve
+    voice "voice/jiaoguan/jiaoguan_048.ogg"
     e "（声音不大，但透着一股冷冽的穿透力）第三排那个戴眼镜的，眼神乱飘什么？"
+    voice "voice/jiaoguan/jiaoguan_039.ogg"
     e "是不是觉得这身军装不够帅，想去跑两圈展示一下身材？"
     # (全场寂静，只有风吹过衣角的猎猎声，几个女生忍不住偷瞄教官挺拔的侧脸)
     stop sound fadeout 1.0
@@ -438,25 +450,39 @@ label chapter_2:
     hide instructor
     show lingning camo weak at center with dissolve
     
+    voice "voice/lingning/lingning_105.ogg"
     l "木子米……我恐怕已到极限了……今日的阳光真是无情啊。"
+    
+    voice "voice/lingning/lingning_061.ogg"
     l "若此刻能有一杯加冰的柠檬水，当是人间至福……"
 
     m "别说话了，凌宁。再坚持五分钟，少尉看表了。"
 
-    l "五分钟？这简直度日如年。看着那位教官冷峻的面容，我只觉得比烈日还要难熬。。"
+    voice "voice/lingning/lingning_158.ogg"
+    l "五分钟？这简直度日如年。看着那位教官冷峻的面容，我只觉得比烈日还要难熬。"
+    
+    voice "voice/lingning/lingning_073.ogg"
     l "我现在……哪怕是一口普通的自来水，也会感激涕零的"
     show instructor cold at center with dissolve
     hide lingning
 
+    voice "voice/jiaoguan/jiaoguan_022.ogg"
     e "全体都有！稍息！"
+    voice "voice/jiaoguan/jiaoguan_057.ogg"
     e "（摘下墨镜，露出一双锐利的眼睛，环视一周）讲一下。"
+    voice "voice/jiaoguan/jiaoguan_002.ogg"
     e "上午的训练，整体表现尚可，但个别同学意志力薄弱。"
+    voice "voice/jiaoguan/jiaoguan_056.ogg"
     e "记住，你们是未来的工程师，连这点苦都吃不了，以后怎么去工地？"
+    voice "voice/jiaoguan/jiaoguan_061.ogg"
     e "鉴于刚才有人乱动，延长十五分钟站姿体验。"
 
     show lingning camo weak at right with dissolve
+    
+    voice "voice/lingning/lingning_003.ogg"
     l "哎……天亡我也。"
 
+    voice "voice/jiaoguan/jiaoguan_058.ogg"
     e "谁在叹气？很有个性嘛。再加五分钟。"
 
     # (一片死寂，所有人的心里都在滴血，但碍于少尉的气场，没人敢出声)
@@ -478,10 +504,13 @@ label chapter_2:
     play sound audio.se_footsteps_crowd
 
     show instructor cold at center
+    voice "voice/jiaoguan/jiaoguan_055.ogg"
     e "解散！休息二十分钟！"
     hide instructor with dissolve
 
     show lingning camo tired at center
+    
+    voice "voice/lingning/lingning_115.ogg"
     l "水……我的生命之源，我来了。"
 
     # (凌宁虽然极度口渴，但依然保持着快步走的姿态，而不是像其他人那样狂奔，木子米紧随其后)
@@ -494,20 +523,25 @@ label chapter_2:
     play sound audio.se_pour_water
 
     show lingning camo surprised at left with vpunch
+    
+    voice "voice/lingning/lingning_053.ogg"
     l "天哪……？"
 
     # (木子米也停下了脚步，愣住了)
     # (只见大妈并没有停手，她拿起半瓶还剩很多的矿泉水，那是凌宁特意用手帕擦拭过瓶身的，毫不犹豫地倒进了旁边的排水沟)
     play sound audio.se_pour_water
 
+    voice "voice/lingning/lingning_099.ogg"
     l "且慢！阿姨！请手下留情！"
 
     a "啥？"
 
+    voice "voice/lingning/lingning_043.ogg"
     l "那是我的水……我才刚刚买来，才喝了一小口。你为何要将它倒掉？"
 
     a "这地儿不让乱扔垃圾。我看这瓶子都在地上晒半天了，寻思是没人要的。"
 
+    voice "voice/lingning/lingning_012.ogg"
     l "怎会是没人要的？我们在那训练呢，瓶子当然在地上晒着了"
 
     # (周围的同学也围了过来，因为极度的干渴和疲惫，大家的情绪都像火药桶一样)
@@ -517,18 +551,27 @@ label chapter_2:
 
     # (素织也走了过来，手里拿着空瓶子，显然她原本也想来喝水，却发现自己的水也没了)
     show suzhi camo normal at right
+    voice "voice/suzhi/suzhi_035.ogg"
     s "阿姨，我们在训练，水瓶放在这是为了休息时喝。"
+    voice "voice/suzhi/suzhi_056.ogg"
     s "您不问一声就倒掉，是不是太过分了？"
     a "我看这水都被太阳晒热了，塑料瓶晒久了有毒！"
     a "再说，这一地乱七八糟的，领导检查看见了要扣俺工资的！"
+    
+    voice "voice/lingning/lingning_045.ogg"
     l "即便有毒，那也是我们自己的选择！您……您怎么能这样不近人情？"
+    
+    voice "voice/lingning/lingning_078.ogg"
     l "我们真的快要渴晕过去了"
+    
+    voice "voice/lingning/lingning_001.ogg"
     l "……扣工资并非小事, 但这也不是您随意处置他人财物的理由啊！"
     a "你这学生咋说话呢！俺这是为了你们好！"
     a "这一地的瓶子，哪瓶是谁的你们分得清吗？万一喝错了传染病咋整？"
 
     m "（眼看局势要失控）凌宁，冷静点。"
 
+    voice "voice/lingning/lingning_106.ogg"
     l "木子米，这让我如何冷静？这简直是……简直是不可理喻！"
 
     # (就在这时，一道挺拔的身影挡住了阳光)
@@ -537,16 +580,23 @@ label chapter_2:
     hide suzhi
     hide lingning
 
+    voice "voice/jiaoguan/jiaoguan_028.ogg"
     e "吵什么？很有精神嘛。"
     
     show lingning camo weak at left
+    
+    voice "voice/lingning/lingning_102.ogg"
     l "教官，这位阿姨将我们的饮用水全部处理掉了，我们在试图……讲道理。"
 
+    voice "voice/jiaoguan/jiaoguan_054.ogg"
     e "（冷冷地扫了一眼满地的空瓶和大妈手里的袋子，眉头微皱）行了。多大点事？没水了再去买。"
+    voice "voice/jiaoguan/jiaoguan_033.ogg"
     e "（目光如炬地盯着凌宁）对着长辈大声喧哗，这就是你的教养？你的军人风度呢？"
 
+    voice "voice/lingning/lingning_086.ogg"
     l "我……并非有意喧哗，只是……"
 
+    voice "voice/jiaoguan/jiaoguan_021.ogg"
     e "全体都有！因为不懂得尊重他人，罚站十分钟！好好反省一下什么是素质！"
 
     m "（一把拉住凌宁）别解释了，教官不会听的。"
@@ -649,6 +699,7 @@ label chapter_2:
     # 背景：乱糟糟的男生宿舍，凌宁正坐在床上，手里拿着一本书，但显然看不进去
     show lingning casual depressed at center
     
+    voice "voice/lingning/lingning_114.ogg"
     l "真是令人郁闷。我实在无法理解，那位阿姨为何要这般固执。还有那位少尉，虽说军令如山，但也太不通人情了……"
 
     # (砰的一声，宿舍门被踢开)
@@ -658,19 +709,26 @@ label chapter_2:
     m "（抱着那个巨大的不锈钢保温桶）凌宁，拿碗来！"
 
     show lingning casual surprised at center
+    
+    voice "voice/lingning/lingning_112.ogg"
     l "木子米？你抱着这庞然大物是何意？莫非是食堂的存货？"
 
     m "抢什么抢。这是“赔偿”。"
 
+    voice "voice/lingning/lingning_131.ogg"
     l "赔偿？"
 
     m "那个大妈给的。绿豆汤，冰糖的。"
 
+    voice "voice/lingning/lingning_098.ogg"
     l "真的吗？她会有这般好意？……不会有什么问题吧？"
 
     m "喝不喝？不喝我给隔壁寝室了。"
 
+    voice "voice/lingning/lingning_065.ogg"
     l "嗯？！……啊，真是舒畅！天哪，竟是冰镇的！"
+    
+    voice "voice/lingning/lingning_025.ogg"
     l "这绿豆熬得恰到好处，口感绵密，甜度适中……"
 
     # (木子米把事情的原委，包括大妈擦地、担心暴晒水质变质的事情，原原本本地讲了一遍)
@@ -679,17 +737,25 @@ label chapter_2:
     
     # (宿舍里渐渐安静下来，凌宁捧着空碗，白皙的脸庞泛起了一丝红晕，表情变得非常惭愧)
 
+    voice "voice/lingning/lingning_015.ogg"
     l "呃……你是说，她是担心水质变坏才倒掉的？"
 
     m "嗯。而且她怕我们中暑，特意熬的汤，结果被你急切的样子吓得不敢拿出来。"
 
+    voice "voice/lingning/lingning_031.ogg"
     l "这……这让我显得像是无理取闹的纨绔子弟一般。"
+    
+    voice "voice/lingning/lingning_004.ogg"
     l "哎，我今日的举止实在是有失风度，竟误解了一位长辈的好意。"
+    
+    voice "voice/lingning/lingning_052.ogg"
     l "真是……太失礼了"
 
     m "行了，明天见到人家，知道该咋办了吧？"
 
     show lingning casual happy at center
+    
+    voice "voice/lingning/lingning_062.ogg"
     l "自然！我定当诚恳致歉，绝不推脱！"
 
     # 【场景六：操场 - 休息区 - 次日中午】
@@ -707,12 +773,18 @@ label chapter_2:
     show auntie surprised at right
     show lingning camo default at left
     
+    voice "voice/lingning/lingning_018.ogg"
     l "阿姨……请留步。"
 
     a "干啥？"
 
+    voice "voice/lingning/lingning_149.ogg"
     l "（突然非常标准地鞠了一躬）真的非常抱歉！"
+    
+    voice "voice/lingning/lingning_103.ogg"
     l "昨日是我鲁莽了，言语多有冒犯，请您原谅！"
+    
+    voice "voice/lingning/lingning_039.ogg"
     l "还有……您的绿豆汤美味至极，万分感谢您的关照！"
 
     a "哎呀，你这孩子，咋行这么大礼。"
@@ -727,6 +799,7 @@ label chapter_2:
     hide lingning
     with dissolve
 
+    voice "voice/suzhi/suzhi_068.ogg"
     s "看来，误会解除了？"
 
     # (木子米转头，发现素织不知何时站在了他身边，手里拿着一瓶水)
@@ -734,22 +807,28 @@ label chapter_2:
 
     m "是啊。有时候，眼睛看到的并不一定是真相。大家只是立场不同罢了。"
 
+    voice "voice/suzhi/suzhi_116.ogg"
     s "听说是你昨天晚上去跟阿姨沟通的？"
 
     m "碰巧遇到了而已。"
 
     show suzhi camo smile at center
+    voice "voice/suzhi/suzhi_132.ogg"
     s "（看不出来，你这人虽然看着呆呆的，办事还挺靠谱的。"
+    voice "voice/suzhi/suzhi_022.ogg"
     s "连那个冷冰冰的少尉刚才都夸了我们班风气不错。"
 
     # (CG图：素织的特写。阳光透过树叶洒在她脸上，那原本清冷的眸子里，此刻倒映着木子米的影子，带着一丝认可和温柔)
     scene cg suzhi_camo_smile with dissolve
 
+    voice "voice/suzhi/suzhi_080.ogg"
     s "喏，这个给你。"
 
     m "这是？"
 
+    voice "voice/suzhi/suzhi_115.ogg"
     s "昨天看你水也没了，今天多买了一瓶。"
+    voice "voice/suzhi/suzhi_001.ogg"
     s "算是……替那个有些少爷脾气但还算懂事的室友，谢谢你的绿豆汤情报。"
 
     # (素织转身离开，马尾辫在脑后轻轻晃动)
@@ -784,16 +863,20 @@ label chapter_3:
     m "（长春的九月中旬，早晚温差开始显现。从温暖的被窝里爬出来钻进冰凉的迷彩服，需要莫大的勇气。）"
 
     # 凌宁画外音
+    voice "voice/lingning/lingning_002.ogg"
     l "啊……这清晨的寒气，简直是在侵蚀我的灵魂。"
 
     # 立绘出现：凌宁。虽然穿着迷彩服，但他的扣子扣得一丝不苟
     show lingning camo weak at center with dissolve
 
+    voice "voice/lingning/lingning_109.ogg"
     l "木子米，你看我的脸色是否有些苍白？这几日的紫外线虽然强烈，但这早晨的寒风更是肌肤的大敌。"
 
     m "（整理着腰带）看起来挺红润的，凌宁。赶紧吧，迟到一分钟，少尉的眼神能把你冻成冰雕。"
 
     show lingning camo tired
+    
+    voice "voice/lingning/lingning_154.ogg"
     l "（打了个寒颤）哦，那位冷面骑士。不得不说，他的威严确实令人折服，但能否稍微……温柔那么一点点？"
 
     m "走吧，听说今天有重要宣布。"
@@ -809,20 +892,29 @@ label chapter_3:
     # 空军少尉登场
     show instructor cold at center
 
+    voice "voice/jiaoguan/jiaoguan_024.ogg"
     e "（拿着扩音器，声音穿透力极强）全体都有！立正！"
+    voice "voice/jiaoguan/jiaoguan_052.ogg"
     e "经过一周的适应性训练，你们已经初步具备了军人的模样。但是，这还不够！"
+    voice "voice/jiaoguan/jiaoguan_006.ogg"
     e "下周五，将举行全校新生军训汇报表演。这是检验你们成果的时刻，也是展现土木系风采的时刻！"
 
     # 台下一阵骚动
     play sound audio.se_footsteps_crowd # 模拟骚动声
 
+    voice "voice/jiaoguan/jiaoguan_032.ogg"
     e "安静！"
+    voice "voice/jiaoguan/jiaoguan_010.ogg"
     e "为了保证汇演效果，从今天开始，我们将重新编队。所有人将被打散，重新划分为三个部分："
+    voice "voice/jiaoguan/jiaoguan_047.ogg"
     e "第一，分列式方队。这是最精锐的部队，将代表系里走过主席台，接受检阅。要求动作标准，身材匀称，意志力强！"
+    voice "voice/jiaoguan/jiaoguan_051.ogg"
     e "第二，合唱团。负责在看台上唱军歌，展现气势。"
+    voice "voice/jiaoguan/jiaoguan_049.ogg"
     e "第三，观训营。身体素质无法适应高强度训练的，进入观训营。"
 
     # 少尉顿了顿
+    voice "voice/jiaoguan/jiaoguan_026.ogg"
     e "分列式方队，是荣誉，也是地狱。训练强度将是现在的两倍。怕苦的，现在就可以后退一步去合唱团。"
 
     # 人群中出现了短暂的沉默
@@ -844,10 +936,12 @@ label chapter_3:
 
     show lingning camo default at center with moveinright
 
+    voice "voice/lingning/lingning_108.ogg"
     l "木子米，虽然我的双腿在抗议，但身为七尺男儿，若连挑战都不敢面对，岂不是有辱斯文？"
 
     m "凌宁？你想进方队？"
 
+    voice "voice/lingning/lingning_097.ogg"
     l "自然。荣誉即吾命。哪怕是倒下，我也要倒在冲锋的路上……或者正步的路上。"
 
     m "好，那我们一起。"
@@ -860,12 +954,15 @@ label chapter_3:
     play sound audio.se_foot_stomp
 
     show instructor cold at center
+    voice "voice/jiaoguan/jiaoguan_046.ogg"
     e "第一排，出列！正步走！"
     
     # 几名男生踢着正步走过
+    voice "voice/jiaoguan/jiaoguan_017.ogg"
     e "停！第三个，顺拐了，去合唱团。第五个，罗圈腿太严重，去合唱团。第一个，留下。"
 
     # 残酷的筛选在继续
+    voice "voice/jiaoguan/jiaoguan_004.ogg"
     e "下一组！"
     hide instructor
 
@@ -875,15 +972,19 @@ label chapter_3:
     m "（即使在一群穿着同样迷彩服的女生中，素织依然很显眼。）"
     m "（她的动作很利落，没有多余的晃动。）"
 
+    voice "voice/jiaoguan/jiaoguan_041.ogg"
     e "正步——走！"
     play sound audio.se_foot_stomp
 
     # 素织踢腿带风，摆臂定格准确
     show suzhi camo angry # 表现凛冽的英气
 
+    voice "voice/jiaoguan/jiaoguan_016.ogg"
     e "（眼中闪过一丝赞赏，但很快掩饰住）停！"
+    voice "voice/jiaoguan/jiaoguan_050.ogg"
     e "第二个（指素织），不错。踢腿高度标准，落地有声。入列，第一排面。"
 
+    voice "voice/suzhi/suzhi_074.ogg"
     s "（大声）是！"
 
     # 素织出列，站在了象征“精锐”的指定区域
@@ -896,6 +997,7 @@ label chapter_3:
     hide suzhi
 
     show instructor cold at center
+    voice "voice/jiaoguan/jiaoguan_005.ogg"
     e "下一组！正步——走！"
 
     m "（绷直脚尖。）"
@@ -903,9 +1005,12 @@ label chapter_3:
     m "（不要晃动。）"
     m "（我感觉全身的肌肉都在紧绷，每一次砸地都震得脚底发麻。）"
 
+    voice "voice/jiaoguan/jiaoguan_014.ogg"
     e "停！"
     # 教官走到面前
+    voice "voice/jiaoguan/jiaoguan_045.ogg"
     e "（上下打量）眼镜扶好。眼神再犀利点，别像没睡醒一样。"
+    voice "voice/jiaoguan/jiaoguan_007.ogg"
     e "不过，节奏感不错，身板也直。入列。"
 
     m "是！"
@@ -920,6 +1025,7 @@ label chapter_3:
 
     # 然而，并不是所有人都有好运
     scene bg playground with fade
+    voice "voice/jiaoguan/jiaoguan_003.ogg"
     e "下一组！"
 
     # 凌宁上场了
@@ -928,16 +1034,26 @@ label chapter_3:
     play music audio.bgm_humorous fadein 0.5
     show cg lingning_mechanical with vpunch
 
+    voice "voice/jiaoguan/jiaoguan_015.ogg"
     e "停！"
+    voice "voice/jiaoguan/jiaoguan_059.ogg"
     e "（皱眉）那个白净的男生，你在跳机械舞吗？"
 
+    voice "voice/lingning/lingning_094.ogg"
     l "报告教官！我正在努力控制肌肉的平衡，试图达到力与美的统一！"
 
+    voice "voice/jiaoguan/jiaoguan_035.ogg"
     e "（忍住笑）很有想法。但是正步需要的是爆发力，不是优雅。"
+    voice "voice/jiaoguan/jiaoguan_012.ogg"
     e "你的协调性还得练练。去合唱团吧，那边可能更适合你的……气质。"
+    
+    voice "voice/lingning/lingning_156.ogg"
     l "（如遭雷击，摇摇欲坠）教官……能不能再给我一次机会？我可以……"
 
+    voice "voice/jiaoguan/jiaoguan_040.ogg"
     e "服从命令！"
+    
+    voice "voice/lingning/lingning_148.ogg"
     l "（行了一个有些悲壮的军礼）是……"
 
     hide cg lingning_mechanical
@@ -945,6 +1061,8 @@ label chapter_3:
     show lingning camo tired at center
 
     # 凌宁垂头丧气地走向合唱团区域
+    
+    voice "voice/lingning/lingning_143.ogg"
     l "（投来了一个“你要连我的份一起努力”的哀怨眼神）"
 
     # 【场景四：分列式方队训练区 - 下午】
@@ -956,13 +1074,19 @@ label chapter_3:
     centered "分列式方队正式成立"
 
     show instructor cold at center
+    voice "voice/jiaoguan/jiaoguan_036.ogg"
     e "恭喜你们，留到了最后。"
+    voice "voice/jiaoguan/jiaoguan_011.ogg"
     e "但不要高兴得太早。从现在起，你们不再是个体，而是一个整体。"
+    voice "voice/jiaoguan/jiaoguan_038.ogg"
     e "方队的要求只有一个：整齐划一。"
+    voice "voice/jiaoguan/jiaoguan_001.ogg"
     e "一人出错，全队受罚！"
 
     # 接下来的几个小时，是枯燥到令人发指的单兵动作定型
+    voice "voice/jiaoguan/jiaoguan_027.ogg"
     e "右腿踢出！定住！谁敢动！"
+    voice "voice/jiaoguan/jiaoguan_053.ogg"
     e "脚尖下压！把腿抬高！"
 
     m "（一分钟……两分钟……）"
@@ -979,10 +1103,13 @@ label chapter_3:
     # 突然，素织身体晃了一下
     with soft_shake
 
+    voice "voice/jiaoguan/jiaoguan_031.ogg"
     e "（立刻捕捉到）女生方队第一排排头！晃什么！腿软了？"
 
+    voice "voice/suzhi/suzhi_073.ogg"
     s "（咬牙，大声）报告！没有！"
 
+    voice "voice/jiaoguan/jiaoguan_043.ogg"
     e "没有就给我站稳！排头兵要是倒了，整个方队就垮了！再加两分钟定型！"
 
     # 周围传来轻微的抱怨声
@@ -1007,16 +1134,19 @@ label chapter_3:
 
     # 素织迅速穿上鞋，警惕地抬头
     show suzhi camo surprised
+    voice "voice/suzhi/suzhi_006.ogg"
     s "是你啊。没事。"
 
     m "（指了指她的脚）刚才定型的时候，我看你有点抖。是不是鞋磨脚？"
 
     show suzhi camo embarrassed
+    voice "voice/suzhi/suzhi_113.ogg"
     s "（沉默了一会儿，偏过头）新鞋都这样。而且……作为排头，我不能让人觉得我娇气。"
 
     m "没人觉得你娇气。能坚持下来已经很厉害了。"
 
     show suzhi camo normal
+    voice "voice/suzhi/suzhi_017.ogg"
     s "（自嘲地笑了一下）刚才害大家多站了两分钟，肯定有人在心里骂我。"
 
     m "（坐到她旁边，保持着礼貌的距离）那是教官严厉，不怪你。而且……"
@@ -1024,6 +1154,7 @@ label chapter_3:
 
     # 素织愣了一下，转过头看着木子米
     show suzhi camo smile
+    voice "voice/suzhi/suzhi_077.ogg"
     s "帅？你是第一个用这个词形容女生的。"
 
     m "在这里，这可是最高评价。"
@@ -1036,16 +1167,23 @@ label chapter_3:
     # 凌宁突然出现
     show lingning casual pose at left with moveinleft
     
+    voice "voice/lingning/lingning_019.ogg"
     l "噢，多么和谐的画面。而我，一个被流放到合唱团的孤独灵魂，只能在远处吟唱悲伤的旋律。"
 
     m "凌宁！你来慰问我们了？"
 
+    voice "voice/lingning/lingning_142.ogg"
     l "（递过饮料，姿态依然优雅）拿去吧，这是合唱团的福利。"
+    
+    voice "voice/lingning/lingning_077.ogg"
     l "我们在树荫下练声，看着你们在烈日下挥洒汗水，"
+    
+    voice "voice/lingning/lingning_085.ogg"
     l "我的良心深受谴责……大约有一秒钟那么久。"
     show suzhi camo smile
     s "（接过饮料，对凌宁点头）谢谢。你的室友挺有趣的。"
 
+    voice "voice/lingning/lingning_150.ogg"
     l "（对素织行了个绅士礼）美丽的小姐，这是我的荣幸。愿这瓶饮料能抚平你脚上的伤痛——虽然它并不能外敷。"
 
     m "（无奈）你快回去吧，别在这拉仇恨了。"
@@ -1081,11 +1219,13 @@ label chapter_3:
     
     m "稍微慢了。落地的时候要干脆，利用重力砸下去，不要犹豫。想象地上有那个……"
 
+    voice "voice/suzhi/suzhi_006.ogg"
     s "有什么？"
 
     m "有那个把你水倒掉的阿姨的扫帚？"
 
     show suzhi camo smile
+    voice "voice/suzhi/suzhi_013.ogg"
     s "（噗嗤一声笑了出来）什么烂比喻。"
 
     m "有用就行。再来！预备——踢！"
@@ -1097,6 +1237,7 @@ label chapter_3:
     m "完美。声音很实。"
 
     show suzhi camo smile
+    voice "voice/suzhi/suzhi_026.ogg"
     s "（深吸一口气，脸上露出了满意的神色）谢谢。感觉找到了。"
 
     m "（看着月光下的素织，她额前的碎发被汗水打湿，眼神却比星星还亮）"
@@ -1106,6 +1247,7 @@ label chapter_3:
 
     m "我会看着你的背影走的。所以……你只要大胆往前走就好。如果排头稳了，我们后面也就稳了。"
 
+    voice "voice/suzhi/suzhi_033.ogg"
     s "（沉默了片刻，眼神变得柔和）嗯。不会让你失望的。"
 
     # 两人并肩坐在草地上休息
@@ -1127,16 +1269,24 @@ label chapter_3:
     # 凌宁敷着面膜
     show lingning casual pose at center
     
+    voice "voice/lingning/lingning_140.ogg"
     l "（敷着面膜，躺在床上发出含糊的声音）木子米，你回来得甚晚。莫非是与那位佳人有了什么月下之约？"
 
     m "（疲惫地爬上床）只是加练而已。别乱想。"
 
+    voice "voice/lingning/lingning_055.ogg"
     l "呵，加练。年轻人的借口总是如此拙劣又可爱。不过……"
+    
+    voice "voice/lingning/lingning_146.ogg"
     l "（翻了个身）我看那位素织小姐，对你也并非无意。她的眼神，比这面膜里的精华还要浓郁。"
 
     m "睡你的觉吧，合唱团的大歌星。"
 
-    l "哼，明日我要去竞选领唱。即便不能在跑道上挥洒汗水，我也要在看台上用歌声征服全场。晚安，我的步兵朋友。"
+    voice "voice/lingning/lingning_057.ogg"
+    l "哼，明日我要去竞选领唱。即便不能在跑道上挥洒汗水，我也要在看台上用歌声征服全场。"
+
+    voice "voice/lingning/lingning_020.ogg"
+    l "晚安，我的步兵朋友。"
 
     m "晚安。"
 
@@ -1177,15 +1327,20 @@ label chapter_4:
     # 立绘：教官
     show instructor cold at center with dissolve
 
+    voice "voice/jiaoguan/jiaoguan_013.ogg"
     e "停——！都给我停下！"
 
     # 音效：刺耳电流声 -> 模拟哨声
     play sound audio.se_whistle
     with soft_shake
 
+    voice "voice/jiaoguan/jiaoguan_030.ogg"
     e "土木系的！你们是在梦游吗？那个排面，歪得像贪吃蛇一样！"
+    voice "voice/jiaoguan/jiaoguan_034.ogg"
     e "尤其是第三列！脚抬高！砸地要有声音！ "
+    voice "voice/jiaoguan/jiaoguan_008.ogg"
     e "中午还想不想吃饭了？我看你们是精神太好了，不饿是吧？ "
+    voice "voice/jiaoguan/jiaoguan_020.ogg"
     e "全体都有——向后转！跑步回原点！再来一遍！ "
     # 音效：一片压抑的哀嚎声，杂乱的跑步声 -> 使用人群脚步声
     play sound audio.se_footsteps_crowd
@@ -1231,7 +1386,9 @@ label chapter_4:
 
     show instructor cold at center with dissolve
 
+    voice "voice/jiaoguan/全jiaoguan_016.ogg"
     e "全停！ 现在是11点40分，距离正式汇演还有40分钟。 为了保持这种紧绷的状态，为了防止你们吃饱了犯困——"
+    voice "voice/jiaoguan/jiaoguan_037.ogg"
     e "所有人原地休息！不许解散！不许去食堂！ 克服饥饿感，这是军人的必修课！听明白了吗？！"
 
     # 众学生（使用旁白代替）
@@ -1257,10 +1414,12 @@ label chapter_4:
     # 立绘：素织 左右张望
     show suzhi camo default at center with easeinright
     
+    voice "voice/suzhi/suzhi_072.ogg"
     s "（压低声音，气声）喂，木子米。活着吗？"
 
     m "（虚弱）快……不行了……这是谋杀……"
 
+    voice "voice/suzhi/suzhi_098.ogg"
     s "想不想吃东西？"
 
     m "（瞬间睁大眼）想！做梦都想！"
@@ -1268,7 +1427,9 @@ label chapter_4:
     # 表情变化：狡黠/微笑
     show suzhi camo smile
 
+    voice "voice/suzhi/suzhi_064.ogg"
     s "跟我来。 我昨天观察过了，那边的凉亭就能直接跑掉，"
+    voice "voice/suzhi/suzhi_121.ogg"
     s "从凉亭穿过去就是食堂。 来回只需要五分钟。"
 
     m "越狱？！在这时候？"
@@ -1277,6 +1438,7 @@ label chapter_4:
     # 表情变化：愤怒/锐利 -> angry
     show suzhi camo angry
 
+    voice "voice/suzhi/suzhi_092.ogg"
     s "怕了？ 那我一个人去了。到时候我吃着你看着，别流口水。"
 
     m "谁怕了！走！ "
@@ -1300,8 +1462,9 @@ label chapter_4:
     show cg eating_pancakes with dissolve
 
     s "唔……！"
-    s "（用力吞咽）太好吃了……木子米。"
-    s "这绝对是我这辈子吃过最好吃的手抓饼。"
+    voice "voice/suzhi/suzhi_039.ogg"
+    s "（用力吞咽）太好吃了……木子米。这绝对是我这辈子吃过最好吃的手抓饼。"
+    voice "voice/suzhi/suzhi_094.ogg"
     s "里面加的这根烤肠简直是世界珍宝。"
     m "（猛点头）那是因为这是“违禁品”。"
 
@@ -1311,21 +1474,30 @@ label chapter_4:
 
     m "真没想到。 那个“优等生”素织，居然会带头违反纪律，还在这啃大饼。"
 
+    voice "voice/suzhi/suzhi_133.ogg"
     s "规则是死的，人是活的。"
+    voice "voice/suzhi/suzhi_130.ogg"
     s "如果不吃饱，哪有力气把那面锦旗扛回来？"
+    voice "voice/suzhi/suzhi_017.ogg"
     s "我又不是铁做的机器人。"
+    voice "voice/suzhi/suzhi_050.ogg"
     s "而且……"
 
     m "而且？"
 
+    voice "voice/suzhi/suzhi_047.ogg"
     s "（移开视线）刚才解散的时候，我看你脸色发白，嘴唇都在抖。 "
 
+    voice "voice/suzhi/suzhi_014.ogg"
     s "我怕你待会儿晕倒在主席台前……那样不仅丢我们土木系的人"
+    voice "voice/suzhi/suzhi_051.ogg"
     s "还……挺让人担心的。"
     m "心脏……好像漏跳了一拍。 胃里暖暖的，心里也暖暖的。"
     m "（挠头，傻笑）原来是专门为了照顾我这个“病号”啊？"
 
+    voice "voice/suzhi/suzhi_108.ogg"
     s "（声音提高八度）少自作多情！我是为了集体的荣誉！ "
+    voice "voice/suzhi/suzhi_081.ogg"
     s "快把垃圾收好！还有三分钟集合，要是迟到了教官会扒了我们的皮！"
     m "是！遵命，长官！"
 
@@ -1357,6 +1529,7 @@ label chapter_4:
     m " 吃饱了肚子的我们，现在体内燃烧着的是碳水化合物转化成的纯粹斗志！"
 
     show instructor cold at left with vpunch
+    voice "voice/jiaoguan/jiaoguan_042.ogg"
     e "正步——走！！！"
 
     hide instructor
@@ -1404,14 +1577,31 @@ label chapter_4:
     # 立绘：凌宁 跳起来
     show lingning camo default at right with vpunch
     
-    l "好！！！太棒了！！！ 木子米！素织小姐！看到了吗！那是第一名！"
-    l "太优雅了！这才是土木人的魂！这才是优雅的极致！"
+    voice "voice/lingning/lingning_064.ogg"
+    l "好！！！太棒了！！！" 
+    
+    voice "voice/lingning/lingning_128.ogg"
+    l "木子米！素织小姐！看到了吗！"
+    
+    voice "voice/lingning/lingning_157.ogg"
+    l "那是第一名！"
+    
+    voice "voice/lingning/lingning_054.ogg"
+    l "太优雅了！"
+    
+    voice "voice/lingning/lingning_028.ogg"
+    l "这才是土木人的魂！"
+    
+    voice "voice/lingning/lingning_027.ogg"
+    l "这才是优雅的极致！"
 
     # 立绘：教官 微笑（虽然素材是cold，但文字描述了）
     show instructor cold at left
     
+    voice "voice/jiaoguan/jiaoguan_029.ogg"
     e "哼，算你们这群小兔崽子没给我丢人。排头兵！出列领奖！"
 
+    voice "voice/suzhi/suzhi_074.ogg"
     s "是！"
 
     hide lingning
@@ -1446,6 +1636,7 @@ label chapter_4:
     # 立绘：素织 迷彩服
     show suzhi camo normal at center with dissolve
 
+    voice "voice/suzhi/suzhi_076.ogg"
     s "呼…… 累死我了……感觉腿已经离家出走了，现在连站起来的力气都没有。"
     s "（把锦旗小心翼翼地交给路过的班长，然后毫无形象地瘫坐在地上）" # 文字演出
 
@@ -1456,9 +1647,12 @@ label chapter_4:
     # 表情变化：微笑
     show suzhi camo smile
 
+    voice "voice/suzhi/suzhi_046.ogg"
     s "（接过水，仰头喝了一大口，转头看着木子米）你也一样。"
     s "刚才踢正步的时候，我能感觉到后面的节奏很稳。"
+    voice "voice/suzhi/suzhi_082.ogg"
     s "就像有一堵墙在后面推着我一样。"
+    voice "voice/suzhi/suzhi_029.ogg"
     s "如果没有你们在后面撑着，我这第一排也不敢走得那么大步。"
 
     m "（耸耸肩，笑）那是，毕竟吃了你的手抓饼。"
@@ -1466,6 +1660,7 @@ label chapter_4:
     # 表情变化：娇羞/笑
     show suzhi camo embarrassed with soft_shake
 
+    voice "voice/suzhi/suzhi_084.ogg"
     s "（扑哧一笑，轻轻锤了一下木子米的肩膀）就知道吃。满脑子都是手抓饼。"
 
     # 短暂沉默
@@ -1474,13 +1669,16 @@ label chapter_4:
     # 表情变化：正常/温柔
     show suzhi camo normal
 
+    voice "voice/suzhi/suzhi_005.ogg"
     s "（抬头看着天空，长舒一口气）不过……终于结束了。 这半个月，简直像过了一年那么长。"
 
     m "是啊，结束了。 但这只是军训结束了。明天开始，就是真正的大学生活了。"
 
     show suzhi camo smile
 
+    voice "voice/suzhi/suzhi_034.ogg"
     s "（轻声，眼神温柔）嗯。 希望以后的日子，也能像今天这样。"
+    voice "voice/suzhi/suzhi_011.ogg"
     s "……虽然过程累得要死，还要冒着风险翻墙…… 但只要结果是好的，就都值得"
 
     # 结尾演出：拉远镜头，影子重叠
@@ -1529,6 +1727,7 @@ label chapter_5:
     m "这就是……天堂吗？"
 
     # 凌宁突然的大声打断
+    voice "voice/lingning/lingning_145.ogg"
     l "（超大声）啊！这是何等残酷的宿命！我的刘海……竟向左偏离了0.5度！"
 
     # 镜头切回中心 (或者切到说话人位置)
@@ -1541,8 +1740,13 @@ label chapter_5:
     # 凌宁：日常 Pose 从右侧移入
     show lingning casual pose at right with moveinright
     
+    voice "voice/lingning/lingning_017.ogg"
     l "早安，我的战友。"
+    
+    voice "voice/lingning/lingning_011.ogg"
     l "不，今日起，请称呼我为——“寻觅真理的贵族学者”。"
+    
+    voice "voice/lingning/lingning_130.ogg"
     l "你看，这瓶“皇家定型喷雾”，能否挽救我这不听话的发梢？"
 
     # 描述性动作
@@ -1552,9 +1756,19 @@ label chapter_5:
     m "第一节课是八点。"
     m "你能不能让我再享受三分钟？"
 
+    voice "voice/lingning/lingning_071.ogg"
     l "No, no, no，木子米，你太松懈了。"
+    
+    voice "voice/lingning/lingning_132.ogg"
     l "军训是肉体的磨炼，而大学课堂，是灵魂的战场！"
-    l "尤其是第一节课！那是决定你在班级女生心中地位的“首秀”！"
+    
+    voice "voice/lingning/lingning_117.ogg"
+    l "尤其是第一节课！"
+    
+    voice "voice/lingning/lingning_042.ogg"
+    l "那是决定你在班级女生心中地位的“首秀”！"
+    
+    voice "voice/lingning/lingning_093.ogg"
     l "你是想做一个默默无闻的路人A，还是像我一样，成为照亮教室的恒星？"
 
     m "（内心）这家伙……绝对是那种会在开学典礼上扔玫瑰花的类型。"
@@ -1566,12 +1780,18 @@ label chapter_5:
     m "如果你所谓的“恒星”是指像个反光板一样闪瞎别人的眼睛，那你赢了。"
     m "话说，我们要去哪个教室？"
 
+    voice "voice/lingning/lingning_153.ogg"
     l "（自信满满）作为情报通，我早已调查清楚。"
+    
+    voice "voice/lingning/lingning_095.ogg"
     l "就在——那个很高的楼。"
 
     m "……哈？"
 
+    voice "voice/lingning/lingning_133.ogg"
     l "长春工程学院有哪个楼高？"
+    
+    voice "voice/lingning/lingning_014.ogg"
     l "呃……就是那个……看起来充满了智慧气息的楼。"
 
     "（吐掉牙膏泡沫，抓起手机一看）"
@@ -1587,6 +1807,8 @@ label chapter_5:
 
     # 凌宁：震惊
     show lingning casual surprised with vpunch
+    
+    voice "voice/lingning/lingning_051.ogg"
     l "什……什么？！!!"
     m "跑起来！小贵族！"
 
@@ -1624,14 +1846,23 @@ label chapter_5:
     # 凌宁从左侧追上来，保持跑步姿势，并且同样应用颠簸效果
     show lingning casual run at center, running_shake with moveinleft
 
+    voice "voice/lingning/lingning_147.ogg"
     l "（气喘吁吁，双手向后像忍者一样摆动）"
+    
+    voice "voice/lingning/lingning_059.ogg"
     l "木子米！慢……慢一点！"
-    l "风！风会把我的发型吹乱的！"
+    
+    voice "voice/lingning/lingning_135.ogg"
+    l "风！"
+    
+    voice "voice/lingning/lingning_136.ogg"
+    l "风会把我的发型吹乱的！"
     
     # 特写凌宁的滑稽感，稍微放大一点
     show lingning casual run at center, running_shake:
         zoom 1.1
     
+    voice "voice/lingning/lingning_033.ogg"
     l "这是对美学的亵渎！"
 
     # --- 互动吐槽 ---
@@ -1668,11 +1899,13 @@ label chapter_5:
         linear 0.2 zoom 1.2 yoffset 0
         repeat 2
     
+    voice "voice/lingning/lingning_151.ogg"
     l "（绝望的哀嚎）四楼？！"
     
     # 音乐淡出，预示着接下来是爬楼梯的痛苦或转场
     stop music fadeout 2.0
     
+    voice "voice/lingning/lingning_100.ogg"
     l "吾命休矣……"
 
     # 屏幕变黑，结束本小节
@@ -1725,7 +1958,10 @@ label chapter_5:
     # 切换凌宁立绘
     show lingning casual pose with dissolve
 
+    voice "voice/lingning/lingning_048.ogg"
     l "看来，只有那个位置了。"
+    
+    voice "voice/lingning/lingning_008.ogg"
     l "那是神留给我们的“VIP席位”。"
 
     # 木子米顺着视线看去
@@ -1779,8 +2015,10 @@ label chapter_5:
     show suzhi casual shy with dissolve
     
     # 只有素织说话时才带名字
+    voice "voice/suzhi/suzhi_091.ogg"
     s "（眉头微微一皱，脸颊泛起一丝红晕，小声喊道）"
     s "呆子！看什么看！"
+    voice "voice/suzhi/suzhi_036.ogg"
     s "这边……有个空位。"
 
     # 木子米发现占座的水杯
@@ -1789,9 +2027,16 @@ label chapter_5:
     # 凌宁复活，凑过来
     show lingning casual happy at left with moveinleft
 
+    voice "voice/lingning/lingning_152.ogg"
     l "（凑到耳边）哦~ 多么感人的战友情。"
+    
+    voice "voice/lingning/lingning_127.ogg"
     l "去吧，木子米。"
+    
+    voice "voice/lingning/lingning_007.ogg"
     l "那个位置属于你。"
+    
+    voice "voice/lingning/lingning_088.ogg"
     l "我就牺牲一下，去第一排沐浴知识（粉笔灰）的洗礼了。"
 
     m "（感动）凌宁……你真是个好人。"
@@ -1799,6 +2044,8 @@ label chapter_5:
 
     # 凌宁潇洒离开
     # 切换凌宁立绘为普通的或得意的，然后消失
+    
+    voice "voice/lingning/lingning_119.ogg"
     l "不必，请我喝一个月的冰红茶即可。"
     
     hide lingning with moveoutleft
@@ -1833,14 +2080,20 @@ label chapter_5:
 
     # 细节：书拿倒了（通过对话体现，立绘保持reading状态）
     # 素织并没有看他
+    voice "voice/suzhi/suzhi_107.ogg"
     s "别误会。"
+    voice "voice/suzhi/suzhi_101.ogg"
     s "本来是给……给室友占的。"
 
     # 切换表情：傲娇/生气
     show suzhi casual angry at center
+    voice "voice/suzhi/suzhi_066.ogg"
     s "但是她突然说要陪男朋友坐后面。"
+    voice "voice/suzhi/suzhi_037.ogg"
     s "这位置空着也是空着，要是坐个不认识的男生，我会不自在。"
+    voice "voice/suzhi/suzhi_049.ogg"
     s "与其那样，不如……不如让你这个“熟人”坐这。"
+    voice "voice/suzhi/suzhi_109.ogg"
     s "至少……你不打呼噜。"
 
     # 内心独白
@@ -1862,10 +2115,13 @@ label chapter_5:
     # 切换表情：惊讶 -> 害羞
     show suzhi casual surprise at center
     with soft_shake
+    voice "voice/suzhi/suzhi_078.ogg"
     s "很……很奇怪吗？"
 
     show suzhi casual shy at center
+    voice "voice/suzhi/suzhi_060.ogg"
     s "是不是太……太花里胡哨了？"
+    voice "voice/suzhi/suzhi_104.ogg"
     s "凌宁那家伙之前说我是“穿裙子的花木兰”……"
 
     m "（真诚地微笑）不。"
@@ -1879,7 +2135,9 @@ label chapter_5:
     scene cg suzhi_reading with fade
     window show
 
+    voice "voice/suzhi/suzhi_009.ogg"
     s "（蚊子叫般的声音）……笨蛋。"
+    voice "voice/suzhi/suzhi_136.ogg"
     s "就会说好听的。"
 
     # 恢复场景
@@ -1964,15 +2222,20 @@ label chapter_5:
     # 使用 gloomy 或者 angry 表情
     show suzhi casual gloomy at center with dissolve
 
+    voice "voice/suzhi/suzhi_006.ogg"
     s "（压低声音）喂。"
+    voice "voice/suzhi/suzhi_093.ogg"
     s "第一节课就睡？你是不想活了吗？"
+    voice "voice/suzhi/suzhi_020.ogg"
     s "那个“杀手王”已经盯你两次了。"
     play music audio.bgm_daily_funny fadein 1.0
     m "（擦了擦嘴角的口水）抱歉……"
     m "但这真的比安眠药还管用。你怎么能听得这么津津有味的？"
 
     show suzhi casual normal
+    voice "voice/suzhi/suzhi_041.ogg"
     s "（指了指笔记本）这哪里津津有味了？"
+    voice "voice/suzhi/suzhi_018.ogg"
     s "我是在……画画。"
 
     # 木子米凑过去看
@@ -1989,7 +2252,9 @@ label chapter_5:
     hide sd_notebook_pig with dissolve
 
     show suzhi casual smile
+    voice "voice/suzhi/suzhi_038.ogg"
     s "因为这只猪睡相很难看。"
+    voice "voice/suzhi/suzhi_045.ogg"
     s "和你刚才一模一样。这叫……艺术写生。"
 
     m "你这就是单纯的报复吧！"
@@ -1999,7 +2264,9 @@ label chapter_5:
 
     # 切换回傲娇/护食状态
     show suzhi casual angry
+    voice "voice/suzhi/suzhi_125.ogg"
     s "不给！这是我的创作！"
+    voice "voice/suzhi/suzhi_112.ogg"
     s "你要画自己在书上画！"
 
     # 动作描写：桌底下的推拉
@@ -2030,7 +2297,9 @@ label chapter_5:
     # 木子米反应
     m "（摸了摸鼻子，心跳有点快）"
 
+    voice "voice/suzhi/suzhi_002.ogg"
     s "（声音颤抖）……好好听课。"
+    voice "voice/suzhi/suzhi_083.ogg"
     s "别……别闹了。"
 
     # 木子米反应
@@ -2082,14 +2351,17 @@ label chapter_5:
     # 素织：
     # （看到木子米）
     # 哎，你居然买到了？
+    voice "voice/suzhi/suzhi_025.ogg"
     s "（看到木子米）哎，你居然买到了？"
 
     # 我去小卖部的时候，草莓味的已经卖光了。
+    voice "voice/suzhi/suzhi_016.ogg"
     s "我去小卖部的时候，草莓味的已经卖光了。"
 
     # 只剩下……香菜味的酸奶。
     # 简直是黑暗料理。
     show suzhi casual angry
+    voice "voice/suzhi/suzhi_122.ogg"
     s "只剩下……香菜味的酸奶。简直是黑暗料理。"
 
     # 木子米：
@@ -2107,9 +2379,11 @@ label chapter_5:
     # （白眼翻到天上去）
     # 想得美。
     show suzhi casual angry # 保持嫌弃表情
+    voice "voice/suzhi/suzhi_127.ogg"
     s "（白眼翻到天上去）想得美。"
 
     # 我自己有水。
+    voice "voice/suzhi/suzhi_131.ogg"
     s "我自己有水。"
 
     # (素织刚想从兜里掏纸巾擦手，结果因为手太滑，没拿住，一张纸巾都没带出来)
@@ -2118,12 +2392,15 @@ label chapter_5:
     # 素织：
     # 啧。
     show suzhi casual gloomy
+    voice "voice/suzhi/suzhi_088.ogg"
     s "啧。"
 
     # 忘带纸了。
+    voice "voice/suzhi/suzhi_089.ogg"
     s "忘带纸了。"
 
     # 喂，木子米，借张纸。
+    voice "voice/suzhi/suzhi_071.ogg"
     s "喂，木子米，借张纸。"
 
     # 木子米：
@@ -2203,6 +2480,7 @@ label chapter_5:
     # 素织：
     # （语气平静得可怕）
     # 木。子。米。
+    voice "voice/suzhi/suzhi_118.ogg"
     s "（语气平静得可怕）木。子。米。"
 
     # 木子米：
@@ -2226,12 +2504,15 @@ label chapter_5:
     with vpunch
     
     # 这是我昨天刚买的新衣服！！！
+    voice "voice/suzhi/suzhi_040.ogg"
     s "（握紧了拳头，额头上蹦出一个红色的井字）这是我昨天刚买的新衣服！！！"
 
     # 而且黏糊糊的难受死了！！！
+    voice "voice/suzhi/suzhi_053.ogg"
     s "而且黏糊糊的难受死了！！！"
 
     # 你给我……去死吧！！！
+    voice "voice/suzhi/suzhi_030.ogg"
     s "你给我……去死吧！！！"
     hide icon_angry_mark
 
@@ -2270,23 +2551,35 @@ label chapter_5:
     # 凌宁：
     # （此时正拿着一杯咖啡路过，看到这一幕，优雅地抿了一口）
     show lingning casual happy at center with dissolve
+    
+    voice "voice/lingning/lingning_139.ogg"
     l "（此时正拿着一杯咖啡路过，看到这一幕，优雅地抿了一口）"
 
     # 哦~
+    
+    voice "voice/lingning/lingning_021.ogg"
     l "哦~"
 
     # 这就是所谓的“打情骂俏”吗？
+    
+    voice "voice/lingning/lingning_026.ogg"
     l "这就是所谓的“打情骂俏”吗？"
 
     # 青春啊，真是充满了甜腻的草莓味。
+    
+    voice "voice/lingning/lingning_134.ogg"
     l "青春啊，真是充满了甜腻的草莓味。"
 
     # 只不过……
     # （看着木子米被逼到墙角）
     show lingning casual pose
+    
+    voice "voice/lingning/lingning_063.ogg"
     l "只不过……（看着木子米被逼到墙角）"
 
     # 愿主保佑你，我的朋友。
+    
+    voice "voice/lingning/lingning_072.ogg"
     l "愿主保佑你，我的朋友。"
 
     stop music fadeout 2.0
@@ -2319,6 +2612,7 @@ label chapter_5:
 
     # 素织：(脸红红的，抱着胸，似乎觉得只穿衬衫在男生面前有点不妥，虽然并不暴露)
     # 保持 shirt shy 立绘，配合晃动效果增强情绪
+    voice "voice/suzhi/suzhi_012.ogg"
     s "（脸红红的，抱着胸）……别废话。洗不干净你就死定了。这可是限量版。"
 
     # 木子米：(回头看了一眼)
@@ -2336,6 +2630,7 @@ label chapter_5:
     # 素织：(敏锐地察觉到了视线)
     # 触发震动特效
     show suzhi shirt shy at slight_shake
+    voice "voice/suzhi/suzhi_069.ogg"
     s "你在看哪？！变态！"
 
     # 镜头复原
@@ -2345,8 +2640,11 @@ label chapter_5:
     m "（立刻转头，疯狂搓衣服）我看衣服！我在看衣服的纹理！我在思考纤维的构造！"
 
     # 素织：(哼了一声，有些别扭地把腿并拢)
+    voice "voice/suzhi/suzhi_006.ogg"
     s "（哼了一声，有些别扭地把腿并拢）……喂。"
+    voice "voice/suzhi/suzhi_044.ogg"
     s "刚才……虽然是你弄脏的。但……你挡在前面的时候，没被烫到吧？"
+    voice "voice/suzhi/suzhi_021.ogg"
     s "那两个人拿着好像是热豆浆。"
 
     # 木子米：(一愣，看了看自己的手背，确实有一块红了)
@@ -2358,8 +2656,10 @@ label chapter_5:
     show suzhi shirt shy at slight_shake
     with flash
 
+    voice "voice/suzhi/suzhi_059.ogg"
     s "谁……谁要你赔一辈子！谁要吃你的饭票！"
-    s "你……你这个笨蛋！不可理喻！"
+    voice "voice/suzhi/suzhi_027.ogg"
+    s "你……这个笨蛋！不可理喻！"
 
     # (素织抓起桌上的书，对着木子米的后背扔了过去)
     # 【SE：书本砸中的闷响】
@@ -2375,8 +2675,11 @@ label chapter_5:
     "（素织把头埋进臂弯里，露出的耳朵红得滴血。）"
 
     # (内心独白)
+    voice "voice/suzhi/suzhi_144.ogg"
     s "（……笨蛋。）"
+    voice "voice/suzhi/suzhi_145.ogg"
     s "（这种话……怎么能随随便便说出口啊。）"
+    voice "voice/suzhi/suzhi_146.ogg"
     s "（犯规。太犯规了。明明只是个木头……）"
 
     # (黑屏)
@@ -2392,8 +2695,16 @@ label chapter_5:
     # 凌宁声音出现，可以加上 mystery 或者是 funny 的BGM
     play music audio.bgm_daily_funny fadein 1.0
 
-    l "这就是青春的试炼！接下来，我们将前往那个神秘的——“图书馆”。听说那里有一位“魔女”正在等待着命运的羔羊。"
+    voice "voice/lingning/lingning_029.ogg"
+    l "这就是青春的试炼！"
+    
+    voice "voice/lingning/lingning_036.ogg"
+    l "接下来，我们将前往那个神秘的——“图书馆”。"
+    
+    voice "voice/lingning/lingning_124.ogg"
+    l "听说那里有一位“魔女”正在等待着命运的羔羊。"
 
+    voice "voice/suzhi/suzhi_141.ogg"
     s "魔女？我看是中二病吧。话说，木子米，我的衣服还没干，我不出去了！"
 
     m "好好好，我给你扇干行了吧？"
@@ -2424,10 +2735,17 @@ label chapter_5:
     show lingning casual pose at right with dissolve
 
     # 凌宁：出来了吗？ 比我预想的时间要短了三分钟。
-    l "出来了吗？ 比我预想的时间要短了三分钟。"
+    
+    voice "voice/lingning/lingning_091.ogg"
+    l "出来了吗？"
+    
+    voice "voice/lingning/lingning_082.ogg"
+    l "比我预想的时间要短了三分钟。"
     
     # 凌宁表情微调：带着一种看透红尘的微笑
     show lingning casual happy
+    
+    voice "voice/lingning/lingning_049.ogg"
     l "看来在那个封闭的空间里，你们并没有进行关于宇宙真理的深层探讨。"
 
     # 木子米：（满头黑线） 你在门口站岗干什么？
@@ -2436,7 +2754,14 @@ label chapter_5:
 
     # 凌宁：（优雅地摊手）
     show lingning casual pose
-    l "我在守护你们的隐私。 要知道，青春的冲动就像暴风雨中的蝴蝶，脆弱而美丽。"
+    
+    voice "voice/lingning/lingning_092.ogg"
+    l "我在守护你们的隐私。"
+    
+    voice "voice/lingning/lingning_010.ogg"
+    l "要知道，青春的冲动就像暴风雨中的蝴蝶，脆弱而美丽。"
+    
+    voice "voice/lingning/lingning_076.ogg"
     l "若是被俗人打扰了这“清洗罪孽（指洗衣服）”的神圣仪式，岂不可惜？"
 
     # 素织：（脸还是红的，听到凌宁的话，额头又冒出了井字）
@@ -2447,6 +2772,7 @@ label chapter_5:
     with vpunch # 配合震动加强语气
 
     # 为了表现愤怒，虽然她是羞涩姿态，但语气是愤怒的
+    voice "voice/suzhi/suzhi_106.ogg"
     s "凌宁！ 你再胡说八道，我就把你那天晚上敷面膜的照片发到新生群里！"
 
     hide icon_angry_mark # 隐藏生气符号
@@ -2455,10 +2781,16 @@ label chapter_5:
     # 使用 casual surprised (惊讶/被吓到) 或 ashamed (羞愧)
     show lingning casual surprised with soft_shake
     
+    voice "voice/lingning/lingning_037.ogg"
     l "唔！这……这是犯规的战术！"
     
     show lingning casual ashamed
-    l "素织小姐，请务必手下留情！那是我身为贵族的最后尊严！"
+    
+    voice "voice/lingning/lingning_121.ogg"
+    l "素织小姐，请务必手下留情！"
+    
+    voice "voice/lingning/lingning_044.ogg"
+    l "那是我身为贵族的最后尊严！"
 
     # (内心独白) 木子米： 看来，就算是贵族，也有怕被社会性死亡的时候。
     m "（看来，就算是贵族，也有怕被社会性死亡的时候。 不过…… 看着这两个人像小学生一样斗嘴。）"
@@ -2469,7 +2801,14 @@ label chapter_5:
 
     # 凌宁：（恢复正经，推了推不存在的眼镜）
     show lingning casual pose with dissolve
-    l "没有课了。 但是，身为土木系的精英，我们有一个必须攻略的副本。"
+    
+    voice "voice/lingning/lingning_101.ogg"
+    l "没有课了。"
+    
+    voice "voice/lingning/lingning_047.ogg"
+    l "但是，身为土木系的精英，我们有一个必须攻略的副本。"
+    
+    voice "voice/lingning/lingning_041.ogg"
     l "那就是—— 第十一节流通过程与物质交换中心。"
 
     # 木子米： 说人话。
@@ -2477,7 +2816,12 @@ label chapter_5:
 
     # 凌宁： 食堂。 抢饭。
     show lingning casual happy
-    l "食堂。 抢饭。"
+    
+    voice "voice/lingning/lingning_137.ogg"
+    l "食堂。"
+    
+    voice "voice/lingning/lingning_138.ogg"
+    l "抢饭。"
 
     # 场景结束，淡出
     scene black with fade
@@ -2510,6 +2854,7 @@ label chapter_5:
 
     # 屏幕震动表现混乱
     show sd_suzhi_run at chase_run_left zorder 1
+    voice "voice/suzhi/suzhi_114.ogg"
     s "快，这边这边。"
     hide sd_suzhi_run
     with vpunch
@@ -2529,14 +2874,22 @@ label chapter_5:
     # 使用 lingning casual tired 或 weak 表现抗拒
     show lingning casual tired at right with dissolve
     
-    l "这……这不符合美学。 在如此拥挤的环境中进食，还要为了一个鸡腿而此时此刻，这有辱斯文。"
+    voice "voice/lingning/lingning_022.ogg"
+    l "这……这不符合美学。"
+    
+    voice "voice/lingning/lingning_035.ogg"
+    l "在如此拥挤的环境中进食，还要为了一个鸡腿而此时此刻，这有辱斯文。"
+    
+    voice "voice/lingning/lingning_087.ogg"
     l "我决定去买面包。"
 
     # 素织： （眼神犀利）
     # 使用 suzhi casual angry 表现气场全开 (假设此时已穿好外套或无视服装bug，使用常规立绘表达情绪)
     show suzhi casual angry at left with moveinleft
 
+    voice "voice/suzhi/suzhi_087.ogg"
     s "（眼神犀利，盯着远处的“特色盖浇饭”窗口） 不行！ 为了下午的英语分级考试，必须吃米饭补充碳水。"
+    voice "voice/suzhi/suzhi_105.ogg"
     s "凌宁你去看包占座。 木子米，你跟我走！"
 
     # 木子米： 哈？我也要去挤？
@@ -2549,7 +2902,9 @@ label chapter_5:
     # 素织逼近
     show suzhi casual angry at center with move
 
+    voice "voice/suzhi/suzhi_065.ogg"
     s "少废话！ 你是肉盾！ 我们要执行“钳形攻势”！" 
+    voice "voice/suzhi/suzhi_015.ogg"
     s "我去排队，你负责挡住后面插队的人！"
 
     # (还没等木子米反抗，他就被素织拖进了人群的洪流中)
@@ -2614,7 +2969,9 @@ label chapter_5:
     pause 0.5
 
     # 素织：（心跳突然漏了一拍）
+    voice "voice/suzhi/suzhi_009.ogg"
     s "……笨蛋。"
+    voice "voice/suzhi/suzhi_042.ogg"
     s "这都要护住我……逞什么强"
     # 【演出效果：回到现实】
     # 恢复音量和噪音
@@ -2626,6 +2983,7 @@ label chapter_5:
     m "阿姨问你要什么菜！快喊！"
 
     # 素织：（回过神，脸一红）
+    voice "voice/suzhi/suzhi_126.ogg"
     s "两份土豆牛肉！不要香菜！"
 
     # 食堂阿姨：（手抖如帕金森）
@@ -2666,7 +3024,12 @@ label chapter_5:
 
     # 凌宁：（优雅地撕开一个小面包）
     show lingning casual happy
-    l "所以说，智者不入爱河，贵族不抢饭桌。 虽然我依然很饿，但我保持了风度。"
+    
+    voice "voice/lingning/lingning_046.ogg"
+    l "所以说，智者不入爱河，贵族不抢饭桌。"
+    
+    voice "voice/lingning/lingning_118.ogg"
+    l "虽然我依然很饿，但我保持了风度。"
 
     # 素织：（戳着盘子里的土豆）
     # 表情切换为犹豫/羞涩
@@ -2675,6 +3038,7 @@ label chapter_5:
     
     pause 0.5
     
+    voice "voice/suzhi/suzhi_006.ogg"
     s "……喂。"
 
     m "嗯？"
@@ -2687,7 +3051,9 @@ label chapter_5:
     # 素织：（动作飞快地丢进木子米的碗里）
     # 恢复正常表情掩饰害羞，或者保持羞涩但嘴硬
     show suzhi casual normal 
+    voice "voice/suzhi/suzhi_148.ogg"
     s "（夹起自己盘子里最大的一块牛肉，动作飞快地丢进木子米的碗里）" 
+    voice "voice/suzhi/脂身が多いのは嫌いなの。ゴミ処理手伝ってあげただけよ。suzhi_107.ogg"
     s "我不喜欢吃太肥的。 帮你解决垃圾。 别多想。"
 
     # 木子米内心吐槽
@@ -2699,6 +3065,7 @@ label chapter_5:
 
     # 素织：（瞪眼）
     show suzhi casual angry
+    voice "voice/suzhi/suzhi_139.ogg"
     s "不吃还我！"
 
     # 木子米：（一口塞进嘴里）
@@ -2712,17 +3079,24 @@ label chapter_5:
         repeat 2 # 快速抖动表现慌乱
         linear 0.1 xoffset 0
 
+    voice "voice/suzhi/suzhi_086.ogg"
     s "咳！咳咳！ 谁……谁有爱意了！"
+    voice "voice/suzhi/suzhi_138.ogg"
     s "吃饭都堵不住你的嘴！ 变态！"
 
     # 凌宁：（看着两人，默默地把手里的面包捏扁了）
     # 表情切换为郁闷/死鱼眼
     show lingning casual depressed with dissolve
     
+    voice "voice/lingning/lingning_141.ogg"
     l "（看着两人，默默地把手里的面包捏扁了）"
+    
+    voice "voice/lingning/lingning_050.ogg"
     l "我觉得…… 我应该在车底，不应该在这里。"
     
     # 柠檬味时刻
+    
+    voice "voice/lingning/lingning_024.ogg"
     l "这面包怎么吃出了一股柠檬味？"
 
     # 场景温馨淡出
@@ -2751,13 +3125,23 @@ label chapter_5:
     show suzhi casual normal at left with dissolve
 
     # 凌宁：（压低声音）
-    l "（压低声音） 这就是知识的殿堂。 空气中都弥漫着墨水的芬芳。 我要去找几本关于西方建筑美学的书，陶冶一下情操。"
+    
+    voice "voice/lingning/lingning_144.ogg"
+    l "（压低声音） 这就是知识的殿堂。"
+    
+    voice "voice/lingning/lingning_120.ogg"
+    l "空气中都弥漫着墨水的芬芳。"
+    
+    voice "voice/lingning/lingning_089.ogg"
+    l "我要去找几本关于西方建筑美学的书，陶冶一下情操。"
 
     # 木子米： 你是去找画册看图吧？
     m "你是去找画册看图吧？"
 
     # 素织： 我也去找几本专业书。
+    voice "voice/suzhi/suzhi_019.ogg"
     s "我也去找几本专业书。 土木概论老师推荐的那几本，据说很难抢。"
+    voice "voice/suzhi/suzhi_119.ogg"
     s "木子米，你……就在这占座吧。 别乱跑，也别睡着流口水。"
 
     # 木子米： 我是那种人吗？ 去吧去吧。
@@ -2792,7 +3176,10 @@ label chapter_5:
 
     # 神秘女生：（眼神空洞，语速极快）
     # 使用 b 代表白墨萱
+    voice "voice/baimoxuan/baimoxuan_011.ogg"
     unknown "（眼神空洞，语速极快） 混凝土的坍落度……骨料的级配…… 不行……这个公式不对……"
+    
+    voice "voice/baimoxuan/baimoxuan_027.ogg"
     unknown "根据魔女的法则……这里应该加一点蜥蜴的尾巴…… 啊不对，是加减水剂……"
 
     # (内心独白) 木子米
@@ -2805,7 +3192,10 @@ label chapter_5:
     # 播放惊悚或悬疑的小音效
     play music audio.bgm_stealth_happy fadein 0.5 # 切换BGM表现古怪氛围
 
+    voice "voice/baimoxuan/baimoxuan_023.ogg"
     unknown "（猛地抬头，眼镜反过一道寒光） （声音阴森） 观测者……？"
+    
+    voice "voice/baimoxuan/baimoxuan_021.ogg"
     unknown "你看到了？ 你看到了我的“禁忌炼成阵”？"
 
     # 木子米：（看了一眼地上的书堆）
@@ -2817,7 +3207,10 @@ label chapter_5:
         yoffset 0
         linear 0.2 yoffset 10
     
+    voice "voice/baimoxuan/baimoxuan_001.ogg"
     unknown "（推了推眼镜，突然换了一副表情，变得像小动物一样可怜） 呜……学长？还是同级？"
+    
+    voice "voice/baimoxuan/baimoxuan_005.ogg"
     unknown "能不能……帮我把上面那本书拿下来？ 我……我的魔力（身高）不够。"
 
     # ==========================================
@@ -2839,7 +3232,10 @@ label chapter_5:
     m "（叹气） （伸手轻松拿下那本书） 给。 《高层建筑结构设计》？ 这书……大一看不懂吧？"
 
     # 神秘女生：（接过书，眼神变得狂热）
+    voice "voice/baimoxuan/baimoxuan_018.ogg"
     b "我是为了……建造巴比伦塔！"
+    
+    voice "voice/baimoxuan/baimoxuan_017.ogg"
     b "通往神域的塔！ 谢谢你，巨人族的好心人。 吾名 {color=#a3a3a3}白墨萱{/color} 。 你可以称呼我为——“结构力学的魔女”。"
 
     # 木子米：（满头黑线）
@@ -2849,7 +3245,10 @@ label chapter_5:
     show baimoxuan coat crazy:
         ease 0.3 zoom 1.2 yoffset 50 # 镜头拉近效果
 
+    voice "voice/baimoxuan/baimoxuan_010.ogg"
     b "（突然凑近木子米，鼻子耸动了一下） 嗯？ 这股味道…… 是草莓牛奶？"
+    
+    voice "voice/baimoxuan/baimoxuan_004.ogg"
     b "而且是……干燥后的糖分结晶的味道？ 你……身上有甜腻的罪孽。"
 
     # (内心独白) 木子米
@@ -2866,6 +3265,7 @@ label chapter_5:
     # 素织从屏幕边缘阴暗地出现
     show suzhi casual angry at left with moveinleft
 
+    voice "voice/suzhi/suzhi_117.ogg"
     s "木。子。米。"
 
     # 木子米：（僵硬地回头）
@@ -2874,12 +3274,17 @@ label chapter_5:
     m "（僵硬地回头） 嗨……素织。 你听我解释，这是……"
 
     # 素织：（目光在白墨萱和木子米之间来回扫视）
+    voice "voice/suzhi/suzhi_058.ogg"
     s "（目光在白墨萱和木子米之间来回扫视，看着白墨萱抓着木子米衣角的手）" 
+    voice "voice/suzhi/suzhi_147.ogg"
     s "我就离开十分钟。 你就开始勾搭……奇怪的小学妹了？ 还真是“乐于助人”啊。"
 
     # 白墨萱：（看着素织，歪了歪头）
     # 白墨萱完全读不懂空气
+    voice "voice/baimoxuan/baimoxuan_008.ogg"
     b "（看着素织，歪了歪头） 哦？ 正宫的气场？ 防御力很强，但攻击性过高。 容易产生裂缝（指感情破裂）。"
+    
+    voice "voice/baimoxuan/baimoxuan_020.ogg"
     b "需要加固。"
 
     # 素织：（额头青筋暴起）
@@ -2888,6 +3293,7 @@ label chapter_5:
         xoffset 100 yoffset -350
     with vpunch
 
+    voice "voice/suzhi/suzhi_135.ogg"
     s "你说谁需要加固？！ 还有谁是正宫啊！ 木子米！回去了！"
     
     hide icon_angry_mark
@@ -2906,7 +3312,10 @@ label chapter_5:
     # 白墨萱：（挥着小手，面无表情）
     show baimoxuan coat crazy at center
     
+    voice "voice/baimoxuan/baimoxuan_026.ogg"
     b "（挥着小手，面无表情） 走好。 作为报酬，我会为你祈祷……" 
+    
+    voice "voice/baimoxuan/baimoxuan_002.ogg"
     b "祈祷你的骨骼强度能承受住那股剪力。"
 
     scene black with fade
@@ -2926,7 +3335,7 @@ label chapter_5:
 
     # (手机震动) 【微信提示音】
     play sound audio.se_phone
-    with soft_shake # 手机震动效果
+    with soft_shake # 手机震动效果]
 
     # ==========================================
     # 进入手机短信模式 (NVL)
@@ -3050,10 +3459,20 @@ label chapter_6:
     # 复用立绘：casual pose
     show lingning casual pose at center with dissolve
 
+    voice "voice/lingning/lingning_107.ogg"
     l "木子米，你这种姿态，简直像是一只失去了梦想的咸鱼。"
+    
+    voice "voice/lingning/lingning_009.ogg"
     l "要知道，即便是周末，贵族也要保持优雅的姿态。"
+    
+    voice "voice/lingning/lingning_129.ogg"
     l "你看我，正在通过冥想来净化这周被高数课污染的灵魂。"
-    l "这面膜可是我托人从海外代购的“深海泥”，能让我的肌肤重回十八岁的光泽……虽然我现在也才十八岁。"
+    
+    voice "voice/lingning/lingning_023.ogg"
+    l "这面膜可是我托人从海外代购的“深海泥”，能让我的肌肤重回十八岁的光泽……"
+    
+    voice "voice/lingning/lingning_060.ogg"
+    l "……虽然我现在也才十八岁。"
 
     # 木子米： （翻了个白眼，放下手柄，伸了个懒腰）
     m "得了吧，凌宁。"
@@ -3064,7 +3483,16 @@ label chapter_6:
     # 切换表情：casual happy
     show lingning casual happy
 
-    l "哼，你不懂。 凉茶亦有凉茶的风味，正如人生总有低谷。 苦涩中带着回甘，这才是成熟男人的味道。"
+    voice "voice/lingning/lingning_056.ogg"
+    l "哼，你不懂。" 
+    
+    voice "voice/lingning/lingning_090.ogg"
+    l "凉茶亦有凉茶的风味，正如人生总有低谷。"
+    
+    voice "voice/lingning/lingning_126.ogg"
+    l "苦涩中带着回甘，这才是成熟男人的味道。"
+    
+    voice "voice/lingning/lingning_040.ogg"
     l "而且，明天又是崭新的一周，我们要以完美的精神面貌去迎接……"
 
     # (突然，两人的手机同时发出了尖锐且急促的提示音，打破了这份宁静) 
@@ -3110,14 +3538,37 @@ label chapter_6:
     # 切换表情：casual surprised
     show lingning casual surprised with vpunch
 
+    voice "voice/lingning/lingning_070.ogg"
     l "不！！！"
-    l "我的美容觉！我的生物钟！我的胶原蛋白！"
-    l "这简直是对人权的践踏！是对美学的亵渎！"
+    
+    voice "voice/lingning/lingning_084.ogg"
+    l "我的美容觉！"
+    
+    voice "voice/lingning/lingning_075.ogg"
+    l "我的生物钟！"
+    
+    voice "voice/lingning/lingning_069.ogg"
+    l "我的胶原蛋白！"
+    
+    voice "voice/lingning/lingning_032.ogg"
+    l "这简直是对人权的践踏！"
+    
+    voice "voice/lingning/lingning_123.ogg"
+    l "是对美学的亵渎！"
     
     # 切换表情：casual depressed
     show lingning casual depressed
-    l "现在的长春早晨只有几度你知道吗？！零度线徘徊啊！"
+    
+    voice "voice/lingning/lingning_074.ogg"
+    l "现在的长春早晨只有几度你知道吗？！"
+    
+    voice "voice/lingning/lingning_116.ogg"
+    l "零度线徘徊啊！"
+    
+    voice "voice/lingning/lingning_079.ogg"
     l "这是要把我们冻成冰雕艺术品吗？！"
+    
+    voice "voice/lingning/lingning_080.ogg"
     l "我那件单薄的风衣根本扛不住这种魔法攻击啊！"
 
     # 木子米： （绝望地看向窗外）
@@ -3158,11 +3609,23 @@ label chapter_6:
     # 复用立绘：casual tired (模拟发抖)
     show lingning casual tired at center with dissolve
     
+    voice "voice/lingning/lingning_104.ogg"
     l "木……木子米……"
+    
+    voice "voice/lingning/lingning_058.ogg"
     l "我觉得……我的下巴……好像……冻掉了……"
+    
+    voice "voice/lingning/lingning_034.ogg"
     l "这种天气……居然……还要……升旗……"
+    
+    voice "voice/lingning/lingning_030.ogg"
     l "这不优雅……这一点都……不优雅……"
-    l "我应该……穿那件……那件看起来像熊一样的羽绒服的……失策……"
+    
+    voice "voice/lingning/lingning_006.ogg"
+    l "我应该……穿那件……那件看起来像熊一样的羽绒服的……"
+    
+    voice "voice/lingning/lingning_096.ogg"
+    l "失策……"
 
     # 木子米： （把羽绒服的拉链拉到最上面，只露出一双眼睛，双手插在袖筒里）
     m "省省力气吧……别说话了。"
@@ -3250,8 +3713,24 @@ label chapter_6:
 
     # 凌宁： （不知何时已经被人群冲散了）
     # （远处传来凌宁微弱且绝望的呼喊）
-    l "哎呀！别挤我的风衣！这是羊毛的！"
-    l "那位同学！你的肉包子油蹭到我袖子上了！ Oh no！我的绅士风度！"
+    
+    voice "voice/lingning/lingning_081.ogg"
+    l "哎呀！别挤我的风衣！"
+    
+    voice "voice/lingning/lingning_066.ogg"
+    l "这是羊毛的！"
+    
+    voice "voice/lingning/lingning_038.ogg"
+    l "那位同学！"
+    
+    voice "voice/lingning/lingning_125.ogg"
+    l "你的肉包子油蹭到我袖子上了！"
+    
+    voice "voice/lingning/lingning_068.ogg"
+    l "Oh no！"
+    
+    voice "voice/lingning/lingning_083.ogg"
+    l "我的绅士风度！"
 
     # 木子米： （叹气，摇了摇头）
     m "看来凌宁是没指望了，他正在进行一场保卫羊毛大衣的圣战。"
@@ -3273,6 +3752,7 @@ label chapter_6:
     "（素织正坐在那里，有些显眼。她一只手拿着勺子，另一只手高高举起，甚至还拿着一根刚咬了一口的油条在挥舞，像是在挥舞荧光棒。）"
 
     # 素织： （看到木子米终于看过来，立刻放下油条，有些不自然地指了指对面的空位，脸上带着一丝嫌弃）
+    voice "voice/suzhi/suzhi_100.ogg"
     s "看什么看！ 这里！ 你是瞎了吗！"
 
     # (木子米如获大赦，端着餐盘艰难地穿过人群，嘴里说着“借过借过”，像是在穿越雷区，终于挤到了素织那一桌)
@@ -3296,8 +3776,13 @@ label chapter_6:
     # 素织： （傲娇地哼了一声，低头喝了一口豆浆，掩饰表情）
     # 切换表情：casual shy
     show suzhi casual shy
+    voice "voice/suzhi/suzhi_123.ogg"
     s "少恶心了。 我只是……只是刚才占座的时候，多占了一个。"
+    
+    voice "voice/suzhi/suzhi_120.ogg"
     s "本来想把包放那儿的，不想让那个油腻腻的学长坐我对面。"
+    
+    voice "voice/suzhi/suzhi_137.ogg"
     s "看你像个无头苍蝇一样转来转去，怪可怜的。 就算是……日行一善吧。"
 
     # (木子米： （坐下，看着素织）)
@@ -3316,8 +3801,13 @@ label chapter_6:
     # 素织： （动作顿了一下，眼神有些闪烁，不自然地摸了摸脖子）
     # 切换表情：casual surprise
     show suzhi casual surprise
+    voice "voice/suzhi/suzhi_057.ogg"
     s "哪有。 我穿了加绒的卫衣，领子很高。"
+    
+    voice "voice/suzhi/suzhi_055.ogg"
     s "倒是你，穿那么少，在那一直吸鼻涕。"
+    
+    voice "voice/suzhi/suzhi_124.ogg"
     s "脏死了。 还有，你的粥都要洒出来了，能不能稳重点。"
 
     # 木子米： （尴尬地摸了摸鼻子）
@@ -3329,8 +3819,13 @@ label chapter_6:
     # 切换表情：casual angry
     show suzhi casual angry with vpunch
 
+    voice "voice/suzhi/suzhi_142.ogg"
     s "闭嘴！ 买多了！ 食堂阿姨手抖给多了不行吗？"
+    
+    voice "voice/suzhi/suzhi_052.ogg"
     s "而且这鸡蛋有点小，我吃不饱……不对，我是说我吃不下了！"
+    
+    voice "voice/suzhi/suzhi_097.ogg"
     s "帮我处理掉！ 要是剩下了，又要被那个保洁阿姨念叨浪费粮食。"
 
     # (内心独白) 木子米
@@ -3343,6 +3838,7 @@ label chapter_6:
     # 素织： （瞪了他一眼，但嘴角却止不住地上扬，耳根微红）
     # 切换表情：casual smile
     show suzhi casual smile
+    voice "voice/suzhi/suzhi_043.ogg"
     s "吃你的饭！ 再废话就把鸡蛋吐出来！ 真是的，给你吃还那么多废话。"
 
     # (两人之间的气氛变得微妙而温馨。周围的嘈杂声仿佛都变成了背景音。窗外的阳光洒在桌面上，升腾的热气模糊了彼此的脸庞，有一种岁月静好的错觉)
@@ -3353,8 +3849,12 @@ label chapter_6:
     m "共进早餐？ 虽然环境是乱糟糟的食堂，但这感觉……居然还不赖。"
     m "如果每天早晨都能这样……"
 
-    # ？？？： （突然，一个没有任何起伏、甚至带着一丝机械感的清冷声音在头顶响起，打破了这份旖旎）
+    # ？？？： （突然,一个没有任何起伏、甚至带着一丝机械感的清冷声音在头顶响起，打破了这份旖旎）
+    
+    voice "voice/baimoxuan/baimoxuan_022.ogg"
     unknown "观测到了。 两个独立的生命体，正在进行高热量的物质交换。"
+    
+    voice "voice/baimoxuan/baimoxuan_003.ogg"
     unknown "且伴随着名为“荷尔蒙”的化学反应。 有趣的实验样本。 打断一下。"
 
     # (木子米和素织同时吓了一跳，抬头看去)
@@ -3382,23 +3882,38 @@ label chapter_6:
     # 播放推书声
     play sound audio.se_drag
     
+    voice "voice/baimoxuan/baimoxuan_024.ogg"
     b "纠正。 不是逃难。 是通宵完成了“桁架结构抗震模拟”后的战略性撤退。"
+    
+    voice "voice/baimoxuan/baimoxuan_015.ogg"
     b "我的机体能量已耗尽，急需高蛋白补充。 食堂的人流密度超过了我的预设值，寻找空位耗费了我宝贵的3分20秒。"
 
     # 素织： （看着白墨萱推开自己的书，眉头瞬间皱成了“川”字，眼神变得犀利）
     # （语气降温至零下，散发着杀气）
+    voice "voice/suzhi/suzhi_063.ogg"
     s "喂。 那是我的书。 而且……这里有人了。"
+    
+    voice "voice/suzhi/suzhi_128.ogg"
     s "你没看到我们正在吃饭吗？"
 
     # 白墨萱： （转头看着素织，推了推眼镜，镜片反光，完全无视了素织的怒气）
+    voice "voice/baimoxuan/baimoxuan_016.ogg"
     b "我知道。 你是“防御者”。 昨天在图书馆见过。 你的领地意识过剩，这不利于学术交流。 而且……"
+    
     b "（指了指空位，一本正经地分析）"
+    
+    voice "voice/baimoxuan/baimoxuan_019.ogg"
     b "根据空间利用率最大化原则，这把椅子的闲置是对公共资源的浪费。 这里的人员密度为每平方米4人，而这把椅子占用面积0.25平方米。 所以我坐这里，符合结构力学的最优解，也符合资源分配的帕累托最优。"
 
     # 素织： （额头青筋暴起，手里的筷子都要捏断了，声音提高了一个八度）
     show suzhi casual angry with vpunch
+    voice "voice/suzhi/suzhi_028.ogg"
     s "你……！"
+    
+    voice "voice/suzhi/suzhi_099.ogg"
     s "什么叫“防御者”！ 还有，谁跟你讨论结构力学了！ 这是礼貌问题！礼貌！"
+    
+    voice "voice/suzhi/suzhi_102.ogg"
     s "你不懂先来后到吗？！"
 
     # 木子米： （感到一阵恶寒，夹在两个女人中间瑟瑟发抖，连忙出来打圆场）
@@ -3407,12 +3922,14 @@ label chapter_6:
     m "或者是刚出土的文物？"
 
     # 白墨萱： （无视了剑拔弩张的气氛，直接抓起一个油腻腻的鸡腿咬了一口，发出清脆的咀嚼声）
+    voice "voice/baimoxuan/baimoxuan_009.ogg"
     b "嗯……油脂。 令人愉悦的碳链结构。 这种高热量能迅速转化为ATP。"
     
     # （突然凑近木子米，鼻子几乎贴到了木子米的脸上，木子米甚至能闻到她身上淡淡的机油味）
     show baimoxuan coat crazy:
         ease 0.3 zoom 1.2 xoffset -100
 
+    voice "voice/baimoxuan/baimoxuan_013.ogg"
     b "巨人。 你的鸡蛋。 蛋白的凝固程度很完美，表面张力保持得不错。 是你孵化的吗？"
 
     # 木子米： （战术后仰，差点连人带椅子翻过去）
@@ -3426,16 +3943,23 @@ label chapter_6:
     play sound audio.se_bump
     # （伸出一只手，直接挡在白墨萱和木子米中间，像护食的母狮子，眼神凶狠）
     
+    voice "voice/suzhi/suzhi_111.ogg"
     s "离他远点！ 这是我给…… 这是我的鸡蛋！ 你想吃自己买去！ 别打他的主意！"
 
     # 白墨萱： （歪了歪头，看着素织的手，又看了看素织愤怒的脸，仿佛在观察一种新物种）
+    voice "voice/baimoxuan/baimoxuan_007.ogg"
     b "哦？ 这种反应…… 在生物学上，被称为“护偶行为”。"
+    
+    voice "voice/baimoxuan/baimoxuan_025.ogg"
     b "通常出现在繁殖季节的……哺乳动物身上。 为了保护配偶和后代，雌性会表现出极强的攻击性。 有趣的样本。"
 
     # 素织： （脸瞬间爆红，像个熟透的番茄，甚至蔓延到了脖子根）
     # （尖叫，声音颤抖）
     show suzhi casual surprise with vpunch
+    voice "voice/suzhi/suzhi_143.ogg"
     s "闭嘴！！！ 什么繁殖季节！ 你这个疯女人在说什么胡话！"
+    
+    voice "voice/suzhi/suzhi_134.ogg"
     s "谁……谁是配偶啊！ 木子米！你管管她！ 你是死人吗！"
 
     # 木子米： （一脸生无可恋，双手举起投降状，欲哭无泪）
@@ -3443,7 +3967,10 @@ label chapter_6:
     m "这可是魔女啊！ 我说的话她能听懂一半就不错了！ 而且“繁殖季节”什么的……我也很无辜啊！"
 
     # 白墨萱： （淡定地喝了一口那杯绿色的饮料，完全不受干扰）
+    voice "voice/baimoxuan/baimoxuan_006.ogg"
     b "那是芹菜汁。 你要喝吗？巨人。 可以提高神经突触的传导速度，让你更聪明一点。"
+    
+    voice "voice/baimoxuan/baimoxuan_012.ogg"
     b "虽然味道像是在咀嚼生化武器，或者像是在喝液态的草地。"
 
     # 木子米： （疯狂摇头，脸色发青）
@@ -3460,10 +3987,14 @@ label chapter_6:
     # 素织： （深吸几口气，努力平复心情，重新拿起筷子，手还在微微发抖）
     # （冷冷地瞥了白墨萱一眼，语气中充满了敌意）
     show suzhi casual gloomy
+    voice "voice/suzhi/suzhi_110.ogg"
     s "既然坐下了，就安静吃饭。"
+    
+    voice "voice/suzhi/suzhi_140.ogg"
     s "吃完赶紧走。 别打扰我们。 你的白大褂味太重了，影响食欲。"
 
     # 白墨萱： （咀嚼着红烧肉，腮帮子鼓鼓的，像只仓鼠）
+    voice "voice/baimoxuan/baimoxuan_014.ogg"
     b "无法承诺。 数据采集尚未完成。 我需要观察“巨人”在进食时的下颚咬合力。 这对我设计新型破碎机有参考价值。 而且，我对你们这种“非理性”的进食交流模式很感兴趣。"
 
     # 木子米： （哭笑不得，敲了敲桌子）
@@ -3471,7 +4002,10 @@ label chapter_6:
 
     # 素织： （突然冷笑一声，夹起一块咸菜里巨大的姜块，放到木子米碗里）
     show suzhi casual smile
+    voice "voice/suzhi/suzhi_075.ogg"
     s "呵。 既然你是破碎机，那这个你也吃了吧。 我不爱吃姜。"
+    
+    voice "voice/suzhi/suzhi_067.ogg"
     s "反正你是机器，应该没有味觉吧？"
 
     # 木子米： （看着碗里那块伪装成土豆的巨大姜块，欲哭无泪）
@@ -3502,13 +4036,17 @@ label chapter_6:
     # 素织： （没好气地，头也不回）
     # 切换表情：casual gloomy
     show suzhi casual gloomy
+    voice "voice/suzhi/suzhi_079.ogg"
     s "没有。 我跟一个神经病生什么气。 那是浪费我的情绪。 倒是你。"
 
     # 木子米：
     m "我？ 我怎么了？"
 
     # 素织： （停下脚步，转过身，认真地盯着木子米，眼神里带着一丝警告）
+    voice "voice/suzhi/suzhi_096.ogg"
     s "你以后……离那个白墨萱远点。"
+    
+    voice "voice/suzhi/suzhi_024.ogg"
     s "那个女人……很危险。 不仅脑子不正常，而且……很奇怪。"
 
     # 木子米： （有些好笑）
@@ -3517,6 +4055,7 @@ label chapter_6:
     # 素织： （咬了咬嘴唇，眼神有些复杂，似乎有些话想说又没说出口）
     # 切换表情：casual shy
     show suzhi casual shy
+    voice "voice/suzhi/suzhi_090.ogg"
     s "笨蛋。 我指的不是那个危险。 那个女人的眼神……像是要把你拆了一样。 总之……"
 
     # （她突然伸出手，帮木子米整理了一下被风吹乱的衣领，动作轻柔而自然）
@@ -3524,6 +4063,7 @@ label chapter_6:
         ease 0.5 zoom 1.1 yoffset 50
     "（她突然伸出手，帮木子米整理了一下被风吹乱的衣领，动作轻柔而自然。）"
 
+    voice "voice/suzhi/suzhi_031.ogg"
     s "你是我的……室友的邻居的朋友。 要是被怪人拐跑了，我会很没面子的。 而且，那个鸡蛋是我给你的，要是被她抢走了，我就……我就再也不给你买了！ 懂了吗？"
 
     # 木子米： （看着近在咫尺的脸庞，闻到了她身上淡淡的洗发水香味，混合着清晨空气的清冽味道） （心跳突然漏了一拍，脸颊微微发热）
@@ -3535,6 +4075,7 @@ label chapter_6:
     # 素织： （满意地拍了拍他的肩膀，恢复了平时的傲气，嘴角勾起一抹不易察觉的微笑）
     # 切换表情：casual smile
     show suzhi casual smile
+    voice "voice/suzhi/suzhi_070.ogg"
     s "这就好。 算你识相。 走吧，第一节课是制图，要是迟到了，老师会把你的头按在图纸上摩擦的。"
 
     # 木子米： （惨叫，看了看表）
