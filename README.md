@@ -7,7 +7,7 @@
 ![Status](https://img.shields.io/badge/Status-In%20Development-green)
 ![License](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey)
 
-![雪之恋海报](./game/images/雪之恋海报素织1.png)
+<img src="./game/images/雪之恋海报素织1.png" width="400" alt="海报">
 
 ## 📖 项目简介 (Introduction)
 
