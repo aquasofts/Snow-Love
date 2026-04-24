@@ -189,16 +189,14 @@ image auntie confused = Transform("images/char/auntie/auntie confused.png", xsiz
 image auntie surprised = Transform("images/char/auntie/auntie surprised.png", xsize=3000, ysize=1030, fit="contain", xalign=0.5, yalign=1.0)
 
 # --- 制图老师 (tea_draft) ---
-# 【第七章新增】立绘暂未绘制，使用占位图，后续替换为正式素材
-image tea_draft strict = Transform("images/char/mathteacher/mathteacher normal.png", xsize=3000, ysize=1030, fit="contain", xalign=0.5, yalign=1.0)
-image tea_draft normal = Transform("images/char/instructor/instructor cold.png", xsize=3000, ysize=1030, fit="contain", xalign=0.5, yalign=1.0)
-image tea_draft angry = Transform("images/char/instructor/instructor cold.png", xsize=3000, ysize=1030, fit="contain", xalign=0.5, yalign=1.0)
+image tea_draft strict = Transform("images/char/tea_draft/tea_draft strict.png", xsize=3000, ysize=1030, fit="contain", xalign=0.5, yalign=1.0)
+image tea_draft normal = Transform("images/char/tea_draft/tea_draft normal.png", xsize=3000, ysize=1030, fit="contain", xalign=0.5, yalign=1.0)
+image tea_draft angry = Transform("images/char/tea_draft/tea_draft angry.png", xsize=3000, ysize=1030, fit="contain", xalign=0.5, yalign=1.0)
 
 # --- 食堂阿姨 (aunt) ---
-# 【第七章新增】立绘暂未绘制，使用占位图，后续替换为正式素材
-image aunt happy = Transform("images/char/auntie/auntie working.png", xsize=3000, ysize=1030, fit="contain", xalign=0.5, yalign=1.0)
-image aunt normal = Transform("images/char/auntie/auntie confused.png", xsize=3000, ysize=1030, fit="contain", xalign=0.5, yalign=1.0)
-image aunt surprised = Transform("images/char/auntie/auntie surprised.png", xsize=3000, ysize=1030, fit="contain", xalign=0.5, yalign=1.0)
+image aunt happy = Transform("images/char/aunt/aunt happy.png", xsize=3000, ysize=1030, fit="contain", xalign=0.5, yalign=1.0)
+image aunt normal = Transform("images/char/aunt/aunt normal.png", xsize=3000, ysize=1030, fit="contain", xalign=0.5, yalign=1.0)
+image aunt confused = Transform("images/char/aunt/aunt confused.png", xsize=3000, ysize=1030, fit="contain", xalign=0.5, yalign=1.0)
 
 
 # --- 背景定义 ---
