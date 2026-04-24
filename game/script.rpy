@@ -16,6 +16,8 @@ define stu_b = Character("路人同学B", color="#aaaaaa")
 define stu_c = Character("路人同学C", color="#aaaaaa")
 define b = Character("白墨萱", color="#a3a3a3")
 define tea_math = Character("高数老师", color="#555555")
+define tea_draft = Character("制图老师", color="#5d4037")
+define aunt = Character("阿姨", color="#ff8a65")
 define unknown = Character("？？？", color="#aaaaaa")
 
 # --- 手机聊天角色 ---
@@ -185,6 +187,18 @@ image mathteacher normal = Transform("images/char/mathteacher/mathteacher normal
 image auntie working = Transform("images/char/auntie/auntie working.png", xsize=3000, ysize=1030, fit="contain", xalign=0.5, yalign=1.0)
 image auntie confused = Transform("images/char/auntie/auntie confused.png", xsize=3000, ysize=1030, fit="contain", xalign=0.5, yalign=1.0)
 image auntie surprised = Transform("images/char/auntie/auntie surprised.png", xsize=3000, ysize=1030, fit="contain", xalign=0.5, yalign=1.0)
+
+# --- 制图老师 (tea_draft) ---
+# 【第七章新增】立绘暂未绘制，使用占位图，后续替换为正式素材
+image tea_draft strict = Transform("images/char/mathteacher/mathteacher normal.png", xsize=3000, ysize=1030, fit="contain", xalign=0.5, yalign=1.0)
+image tea_draft normal = Transform("images/char/instructor/instructor cold.png", xsize=3000, ysize=1030, fit="contain", xalign=0.5, yalign=1.0)
+image tea_draft angry = Transform("images/char/instructor/instructor cold.png", xsize=3000, ysize=1030, fit="contain", xalign=0.5, yalign=1.0)
+
+# --- 食堂阿姨 (aunt) ---
+# 【第七章新增】立绘暂未绘制，使用占位图，后续替换为正式素材
+image aunt happy = Transform("images/char/auntie/auntie working.png", xsize=3000, ysize=1030, fit="contain", xalign=0.5, yalign=1.0)
+image aunt normal = Transform("images/char/auntie/auntie confused.png", xsize=3000, ysize=1030, fit="contain", xalign=0.5, yalign=1.0)
+image aunt surprised = Transform("images/char/auntie/auntie surprised.png", xsize=3000, ysize=1030, fit="contain", xalign=0.5, yalign=1.0)
 
 
 # --- 背景定义 ---
@@ -4094,5 +4108,1236 @@ label chapter_6:
     scene black with fade
     stop music fadeout 2.0
     centered "{size=60}第六章 完{/size}"
+
+    return
+
+
+label chapter_7:
+
+    # ==========================================
+    # 【场景一：制图教室 - 上课时间】
+    # ==========================================
+
+    scene bg classroom_desk with fade
+
+    play music audio.bgm_classroom fadein 1.0
+
+    "上课铃声还没响。"
+    "工程制图课。"
+    "听说老师是个狠人。"
+
+    show lingning casual pose at left with moveinleft
+
+    l "这就是制图教室吗。"
+    l "一股子蓝图味。"
+    l "我的艺术细胞在躁动。"
+
+    show suzhi casual normal at right with moveinright
+
+    s "你那不是艺术细胞。"
+    s "是戏精细胞。"
+
+    m "别吵了。"
+    m "赶紧找位置坐。"
+
+    show lingning casual happy
+
+    l "我要坐窗边。"
+    l "光线好。"
+    l "画图需要氛围感。"
+
+    s "随你。"
+    s "我坐这里就行。"
+    s "离黑板近。"
+
+    m "那我坐你后面。"
+
+    show suzhi casual gloomy
+
+    s "为什么。"
+
+    m "方便借橡皮。"
+
+    show suzhi casual angry
+
+    s "你没带？"
+
+    m "忘了。"
+
+    s "你脑子也忘了。"
+
+    show lingning casual surprised
+
+    l "我有备用的。"
+    l "皇家橡皮。"
+    l "要吗。"
+
+    show suzhi casual normal
+
+    m "你的太香了。"
+    m "用了会头晕。"
+
+    show lingning casual depressed
+
+    l "不懂欣赏。"
+
+    play sound audio.se_bell
+
+    "老师来了。"
+
+    hide lingning with dissolve
+    hide suzhi with dissolve
+
+    show tea_draft strict at center with dissolve
+
+    tea_draft "安静。"
+    tea_draft "我是你们的制图老师。"
+    tea_draft "姓严。"
+    tea_draft "严谨的严。"
+
+    show tea_draft normal
+
+    tea_draft "我的课有三个规矩。"
+    tea_draft "第一。"
+    tea_draft "不许迟到。"
+    tea_draft "第二。"
+    tea_draft "不许抄袭。"
+    tea_draft "第三。"
+    tea_draft "不许敷衍。"
+
+    show tea_draft strict:
+        ease 0.3 zoom 1.05
+
+    tea_draft "听懂了吗。"
+
+    show tea_draft strict:
+        ease 0.3 zoom 1.0
+
+    m "听懂了。"
+    l "明白。"
+    s "是。"
+
+    show tea_draft normal
+
+    tea_draft "很好。"
+    tea_draft "翻开书。"
+    tea_draft "今天学基本线条。"
+    tea_draft "别小看线条。"
+
+    show tea_draft strict
+
+    tea_draft "线都画不直。"
+    tea_draft "别当工程师。"
+
+    show lingning casual happy at left with dissolve
+    show suzhi casual normal at right with dissolve
+
+    l "画直线。"
+    l "这还不简单。"
+    l "我有尺子。"
+
+    show tea_draft strict at center with dissolve
+
+    tea_draft "尺子？"
+
+    with vpunch
+
+    tea_draft "谁让你用尺子。"
+
+    show lingning casual surprised
+
+    l "不用尺子？"
+
+    tea_draft "徒手画。"
+
+    l "徒手？"
+
+    show tea_draft normal
+
+    tea_draft "对。"
+    tea_draft "尺子是辅助。"
+    tea_draft "手稳才叫本事。"
+
+    show lingning casual depressed
+
+    l "这不科学。"
+
+    tea_draft "科学在后头。"
+    tea_draft "现在练手感。"
+
+    show tea_draft strict
+
+    tea_draft "开始。"
+
+    show suzhi casual normal
+
+    s "别抱怨了。"
+    s "画吧。"
+
+    m "凌宁你手抖吗。"
+
+    show lingning casual happy
+
+    l "怎么可能。"
+    l "我是经过军训洗礼的人。"
+
+    show suzhi casual smile
+
+    s "那你线条怎么像蚯蚓。"
+
+    show lingning casual surprised
+
+    l "这是艺术。"
+    l "曲线美。"
+
+    show suzhi casual normal
+
+    s "老师要直线。"
+
+    show lingning casual pose
+
+    l "直线缺乏灵魂。"
+
+    show tea_draft strict at center with dissolve
+
+    tea_draft "那位同学。"
+    tea_draft "你叫凌宁？"
+
+    show lingning casual surprised
+
+    l "是的老师。"
+
+    tea_draft "你的线条很有个性。"
+
+    show lingning casual happy
+
+    l "谢谢老师。"
+
+    show tea_draft angry
+
+    with vpunch
+
+    tea_draft "但这是工程制图。"
+    tea_draft "不是抽象画。"
+
+    show tea_draft strict
+
+    tea_draft "重画。"
+
+    show lingning casual depressed
+
+    l "是。"
+
+    show suzhi casual smile
+
+    s "噗。"
+
+    m "别笑。"
+    m "你画得怎么样。"
+
+    show suzhi casual normal
+
+    s "自己看。"
+
+    m "哇。"
+    m "好直。"
+
+    show suzhi casual smile
+
+    s "练过。"
+
+    m "什么时候。"
+
+    s "暑假。"
+    s "提前预习了。"
+
+    m "厉害。"
+
+    s "还行。"
+
+    show suzhi casual smile
+
+    s "比某人强。"
+
+    show lingning casual angry
+
+    l "我听见了。"
+    l "这是人身攻击。"
+
+    show suzhi casual normal
+
+    s "我说的是事实。"
+
+    show tea_draft strict at center with dissolve
+
+    tea_draft "安静。"
+    tea_draft "画完的举手。"
+
+    show suzhi casual normal at right with dissolve
+
+    s "我。"
+
+    show tea_draft normal at center with dissolve
+
+    tea_draft "拿过来。"
+    tea_draft "嗯。"
+
+    show tea_draft strict
+
+    tea_draft "不错。"
+    tea_draft "线条有力。"
+    tea_draft "继续努力。"
+
+    show suzhi casual smile
+
+    s "谢谢老师。"
+
+    show tea_draft normal
+
+    tea_draft "下一个。"
+    tea_draft "木子米。"
+
+    m "在。"
+
+    tea_draft "你的线呢。"
+
+    m "画完了。"
+
+    tea_draft "拿过来。"
+
+    show tea_draft normal
+
+    tea_draft "还行。"
+    tea_draft "基本功不扎实。"
+    tea_draft "多练。"
+
+    m "是。"
+
+    show lingning casual happy at left with dissolve
+
+    l "到我了到我了。"
+
+    show tea_draft strict at center with dissolve
+
+    tea_draft "凌宁。"
+
+    show lingning casual surprised
+
+    l "在。"
+
+    tea_draft "你这画的是线吗。"
+
+    show lingning casual happy
+
+    l "报告老师。"
+    l "是线。"
+
+    show tea_draft angry
+
+    with vpunch
+
+    tea_draft "我看像波浪。"
+
+    show lingning casual surprised
+
+    l "波浪也是线。"
+
+    show tea_draft strict
+
+    with vpunch
+
+    tea_draft "闭嘴。"
+    tea_draft "重画三遍。"
+
+    show lingning casual depressed
+
+    l "是。"
+
+    show suzhi casual normal at right with dissolve
+
+    m "同情你。"
+
+    show lingning casual depressed
+
+    l "友谊呢。"
+
+    m "跟波浪一起飞走了。"
+
+    show suzhi casual smile
+
+    s "活该。"
+
+    show lingning casual angry
+
+    l "你们太冷酷了。"
+
+    show tea_draft strict at center with dissolve
+
+    tea_draft "现在教大家画平行线。"
+    tea_draft "间距保持一致。"
+    tea_draft "这是基本功中的基本功。"
+    tea_draft "看黑板。"
+    tea_draft "手腕放松。"
+    tea_draft "手臂不动。"
+    tea_draft "靠手腕发力。"
+    tea_draft "这样画出来的线才匀称。"
+
+    show tea_draft normal
+
+    tea_draft "明白吗。"
+
+    show suzhi casual normal at right with dissolve
+
+    s "明白。"
+
+    m "明白。"
+
+    show lingning casual depressed at left with dissolve
+
+    l "明白。"
+
+    show tea_draft strict
+
+    tea_draft "开始练。"
+    tea_draft "二十分钟后检查。"
+
+    show suzhi casual normal
+
+    m "手腕好酸。"
+
+    s "慢慢来。"
+    s "你太用力了。"
+
+    m "不用力画不直。"
+
+    show suzhi casual normal:
+        ease 0.5 zoom 1.1 yoffset 50
+
+    s "方法不对。"
+    s "你看我。"
+    s "这样。"
+    s "手腕带动笔。"
+    s "不是手指。"
+
+    show suzhi casual normal:
+        ease 0.5 zoom 1.0 yoffset 0
+
+    m "试试看。"
+    m "好像好点。"
+
+    show suzhi casual smile
+
+    s "对吧。"
+
+    show lingning casual depressed
+
+    l "素织老师。"
+    l "救救我。"
+
+    show suzhi casual smile
+
+    s "你放弃吧。"
+
+    show lingning casual surprised
+
+    l "不能区别对待。"
+
+    show suzhi casual normal
+
+    s "你基础太差。"
+
+    show lingning casual depressed
+
+    l "我心灵受伤了。"
+
+    m "别演了。"
+    m "赶紧练。"
+
+    show lingning casual tired
+
+    l "好吧。"
+    l "为了不被老师骂。"
+
+    show tea_draft strict at center with dissolve
+
+    tea_draft "时间到。"
+    tea_draft "检查。"
+    tea_draft "素织。"
+    tea_draft "优秀。"
+    tea_draft "木子米。"
+    tea_draft "有进步。"
+    tea_draft "凌宁。"
+
+    show tea_draft angry
+
+    with vpunch
+
+    tea_draft "你练的是波浪二代吗。"
+
+    show lingning casual depressed
+
+    l "老师我尽力了。"
+
+    show tea_draft strict
+
+    tea_draft "下课别走。"
+
+    show lingning casual depressed
+
+    l "是。"
+
+    show suzhi casual smile at right with dissolve
+
+    s "这就是报应。"
+
+    m "太惨了。"
+
+    show lingning casual angry
+
+    l "你们还笑。"
+
+    play sound audio.se_bell
+
+    "下课铃响了。"
+
+    show tea_draft normal at center with dissolve
+
+    tea_draft "今天就到这里。"
+    tea_draft "作业画一页直线。"
+    tea_draft "明天交。"
+
+    show tea_draft strict
+
+    tea_draft "凌宁留堂。"
+
+    show lingning casual depressed
+
+    l "是。"
+
+    # ==========================================
+    # 【场景二：食堂 - 午饭时间】
+    # ==========================================
+
+    scene bg dining_inside with fade
+
+    play music audio.bgm_break_time fadein 1.0
+    play sound audio.se_footsteps_crowd volume 0.3
+
+    hide lingning with dissolve
+    hide suzhi with dissolve
+
+    m "我们在外面等你。"
+
+    show suzhi casual normal at right with dissolve
+
+    s "食堂见。"
+
+    show lingning casual depressed at left with dissolve
+
+    l "谢了。"
+
+    m "那家伙真可怜。"
+
+    s "谁让他吊儿郎当。"
+
+    m "其实他挺聪明的。"
+
+    show suzhi casual normal
+
+    s "聪明不用正地方。"
+
+    m "也是。"
+
+    s "走吧。"
+    s "先去占位。"
+
+    m "今天吃什么。"
+
+    s "你请客。"
+
+    m "为什么。"
+
+    show suzhi casual smile
+
+    s "因为你欠我的。"
+
+    m "欠什么。"
+
+    s "鸡蛋。"
+
+    m "那是你给我的。"
+
+    s "所以你要回礼。"
+
+    m "这逻辑。"
+
+    show suzhi casual angry
+
+    s "有意见？"
+
+    m "没有。"
+    m "想吃什么。"
+
+    show suzhi casual smile
+
+    s "红烧肉。"
+
+    m "你又不怕胖。"
+
+    show suzhi casual angry
+
+    s "你才胖。"
+
+    m "我错了。"
+
+    show suzhi casual smile
+
+    s "再加一个鸡腿。"
+
+    m "行。"
+    m "今天大出血。"
+
+    s "这就是得罪我的下场。"
+
+    m "我什么时候得罪你了。"
+
+    show suzhi casual angry
+
+    s "刚才。"
+    s "你说我胖。"
+
+    m "我没说。"
+
+    s "你暗示了。"
+
+    m "冤枉。"
+
+    show suzhi casual smile
+
+    s "不接受反驳。"
+
+    m "好吧。"
+
+    show suzhi casual normal
+
+    m "食堂人好多。"
+
+    s "赶紧排队。"
+    s "红烧肉窗口。"
+
+    m "我去挤。"
+
+    s "小心点。"
+    s "别洒了。"
+
+    m "放心。"
+    m "为了鸡腿。"
+
+    show suzhi casual smile
+
+    s "还有红烧肉。"
+
+    m "拼了。"
+
+    play sound audio.se_foot_stomp
+
+    m "让一让。"
+    m "谢谢。"
+    m "阿姨。"
+    m "两份红烧肉。"
+    m "两个鸡腿。"
+
+    show aunt happy at left with dissolve
+
+    aunt "好嘞。"
+    aunt "小伙子能吃。"
+
+    show aunt normal
+
+    m "不是我一个人。"
+
+    aunt "那也够多的。"
+
+    m "朋友胃口好。"
+
+    show aunt happy
+
+    aunt "给你多加一勺汁。"
+
+    m "谢谢阿姨。"
+
+    hide aunt with dissolve
+    show suzhi casual normal at right with dissolve
+
+    s "拿到了吗。"
+
+    m "任务完成。"
+
+    show suzhi casual smile
+
+    s "不错。"
+    s "奖励你一个鸡腿。"
+
+    m "本来就是我的。"
+
+    s "我让给你的。"
+
+    m "行行。"
+    m "你说了算。"
+
+    show lingning casual tired at left with moveinleft
+
+    l "我来了。"
+    l "老师终于放过了我。"
+    l "你们已经开始吃了。"
+
+    show suzhi casual normal
+
+    s "谁让你慢。"
+
+    show lingning casual depressed
+
+    l "我受了那么多苦。"
+    l "你们不等我。"
+
+    m "你的饭在那边。"
+    m "自己打。"
+
+    show lingning casual surprised
+
+    l "没钱了。"
+    l "行行好。"
+
+    m "拿去。"
+    m "饭卡。"
+
+    show lingning casual happy
+
+    l "恩人。"
+    l "我要吃最贵的。"
+
+    show suzhi casual gloomy
+
+    s "脸皮真厚。"
+
+    show lingning casual pose
+
+    l "这是劫后余生的庆祝。"
+    l "等我回来。"
+
+    m "快去吧。"
+    m "红烧肉快没了。"
+
+    show lingning casual surprised
+
+    l "我这就去。"
+
+    hide lingning with moveoutleft
+
+    show suzhi casual normal
+
+    s "这家伙。"
+    s "真拿他没办法。"
+
+    m "就这个性子。"
+    m "习惯就好。"
+
+    show suzhi casual normal
+
+    s "嗯。"
+    s "吃肉。"
+
+    m "你也多吃点。"
+
+    show suzhi casual smile
+
+    s "自然。"
+    s "不用你说。"
+
+    show lingning casual happy at left with moveinleft
+
+    l "满载而归。"
+    l "阿姨多给了我一个狮子头。"
+    l "说我辛苦了。"
+
+    show suzhi casual normal
+
+    m "阿姨知道你是被留堂的。"
+    m "同情你。"
+
+    show lingning casual pose
+
+    l "不管是同情还是欣赏。"
+    l "肉是真的。"
+    l "开动。"
+
+    show suzhi casual smile
+
+    s "慢点吃。"
+    s "没人抢。"
+
+    show lingning casual happy
+
+    l "好吃。"
+    l "这是我应得的。"
+    l "上午的屈辱被治愈了。"
+
+    m "你要求真低。"
+
+    l "知足常乐。"
+    l "吃完这顿饭。"
+    l "我就忘了画线的事。"
+
+    show suzhi casual normal
+
+    s "明天还要画。"
+
+    show lingning casual surprised
+
+    l "明天的事明天说。"
+
+    m "赞同。"
+
+    show suzhi casual gloomy
+
+    s "你们男生都这样。"
+
+    m "这叫乐观。"
+
+    s "这叫逃避。"
+
+    show lingning casual happy
+
+    l "都一样。"
+    l "下午没课吧。"
+
+    m "没有。"
+
+    show lingning casual pose
+
+    l "自由了。"
+
+    show suzhi casual normal
+
+    s "我要去图书馆。"
+
+    m "又预习？"
+
+    s "复习制图。"
+    s "今天的内容要巩固。"
+
+    show lingning casual happy
+
+    l "太勤奋了。"
+    l "不像某人。"
+
+    m "你说谁。"
+
+    show lingning casual smile
+
+    l "说你。"
+    l "你下午准备干什么。"
+
+    m "回宿舍睡觉。"
+
+    show lingning casual happy
+
+    l "好主意。"
+    l "我也睡。"
+
+    show suzhi casual gloomy
+
+    s "你们两个。"
+    s "没救了。"
+
+    m "劳逸结合。"
+
+    show lingning casual pose
+
+    l "说得对。"
+    l "素织一起去休息吧。"
+
+    show suzhi casual angry
+
+    s "不要。"
+    s "我去图书馆。"
+
+    show suzhi casual normal
+
+    m "那晚上见。"
+
+    s "晚上有选修课。"
+
+    m "对。"
+    m "土木概论。"
+
+    s "别迟到。"
+
+    m "知道了。"
+
+    show lingning casual happy
+
+    l "我会叫他的。"
+
+    show suzhi casual smile
+
+    s "你更不靠谱。"
+
+    show lingning casual surprised
+
+    l "怎么会。"
+    l "我是靠谱的代名词。"
+
+    show suzhi casual smile
+
+    s "信你才怪。"
+
+    m "好了好了。"
+    m "吃完了。"
+    m "走吧。"
+
+    show lingning casual pose
+
+    l "我去买奶茶。"
+    l "你们要吗。"
+
+    show suzhi casual normal
+
+    s "不要。"
+    s "糖分太高。"
+
+    m "我要。"
+    m "草莓味。"
+
+    show lingning casual happy
+
+    l "老样子。"
+    l "素织真的不要？"
+
+    s "不要。"
+
+    show lingning casual surprised
+
+    l "可惜。"
+    l "那我买两杯。"
+    l "自己喝。"
+
+    m "会胖的。"
+
+    show lingning casual pose
+
+    l "本少爷代谢好。"
+    l "不怕。"
+
+    s "随你。"
+
+    show suzhi casual normal
+
+    s "我走了。"
+
+    hide suzhi with moveoutright
+
+    # ==========================================
+    # 【场景三：回宿舍路上 / 宿舍 - 午后】
+    # ==========================================
+
+    scene bg campus_road_blur with fade
+
+    stop sound fadeout 1.0
+    play music audio.bgm_campus fadein 1.0
+    play sound audio.se_footsteps_crowd volume 0.2
+
+    hide lingning with dissolve
+
+    show lingning casual normal at left with dissolve
+
+    l "她还真是干脆。"
+
+    m "她一直这样。"
+
+    show lingning casual happy
+
+    l "你现在很了解她嘛。"
+
+    m "一般般。"
+
+    show lingning casual smile
+
+    l "骗谁呢。"
+    l "看你那眼神。"
+
+    m "什么眼神。"
+
+    show lingning casual pose
+
+    l "黏糊糊的眼神。"
+
+    m "别瞎说。"
+
+    show lingning casual happy
+
+    l "我没瞎说。"
+    l "旁观者清。"
+
+    m "奶茶还堵不住你的嘴。"
+
+    show lingning casual surprised
+
+    l "堵不住。"
+    l "除非你给我加珍珠。"
+
+    m "行。"
+    m "加双份。"
+
+    show lingning casual happy
+
+    l "成交。"
+    l "暂时不说了。"
+
+    m "走吧。"
+    m "回宿舍。"
+
+    show lingning casual pose
+
+    l "回去打游戏。"
+
+    m "你不是要睡觉吗。"
+
+    show lingning casual happy
+
+    l "先打一把。"
+    l "再睡。"
+
+    m "随你。"
+
+    show lingning casual normal
+
+    l "今晚叫素织一起吃饭吗。"
+
+    m "她有选修课。"
+
+    l "我们也有。"
+    l "一起吃呗。"
+
+    m "看情况。"
+
+    show lingning casual smile
+
+    l "你就是怂。"
+    l "想约就约。"
+
+    m "我没有。"
+
+    show lingning casual happy
+
+    l "行。"
+    l "你说没有就没有。"
+    l "反正我信了。"
+
+    m "你那语气明明是怀疑。"
+
+    show lingning casual surprised
+
+    l "哪有。"
+    l "我语气很诚恳。"
+
+    m "算了。"
+    m "走吧。"
+
+    show lingning casual normal
+
+    l "走。"
+    l "等等。"
+
+    show lingning casual surprised
+
+    l "我奶茶还没拿。"
+
+    m "你事真多。"
+
+    show lingning casual pose
+
+    l "人生大事。"
+    l "奶茶第一。"
+
+    m "快拿。"
+
+    show lingning casual happy
+
+    l "拿到了。"
+    l "回窝。"
+
+    m "终于可以休息了。"
+
+    show lingning casual tired
+
+    l "上午太痛苦。"
+    l "手还酸呢。"
+
+    m "我也是。"
+    m "制图课好累。"
+
+    l "严老师太严格。"
+    l "不过人不错。"
+
+    m "确实。"
+    m "教得也好。"
+
+    show lingning casual depressed
+
+    l "只是我手不听话。"
+
+    m "多练就好了。"
+
+    show lingning casual normal
+
+    l "希望如此。"
+    l "不然我要挂科。"
+
+    m "不会的。"
+    m "你努力就行。"
+
+    show lingning casual happy
+
+    l "那你教我。"
+
+    m "行。"
+    m "教你画线。"
+
+    show lingning casual pose
+
+    l "恩人。"
+    l "下午就教。"
+
+    m "下午要睡觉。"
+
+    show lingning casual surprised
+
+    l "睡觉不重要。"
+
+    m "很重要。"
+
+    show lingning casual depressed
+
+    l "好吧。"
+    l "晚上再教。"
+
+    m "晚上上课。"
+
+    l "那就下课。"
+
+    m "你是真的急。"
+
+    show lingning casual pose
+
+    l "关乎荣誉。"
+    l "必须急。"
+
+    m "知道了。"
+    m "下课教你。"
+
+    show lingning casual happy
+
+    l "赞。"
+    l "先回去了。"
+
+    m "嗯。"
+    m "素织到图书馆了吧。"
+
+    show lingning casual smile
+
+    l "你看。"
+    l "还说不想她。"
+
+    m "我只是自言自语。"
+
+    show lingning casual happy
+
+    l "恩。"
+    l "自言自语。"
+    l "我懂。"
+
+    m "闭嘴。"
+
+    show lingning casual surprised
+
+    l "闭了。"
+    l "但我在心里说。"
+
+    m "幼稚。"
+
+    show lingning casual smile
+
+    l "彼此彼此。"
+
+    stop sound fadeout 1.0
+
+    scene bg dorm_room_clean with fade
+
+    play music audio.bgm_warm fadein 1.0
+    play sound audio.se_door_kick volume 0.5
+
+    show lingning casual tired at center with moveinright
+
+    m "到了。"
+    m "开门。"
+
+    show lingning casual normal
+
+    l "你开。"
+
+    m "你没带钥匙？"
+
+    show lingning casual surprised
+
+    l "好像没带。"
+
+    m "你真是。"
+    m "什么事都忘。"
+
+    show lingning casual happy
+
+    l "因为有你。"
+    l "你是我的备用钥匙。"
+
+    m "我不是。"
+
+    show lingning casual pose
+
+    l "你是。"
+    l "开门吧。"
+
+    m "唉。"
+    m "开了。"
+
+    play sound audio.se_bump
+
+    show lingning casual tired at center, running_shake with moveinright
+
+    l "床。"
+    l "我想你了。"
+
+    m "别发神经。"
+
+    show lingning casual depressed
+
+    l "是真的想。"
+    l "我的被子。"
+    l "我的枕头。"
+
+    m "睡吧。"
+    m "别说话了。"
+
+    show lingning casual tired
+
+    l "睡。"
+    l "晚上见。"
+
+    m "晚上见。"
+
+    # 第七章 完
+    scene black with fade
+    stop music fadeout 2.0
+    centered "{size=60}第七章 完{/size}"
 
     return
