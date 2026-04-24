@@ -7,6 +7,8 @@
 ![Status](https://img.shields.io/badge/Status-In%20Development-green)
 ![License](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey)
 
+![雪之恋海报](./game/images/雪之恋海报素织1.png)
+
 ## 📖 项目简介 (Introduction)
 
 本项目是一个基于 **Ren'Py** 引擎开发的视觉小说（Galgame）。
