@@ -4119,7 +4119,7 @@ label chapter_6:
     stop music fadeout 2.0
     centered "{size=60}第六章 完{/size}"
 
-    return
+    jump chapter_7
 
 
 label chapter_7:
