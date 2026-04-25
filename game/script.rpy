@@ -17,6 +17,7 @@ define stu_c = Character("路人同学C", color="#aaaaaa")
 define b = Character("白墨萱", color="#a3a3a3")
 define tea_math = Character("高数老师", color="#555555")
 define tea_draft = Character("制图老师", color="#5d4037")
+define tea_cad = Character("实训老师", color="#3e7d4e")  # 第八新增：电脑实训周老师
 define aunt = Character("阿姨", color="#ff8a65")
 define unknown = Character("？？？", color="#aaaaaa")
 
@@ -193,6 +194,11 @@ image tea_draft strict = Transform("images/char/tea_draft/tea_draft strict.png",
 image tea_draft normal = Transform("images/char/tea_draft/tea_draft normal.png", xsize=3000, ysize=1030, fit="contain", xalign=0.5, yalign=1.0)
 image tea_draft angry = Transform("images/char/tea_draft/tea_draft angry.png", xsize=3000, ysize=1030, fit="contain", xalign=0.5, yalign=1.0)
 
+# --- 实训老师 (tea_cad) --- [第八章新增]
+image tea_cad normal = Transform("images/char/tea_cad/tea_cad normal.png", xsize=3000, ysize=1030, fit="contain", xalign=0.5, yalign=1.0)
+image tea_cad smile = Transform("images/char/tea_cad/tea_cad smile.png", xsize=3000, ysize=1030, fit="contain", xalign=0.5, yalign=1.0)
+image tea_cad strict = Transform("images/char/tea_cad/tea_cad strict.png", xsize=3000, ysize=1030, fit="contain", xalign=0.5, yalign=1.0)
+
 # --- 食堂阿姨 (aunt) ---
 image aunt happy = Transform("images/char/aunt/aunt happy.png", xsize=3000, ysize=1030, fit="contain", xalign=0.5, yalign=1.0)
 image aunt normal = Transform("images/char/aunt/aunt normal.png", xsize=3000, ysize=1030, fit="contain", xalign=0.5, yalign=1.0)
@@ -225,6 +231,12 @@ image bg cafeteria_closeup = Transform("images/bg/cafeteria_closeup.jpg", fit="c
 image bg library = Transform("images/bg/library.jpg", fit="cover")
 image bg black = Transform("images/bg/black.png", fit="cover")
 image bg playground_morning_and_morning = Transform("images/bg/playground_morning_and_morning.png", fit="cover")
+
+# --- 第八章新增背景 (复用现有素材) ---
+image bg computer_lab = Transform("images/bg/classroom_full.png", fit="cover")  # 电子阅览室
+image bg library_shelves = Transform("images/bg/library.jpg", fit="cover")  # 五楼专业书库
+image bg library_counter = Transform("images/bg/library.jpg", fit="cover")  # 自助借书机
+image bg shop = Transform("images/bg/dining_door.png", fit="cover")  # 小卖部
 
 
 # --- CG插画定义 ---
@@ -5337,5 +5349,1393 @@ label chapter_7:
     scene black with fade
     stop music fadeout 2.0
     centered "{size=60}第七章 完{/size}"
+
+    jump chapter_8
+
+
+# ==========================================
+# 第八章：电脑实训课的相遇
+# ==========================================
+label chapter_8:
+
+    # 【场景一：教学楼走廊 - 上课前】
+    scene bg classroom_clean with fade
+    play music audio.bgm_school fadein 1.0
+    play sound audio.se_bell
+
+    "上课铃声响了。"
+
+    show suzhi casual normal at center with dissolve
+
+    m "又是新课。"
+    m "电脑实训。"
+    m "在图书馆四楼。"
+
+    show lingning casual surprised at left with moveinleft
+
+    l "图书馆有电脑室吗。"
+
+    s "有。"
+    s "电子阅览室。"
+
+    l "我都不知道。"
+
+    s "你只知道奶茶店。"
+
+    show lingning casual happy
+
+    l "还有食堂。"
+
+    show suzhi casual gloomy
+
+    m "别说了。"
+    m "快走吧。"
+    m "图书馆离这儿远。"
+
+    show lingning casual tired
+
+    l "又要爬坡。"
+    l "我恨坡。"
+
+    show suzhi casual smile
+
+    s "就当锻炼。"
+
+    show lingning casual depressed
+
+    l "军训已经锻炼够了。"
+
+    show suzhi casual normal
+
+    m "走吧走吧。"
+
+    stop music fadeout 1.0
+
+    # 【场景二：图书馆大门】
+    scene bg library with fade
+    play music audio.bgm_campus fadein 1.0
+    play sound audio.se_footsteps_crowd volume 0.3
+
+    show lingning casual pose at left with dissolve
+    show suzhi casual normal at center with dissolve
+
+    l "知识的味道。"
+
+    s "是灰尘的味道。"
+
+    m "是机房的味道。"
+
+    show lingning casual happy
+
+    l "你们真没情调。"
+
+    show suzhi casual normal
+
+    s "四楼。"
+    s "电梯还是楼梯。"
+
+    m "楼梯。"
+    m "电梯要等很久。"
+
+    show lingning casual surprised
+
+    l "我选电梯。"
+    l "节约体力。"
+
+    s "那你等吧。"
+    s "我们走楼梯。"
+
+    show lingning casual tired
+
+    l "等等我。"
+    l "我还是跟你们走。"
+
+    show suzhi casual smile
+
+    m "善变。"
+
+    show lingning casual pose
+
+    l "这是策略。"
+
+    stop sound fadeout 1.0
+
+    # 【场景三：电子阅览室门口】
+    scene bg computer_lab with fade
+    play music audio.bgm_classroom fadein 1.0
+
+    m "好大。"
+
+    s "比想象的大。"
+
+    show lingning casual surprised at left with dissolve
+
+    l "电脑好多。"
+    l "都是新款的。"
+
+    show suzhi casual normal at center
+
+    m "找位置。"
+
+    s "坐中间吧。"
+    s "能看清楚投影。"
+
+    m "行。"
+
+    show lingning casual happy
+
+    l "我坐素织那边。"
+
+    show suzhi casual gloomy
+
+    m "为什么。"
+
+    l "离老师近。"
+    l "我要好好学。"
+
+    show suzhi casual smile
+
+    s "难得。"
+
+    show lingning casual pose
+
+    l "我是认真的。"
+
+    # 【场景四：实训课开始 - 老师】
+    show tea_cad normal at center with dissolve
+    hide lingning
+    hide suzhi
+
+    tea_cad "同学们好。"
+    tea_cad "我是你们的电脑实训老师。"
+    tea_cad "我姓周。"
+    tea_cad "这门课叫工程制图实训。"
+    tea_cad "说白了就是教你们用电脑画图。"
+    tea_cad "之前学的都是手绘。"
+    tea_cad "现在开始学软件。"
+
+    show tea_cad smile
+
+    tea_cad "这门课很重要。"
+    tea_cad "以后你们做设计。"
+    tea_cad "全靠电脑出图。"
+    tea_cad "明白吗。"
+
+    # 众学生回应
+    play sound audio.se_footsteps_crowd volume 0.2
+    "众学生" "明白。"
+
+    show tea_cad normal
+
+    tea_cad "今天先学基础。"
+    tea_cad "打开电脑。"
+    tea_cad "找到桌面上这个图标。"
+    tea_cad "叫CAD。"
+    tea_cad "点开。"
+
+    hide tea_cad with dissolve
+
+    # 【场景五：学生操作CAD】
+    show lingning casual tired at left with dissolve
+    show suzhi casual normal at center with dissolve
+
+    l "这个软件好大。"
+    l "要加载多久。"
+
+    s "别急。"
+    s "等就行了。"
+
+    m "打开了。"
+    m "界面好复杂。"
+
+    show tea_cad strict at right with moveinright
+
+    tea_cad "别慌。"
+    tea_cad "今天只讲基本操作。"
+    tea_cad "先学画线。"
+    tea_cad "看投影。"
+    tea_cad "鼠标点这里。"
+    tea_cad "选定直线工具。"
+    tea_cad "在绘图区点一下。"
+    tea_cad "拖动。"
+    tea_cad "再点一下。"
+    tea_cad "线就画好了。"
+    tea_cad "大家试试。"
+
+    hide tea_cad with moveoutright
+
+    show suzhi casual smile
+
+    m "比手绘简单。"
+
+    s "因为有电脑辅助。"
+
+    show lingning casual happy
+
+    l "我画出来了。"
+    l "直的。"
+    l "好直。"
+
+    show suzhi casual gloomy
+
+    s "那是因为电脑帮你直了。"
+
+    show lingning casual pose
+
+    l "工具就是给人用的。"
+
+    m "横线画好了。"
+    m "竖线怎么画。"
+
+    show tea_cad normal at right with moveinright
+
+    tea_cad "按F8。"
+    tea_cad "开启正交模式。"
+    tea_cad "这时只能画水平或垂直线。"
+    tea_cad "对初学者很实用。"
+
+    hide tea_cad with moveoutright
+
+    show suzhi casual normal
+
+    s "试试看。"
+    s "真的只能画直线。"
+
+    show lingning casual happy
+
+    l "这功能真好。"
+    l "再也不怕歪了。"
+
+    show tea_cad normal at right with moveinright
+
+    tea_cad "接下来学删除。"
+    tea_cad "选中线条。"
+    tea_cad "按Delete键。"
+    tea_cad "就删掉了。"
+
+    hide tea_cad with moveoutright
+
+    m "简单。"
+
+    s "实用。"
+
+    show lingning casual tired
+
+    l "我多画了几条。"
+    l "想删。"
+    l "按了没反应。"
+
+    show tea_cad strict at right with moveinright
+
+    tea_cad "因为你没选中。"
+    tea_cad "要先点选。"
+    tea_cad "再删除。"
+
+    hide tea_cad with moveoutright
+
+    show lingning casual surprised
+
+    l "哦。"
+    l "选中了。"
+    l "删掉了。"
+
+    show suzhi casual gloomy
+
+    m "你没听课。"
+
+    show lingning casual ashamed
+
+    l "刚才走神了。"
+
+    show suzhi casual normal
+
+    s "正常。"
+    s "你一直这样。"
+
+    # 【场景六：矩形工具和图层】
+    show tea_cad normal at center with dissolve
+    hide lingning
+    hide suzhi
+
+    tea_cad "还有矩形工具。"
+    tea_cad "点这里。"
+    tea_cad "输入长和宽。"
+    tea_cad "就能画出标准矩形。"
+    tea_cad "不用手量尺寸。"
+
+    hide tea_cad with dissolve
+
+    show suzhi casual smile at center with dissolve
+
+    m "真好用。"
+    m "画了个正方形。"
+
+    s "我画了个100乘50的矩形。"
+
+    show lingning casual tired at left with dissolve
+
+    l "我画的不知道多大。"
+    l "没看输入栏。"
+
+    show suzhi casual gloomy
+
+    s "你乱画。"
+
+    show lingning casual happy
+
+    l "艺术就是这样。"
+
+    show tea_cad normal at right with moveinright
+
+    tea_cad "接下来教大家用图层。"
+    tea_cad "图层就是透明的纸。"
+    tea_cad "不同内容放不同层。"
+    tea_cad "方便管理。"
+    tea_cad "也方便修改。"
+    tea_cad "这是专业习惯。"
+    tea_cad "必须养成。"
+
+    hide tea_cad with moveoutright
+
+    show suzhi casual normal
+
+    m "有点难。"
+    m "但能理解。"
+
+    s "很实用。"
+    s "我建了三个层。"
+
+    show lingning casual happy
+
+    l "我建了五个。"
+    l "虽然不知道干什么用。"
+
+    show suzhi casual gloomy
+
+    s "你乱建也没用。"
+
+    show lingning casual pose
+
+    l "先建了再说。"
+
+    # 【场景七：自由练习】
+    show tea_cad smile at center with dissolve
+    hide lingning
+    hide suzhi
+
+    tea_cad "现在自由练习。"
+    tea_cad "画一下刚才学的内容。"
+    tea_cad "有问题举手。"
+
+    hide tea_cad with dissolve
+
+    show suzhi casual normal at center with dissolve
+
+    m "图层怎么改名。"
+
+    s "双击名字就行。"
+
+    m "好了。"
+    m "谢谢。"
+
+    s "举手之劳。"
+
+    show lingning casual surprised at left with dissolve
+
+    l "我有问题。"
+    l "鼠标怎么不听话。"
+
+    show suzhi casual smile
+
+    s "你鼠标垫歪了。"
+
+    show lingning casual ashamed
+
+    l "哦。"
+    l "好了。"
+
+    show suzhi casual normal
+
+    s "你基本功太差。"
+
+    show lingning casual pose
+
+    l "练习嘛。"
+    l "慢慢来。"
+
+    # 【场景八：下课】
+    show tea_cad normal at center with dissolve
+    hide lingning
+    hide suzhi
+
+    tea_cad "时间差不多了。"
+    tea_cad "今天的内容很重要。"
+    tea_cad "回去复习。"
+    tea_cad "下次学画圆。"
+    tea_cad "下课。"
+
+    hide tea_cad with dissolve
+
+    stop music fadeout 1.0
+
+    # 【场景九：课后】
+    scene bg library with fade
+    play music audio.bgm_daily fadein 1.0
+
+    show lingning casual happy at left with dissolve
+
+    l "终于结束了。"
+
+    show suzhi casual normal at center
+
+    m "你去哪。"
+
+    s "等一下。"
+    s "我有点事。"
+
+    m "什么事。"
+
+    s "我的图没保存。"
+    s "要重新弄一下。"
+
+    show lingning casual pose
+
+    l "那我先走了。"
+    l "奶茶店有活动。"
+    l "买一送一。"
+    l "我要去抢。"
+
+    show suzhi casual smile
+
+    m "你去吧。"
+    m "我等他。"
+
+    s "不用等我。"
+    s "你先走吧。"
+
+    show suzhi casual normal
+
+    m "我等你。"
+    m "反正也没事。"
+
+    s "随便你。"
+
+    m "你慢慢弄。"
+    m "不急。"
+
+    s "嗯。"
+    s "保存好了。"
+
+    m "那走。"
+
+    s "等一下。"
+    s "我想借两本书。"
+    s "工程制图参考书。"
+    s "在五楼的专业书库。"
+
+    hide lingning with dissolve
+
+    m "我陪你去。"
+
+    s "不用。"
+    s "我自己就行。"
+
+    m "我今天还没借书。"
+    m "也想看看。"
+
+    show suzhi casual gloomy
+
+    s "你平时不看书。"
+
+    m "今天想看了。"
+
+    s "随你。"
+
+    stop music fadeout 1.0
+
+    # 【场景十：五楼专业书库】
+    scene bg library_shelves with fade
+    play music audio.bgm_warm fadein 1.0
+
+    show suzhi casual normal at center with dissolve
+
+    s "书在那边。"
+    s "TU开头的。"
+
+    m "你对图书馆很熟。"
+
+    s "来过几次。"
+    s "找书很方便。"
+
+    m "我还没来过五楼。"
+
+    s "这边都是建筑类。"
+    s "那边是结构类。"
+
+    m "书好多。"
+    m "看得眼花。"
+
+    s "找这本。"
+    s "CAD从入门到精通。"
+    s "还有这本。"
+    s "工程制图规范。"
+
+    m "我也借一本。"
+    m "就借这本。"
+
+    show suzhi casual surprised
+
+    s "你借一样的干嘛。"
+
+    m "一起看。"
+
+    show suzhi casual gloomy
+
+    s "有病。"
+
+    m "方便讨论。"
+
+    show suzhi casual normal
+
+    s "那你拿好。"
+    s "别弄丢了。"
+
+    m "放心。"
+
+    # 【场景十一：发现白墨萱】
+    show layer master at soft_shake
+
+    m "嗯？"
+    m "那边有人。"
+
+    show suzhi casual surprised
+
+    s "哪里。"
+
+    m "书架尽头。"
+    m "好像在打瞌睡。"
+
+    show suzhi casual gloomy
+
+    s "谁会在书库睡觉。"
+
+    m "不知道。"
+    m "去看看。"
+
+    s "别多事。"
+
+    m "万一是晕倒了。"
+
+    show suzhi casual normal
+
+    s "好吧。"
+    m "走过去看看。"
+
+    stop music fadeout 1.0
+    hide suzhi with dissolve
+    show layer master
+
+    # 【场景十二：白墨萱登场】
+    play music audio.bgm_awkward fadein 1.0
+
+    show baimoxuan coat crazy at center with dissolve
+
+    pause 0.5
+
+    b "呼……"
+    b "混凝土的配比。"
+    b "水灰比0.35。"
+    b "减水剂掺量0.8%。"
+    b "坍落度……"
+    b "坍落度要算……"
+
+    show suzhi casual surprised at right with moveinright
+
+    s "白墨萱？"
+    s "你怎么在这儿睡。"
+
+    b "嗯。"
+    b "有人在呼唤我的名讳。"
+    b "是正宫的气场。"
+    b "还有巨人族的脚步。"
+
+    show suzhi casual gloomy
+
+    m "你在这睡了多久。"
+
+    b "多久。"
+    b "让我确认一下时间线。"
+    b "下午一点进来。"
+    b "现在是。"
+    b "根据窗外光照强度推算。"
+    b "大约四点。"
+    b "三个小时。"
+    b "不算久。"
+
+    show suzhi casual angry
+
+    s "你在这睡了三个小时？"
+
+    b "不是睡。"
+    b "是深度思考。"
+    b "我在推算一个公式。"
+
+    m "什么公式。"
+
+    b "高层建筑风荷载的临界值。"
+    b "算到一半。"
+    b "内存不足。"
+    b "就进入了低功耗模式。"
+
+    show suzhi casual normal
+
+    s "低功耗模式。"
+    s "说人话就是睡着了。"
+
+    b "不准确。"
+    b "是战略性休息。"
+
+    m "你吃饭了吗。"
+
+    b "饭。"
+    b "上次摄入营养物质。"
+    b "是昨晚的泡面。"
+    b "还有今天早上的薄荷糖。"
+
+    show suzhi casual surprised
+
+    s "你一天没吃饭？"
+
+    b "进食会占用思考时间。"
+    b "效率优先。"
+
+    show suzhi casual angry
+
+    m "不行。"
+    m "你得吃东西。"
+    m "现在就去。"
+
+    b "现在食堂没开。"
+
+    m "小卖部有面包。"
+
+    b "面包。"
+    b "碳水化合物加防腐剂。"
+    b "营养价值低。"
+
+    show suzhi casual gloomy
+
+    s "总比饿死强。"
+
+    b "说得对。"
+    b "生存优先。"
+    b "但在去之前。"
+    b "我需要借这摞书。"
+
+    m "这摞书。"
+    m "这也太多了。"
+    m "十几本。"
+    m "你能拿得动吗。"
+
+    b "理论上能。"
+    b "前提是我今天吃过饭。"
+    b "现在不行。"
+    b "缺乏ATP。"
+
+    show suzhi casual normal
+
+    s "我们帮你拿。"
+    s "但你得先去吃东西。"
+
+    b "协议达成。"
+    b "这是双赢。"
+
+    m "你借这么多书干嘛。"
+
+    b "研究。"
+    b "我的魔塔需要理论支撑。"
+
+    show suzhi casual surprised
+
+    s "魔塔？"
+
+    b "就是那个。"
+    b "我说过的。"
+    b "巴比伦塔。"
+    b "以现代高层建筑结构的形式。"
+    b "重现于世。"
+
+    show suzhi casual normal
+
+    s "你还真是执着。"
+
+    b "这是我的课题。"
+    b "我的生存意义。"
+
+    m "但是这些书。"
+    m "有些是大三才学的。"
+
+    b "知识不分年级。"
+    b "大一能学懂的。"
+    b "就不要等大三。"
+    b "时间有限。"
+    b "人类寿命太短。"
+
+    show suzhi casual smile
+
+    s "你这想法。"
+    s "有点道理。"
+    s "但身体更重要。"
+
+    b "身体是容器。"
+    b "知识是内容。"
+    b "容器要维护。"
+    b "但不能本末倒置。"
+
+    show suzhi casual gloomy
+
+    m "说不过你。"
+    m "书给我一半。"
+
+    b "谢谢。"
+    b "巨人族的力量派上用场了。"
+
+    show suzhi casual angry
+
+    m "别叫我巨人。"
+
+    b "好的巨人。"
+
+    show suzhi casual gloomy
+
+    s "她根本不想改。"
+
+    b "这是客观描述。"
+    b "你身高超过平均值两个标准差。"
+    b "符合巨人定义。"
+
+    m "随你吧。"
+
+    show suzhi casual normal
+
+    s "走吧。"
+    s "先去自助借书机。"
+
+    stop music fadeout 1.0
+
+    # 【场景十三：自助借书机】
+    scene bg library_counter with fade
+    play music audio.bgm_daily_warm fadein 1.0
+
+    show baimoxuan coat crazy at center with dissolve
+
+    b "滴。"
+    b "滴。"
+    b "滴。"
+    b "十二本。"
+    b "借阅成功。"
+
+    show suzhi casual surprised at right with dissolve
+
+    m "借书证一次只能借十本。"
+    m "你怎么借了十二本。"
+
+    b "我有两张证。"
+    b "一张是我的。"
+    b "一张是室友的。"
+    b "她借给我用的。"
+
+    show suzhi casual normal
+
+    s "你室友不管你吗。"
+
+    b "她管不了。"
+    b "她说我是异次元生物。"
+    b "放弃了干预。"
+    b "选择观察。"
+
+    m "心态真好。"
+
+    b "是的。"
+    b "她叫赵晴晴。"
+    b "是个好人。"
+    b "经常帮我打饭。"
+
+    show suzhi casual smile
+
+    s "难怪你能活到现在。"
+
+    b "人类的延续依赖社会合作。"
+    b "这是演化优势。"
+
+    show suzhi casual normal
+
+    m "好了。"
+    m "现在去小卖部。"
+
+    stop music fadeout 1.0
+
+    # 【场景十四：小卖部】
+    scene bg shop with fade
+    play music audio.bgm_break_time fadein 1.0
+
+    show baimoxuan coat crazy at center with dissolve
+
+    b "这个。"
+    b "全麦面包。"
+    b "还有纯牛奶。"
+    b "蛋白质加碳水。"
+    b "营养均衡。"
+
+    show suzhi casual normal at right with dissolve
+
+    m "你不买点零食吗。"
+
+    b "零食。"
+    b "反式脂肪酸。"
+    b "添加剂。"
+    b "不合算的营养来源。"
+
+    show suzhi casual gloomy
+
+    s "你连吃东西都算。"
+
+    b "当然。"
+    b "身体是研究工具。"
+    b "工具需要定期保养。"
+    b "输入合格燃料。"
+
+    m "你活得好累。"
+
+    b "不累。"
+    b "这是我的常态。"
+
+    show suzhi casual smile
+
+    s "快吃吧。"
+    s "吃完回去休息。"
+
+    b "不能休息。"
+    b "晚上还要做实验。"
+
+    m "什么实验。"
+
+    b "结构模型加载实验。"
+    b "在土木实验楼。"
+    b "晚上七点开始。"
+
+    show suzhi casual surprised
+
+    s "你才大一。"
+    s "怎么做实验。"
+
+    b "我申请了课外创新项目。"
+    b "指导老师特批的。"
+
+    m "你太厉害了。"
+
+    b "不厉害。"
+    b "只是愿意花时间。"
+    b "面包吃完了。"
+    b "牛奶喝完了。"
+    b "感谢你们的能源补给。"
+    b "我要去实验室了。"
+
+    show suzhi casual normal
+
+    s "等一下。"
+    s "这摞书。"
+    s "我们帮你送过去吧。"
+
+    b "不用。"
+    b "实验室不远。"
+    b "我的能量值恢复到正常水平的百分之七十二。"
+    b "足以搬运这些文献。"
+
+    m "真的不用？"
+
+    b "真的。"
+    b "你们已经提供了足够的帮助。"
+    b "作为回报。"
+    b "这个给你们。"
+
+    # 白墨萱递出便签
+    play sound audio.se_book_drop
+
+    b "我从口袋里掏出一张便签。"
+
+    m "这是什么。"
+
+    b "我整理的学习笔记。"
+    b "关于CAD的常用快捷键。"
+    b "刚才在书库里。"
+    b "听到你们在讨论实训课。"
+    b "这个应该对你们有帮助。"
+
+    show suzhi casual surprised
+
+    s "你刚才不是在睡觉吗。"
+
+    b "低功耗模式。"
+    b "听觉依然在线。"
+    b "这是人类演化的本能。"
+    b "用来防范危险。"
+
+    m "谢谢。"
+
+    s "谢谢。"
+
+    b "不客气。"
+    b "再见。"
+    b "巨人。"
+    b "还有正宫。"
+
+    show suzhi casual angry
+
+    s "别叫那个。"
+    s "听到了吗。"
+
+    b "听到了。"
+    b "但保留称呼权。"
+    b "这是观察者命名体系的一部分。"
+
+    show suzhi casual gloomy
+
+    s "你。"
+    s "算了。"
+    s "跟她说理说不通。"
+
+    hide baimoxuan with moveoutright
+
+    m "她走了。"
+    m "真快。"
+
+    show suzhi casual normal
+
+    s "这个人。"
+    s "越想越神奇。"
+
+    m "其实她人不错。"
+
+    s "我知道。"
+    s "只是太奇怪了。"
+
+    m "奇怪的善良。"
+    m "你看这个笔记。"
+    m "写得好详细。"
+    m "每个快捷键都有注释。"
+
+    show suzhi casual smile
+
+    s "她确实很用心。"
+    s "就是表达方式独特。"
+
+    m "也许天才都这样。"
+
+    show suzhi casual normal
+
+    s "你把她当天才。"
+
+    m "难道不是吗。"
+    m "大一就能做创新项目。"
+    m "能借大三大四的书看。"
+
+    s "也是。"
+    s "她确实不一样。"
+
+    m "走吧。"
+    m "书也借了。"
+    m "饭也催她吃了。"
+    m "任务完成。"
+
+    s "嗯。"
+
+    stop music fadeout 1.0
+
+    # 【场景十五：凌宁来电】
+    scene bg library with fade
+    play music audio.bgm_daily fadein 1.0
+
+    show suzhi casual normal at center with dissolve
+
+    s "等等。"
+    s "我手机响了。"
+    s "是凌宁。"
+
+    m "他干嘛。"
+
+    s "接一下。"
+
+    play sound audio.se_phone
+
+    # 手机通话场景
+    show lingning casual happy at left with dissolve
+
+    l "喂。"
+    l "素织。"
+    l "那个奶茶活动太火爆了。"
+    l "排队排了四十分钟。"
+    l "你们还在图书馆吗。"
+
+    s "在。"
+    s "正要走。"
+
+    l "那我去找你们。"
+    l "我买了三杯。"
+    l "草莓味给木子米。"
+    l "红豆味给素织。"
+    l "珍珠奶茶我自己。"
+
+    show suzhi casual surprised
+
+    s "你不是没钱了吗。"
+
+    l "刚充了饭卡。"
+    l "还发现了零钱。"
+    l "藏在旧衣服口袋里。"
+    l "贵族的好运。"
+
+    show suzhi casual normal
+
+    s "行。"
+    s "我们在图书馆门口等你。"
+
+    l "马上到。"
+
+    s "挂了。"
+
+    hide lingning with dissolve
+
+    m "凌宁要来？"
+
+    s "嗯。"
+    s "买了奶茶。"
+    s "有你喜欢的草莓味。"
+
+    m "他还记得。"
+
+    show suzhi casual smile
+
+    s "那家伙记吃的最清楚。"
+
+    m "也有你的。"
+
+    s "红豆的。"
+    s "其实我喜欢原味。"
+
+    m "那你怎么不说。"
+
+    show suzhi casual normal
+
+    s "他好心买的。"
+    s "说了浪费。"
+    s "红豆也不难喝。"
+
+    m "下次我帮你告诉他。"
+
+    show suzhi casual gloomy
+
+    s "不用。"
+    s "小事而已。"
+
+    # 【场景十六：凌宁到达】
+    show lingning casual tired at left with moveinleft
+
+    l "我来了。"
+    l "累死了。"
+    l "爬坡又爬楼梯。"
+    l "奶茶差点洒了。"
+    l "接住。"
+    l "一人一杯。"
+
+    m "谢谢。"
+
+    s "谢谢。"
+
+    show lingning casual happy
+
+    l "不客气。"
+    l "你们在图书馆这么久。"
+    l "是不是又遇到谁了。"
+
+    m "你猜。"
+
+    show lingning casual surprised
+
+    l "白墨萱。"
+    l "对不对。"
+
+    show suzhi casual surprised
+
+    s "你怎么知道。"
+
+    l "图书馆是她的领地。"
+    l "上次就见她在这儿。"
+    l "再加上你们这表情。"
+    l "我就猜到了。"
+
+    m "她在这儿睡了三个小时。"
+
+    show lingning casual surprised
+
+    l "睡？"
+    l "在书库睡觉？"
+    l "果然是她。"
+
+    show suzhi casual normal
+
+    s "她还一天没吃饭。"
+
+    show lingning casual ashamed
+
+    l "太不会照顾自己了。"
+    l "下次遇到。"
+    l "我请她吃饭。"
+    l "贵族不能让女士饿着。"
+
+    m "她会跟你讲营养学。"
+
+    show lingning casual pose
+
+    l "那我就跟她探讨。"
+    l "说不定能学到东西。"
+
+    show suzhi casual gloomy
+
+    s "你想学？"
+
+    show lingning casual happy
+
+    l "不想。"
+    l "但聊聊天总行。"
+    l "她的世界观很有趣。"
+
+    m "那确实。"
+
+    m "走吧。"
+    m "吸管插好。"
+    m "边走边喝。"
+
+    show lingning casual tired
+
+    l "晚上还有课。"
+    l "土木概论。"
+
+    show suzhi casual normal
+
+    s "我记得。"
+    s "在阶梯教室。"
+
+    m "现在还早。"
+    m "先回宿舍吧。"
+
+    show lingning casual happy
+
+    l "好主意。"
+    l "我要补个觉。"
+    l "奶茶的咖啡因对我没用。"
+
+    show suzhi casual gloomy
+
+    s "你就是想睡。"
+
+    show lingning casual pose
+
+    l "诚实面对欲望。"
+    l "这是贵族的品格。"
+
+    show suzhi casual angry
+
+    s "什么乱七八糟的。"
+
+    m "素织呢。"
+    m "也回宿舍吗。"
+
+    show suzhi casual normal
+
+    s "嗯。"
+    s "回去放下书。"
+    s "衣服也要换一件。"
+
+    m "怎么了。"
+
+    s "搬书搬的。"
+    s "袖子有点灰。"
+
+    m "都怪我让你帮忙。"
+
+    show suzhi casual smile
+
+    s "我自己要帮的。"
+    s "不怪你。"
+
+    show lingning casual happy
+
+    l "你们互帮互助。"
+    l "真是感人。"
+    l "怎么没人帮我。"
+
+    show suzhi casual normal
+
+    s "你帮我们也行。"
+
+    l "我帮了。"
+    l "我买了奶茶。"
+    l "这就是帮助。"
+
+    m "算。"
+    m "当然算。"
+
+    show lingning casual pose
+
+    l "那就对了。"
+    l "扯平。"
+
+    show suzhi casual gloomy
+
+    s "别扯了。"
+    s "快走吧。"
+
+    show lingning casual happy
+
+    l "走走走。"
+    l "奶茶真好喝。"
+    l "珍珠弹牙。"
+
+    m "我的草莓味也不错。"
+
+    show suzhi casual normal
+
+    s "还行。"
+    s "甜了点。"
+
+    show lingning casual pose
+
+    l "这就是青春的味道。"
+
+    m "你又来了。"
+
+    l "我说的是事实。"
+
+    stop music fadeout 1.0
+
+    # 【场景十七：路上聊天】
+    scene bg campus_road_blur with fade
+    play music audio.bgm_campus fadein 1.0
+
+    show lingning casual happy at left with dissolve
+    show suzhi casual normal at center with dissolve
+
+    l "对了。"
+    l "白墨萱说要研究什么来着。"
+
+    s "高层建筑风荷载。"
+
+    show lingning casual surprised
+
+    l "完全不懂。"
+
+    m "我也不懂。"
+
+    show suzhi casual normal
+
+    s "以后会学到的。"
+
+    l "她还说要建巴比伦塔。"
+
+    s "那是比喻。"
+
+    show lingning casual pose
+
+    l "有梦想是好事。"
+    l "虽然听起来太远。"
+
+    m "她说的时候眼神很亮。"
+    m "不是那种说大话的感觉。"
+
+    show suzhi casual smile
+
+    s "确实。"
+    s "她大概真的能做到。"
+
+    show lingning casual happy
+
+    l "那我要提前交好关系。"
+    l "万一以后她真的建出什么。"
+    l "我可以去参观。"
+
+    show suzhi casual gloomy
+
+    m "目的不纯。"
+
+    show lingning casual pose
+
+    l "实用主义。"
+    l "这也是贵族品格。"
+
+    show suzhi casual angry
+
+    s "你什么都能说成品格。"
+
+    show lingning casual happy
+
+    l "当然。"
+    l "只要我愿意。"
+
+    # 【场景十八：回到宿舍区】
+    scene bg dorm_room_clean with fade
+    stop music fadeout 1.0
+
+    show lingning casual happy at left with dissolve
+    show suzhi casual normal at center with dissolve
+
+    m "到了。"
+    m "各自回窝吧。"
+
+    s "晚上教室见。"
+
+    l "记得叫我们。"
+
+    show suzhi casual gloomy
+
+    s "是你叫我。"
+
+    show lingning casual surprised
+
+    l "好吧。"
+    l "我叫你。"
+    l "木子米我叫他。"
+
+    m "定好闹钟。"
+    m "上次差点迟到。"
+
+    show lingning casual pose
+
+    l "有我呢。"
+
+    m "就是你最不靠谱。"
+
+    show lingning casual happy
+
+    l "这次保证。"
+
+    show suzhi casual normal
+
+    s "信你最后一次。"
+
+    show lingning casual pose
+
+    l "荣誉担保。"
+
+    m "行。"
+    m "晚上见。"
+
+    s "晚上见。"
+
+    stop music fadeout 2.0
+
+    # 第八章 完
+    scene black with fade
+    centered "{size=60}第八章 完{/size}"
 
     return
