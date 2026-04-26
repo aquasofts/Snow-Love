@@ -171,6 +171,7 @@ image lingning casual surprised = Transform("images/char/lingning/lingning casua
 image lingning casual happy = Transform("images/char/lingning/lingning casual happy.png", xsize=3000, ysize=1030, fit="contain", xalign=0.5, yalign=1.0)
 image lingning casual ashamed = Transform("images/char/lingning/lingning casual ashamed.png", xsize=3000, ysize=1030, fit="contain", xalign=0.5, yalign=1.0)
 image lingning camo default = Transform("images/char/lingning/lingning camo default.png", xsize=3000, ysize=1030, fit="contain", xalign=0.5, yalign=1.0)
+#pose是jojo形象 尽量少用
 image lingning casual pose = Transform("images/char/lingning/lingning casual pose.png", xsize=3000, ysize=1030, fit="contain", xalign=0.5, yalign=1.0)
 image lingning casual run = Transform("images/char/lingning/lingning casual run.png", xsize=3000, ysize=1030, fit="contain", xalign=0.5, yalign=1.0)
 image lingning casual tired = Transform("images/char/lingning/lingning casual tired.png", xsize=3000, ysize=1030, fit="contain", xalign=0.5, yalign=1.0)
@@ -4369,7 +4370,7 @@ label chapter_7:
 
     s "比某人强。"
 
-    show lingning casual angry
+    show lingning casual ashamed
 
     l "我听见了。"
     l "这是人身攻击。"
@@ -4477,7 +4478,7 @@ label chapter_7:
 
     s "活该。"
 
-    show lingning casual angry
+    show lingning casual ashamed
 
     l "你们太冷酷了。"
 
@@ -4602,7 +4603,7 @@ label chapter_7:
 
     m "太惨了。"
 
-    show lingning casual angry
+    show lingning casual ashamed
 
     l "你们还笑。"
 
