@@ -4948,7 +4948,7 @@ label chapter_7:
 
     m "你说谁。"
 
-    show lingning casual smile
+    show lingning casual happy
 
     l "说你。"
     l "你下午准备干什么。"
@@ -4970,7 +4970,7 @@ label chapter_7:
     show lingning casual pose
 
     l "说得对。"
-    l "素织一起去休息吧。"
+    l "素织也回去休息吧。"
 
     show suzhi casual angry
 
@@ -4979,7 +4979,7 @@ label chapter_7:
 
     show suzhi casual normal
 
-    m "那晚上见。"
+    m "那晚上我再去找你俩。"
 
     s "晚上有选修课。"
 
@@ -5076,7 +5076,7 @@ label chapter_7:
 
     m "一般般。"
 
-    show lingning casual smile
+    show lingning casual happy
 
     l "骗谁呢。"
     l "看你那眼神。"
@@ -5136,7 +5136,7 @@ label chapter_7:
 
     m "看情况。"
 
-    show lingning casual smile
+    show lingning casual happy
 
     l "你就是怂。"
     l "想约就约。"
@@ -5259,7 +5259,7 @@ label chapter_7:
     m "嗯。"
     m "素织到图书馆了吧。"
 
-    show lingning casual smile
+    show lingning casual happy
 
     l "你看。"
     l "还说不想她。"
@@ -5281,7 +5281,7 @@ label chapter_7:
 
     m "幼稚。"
 
-    show lingning casual smile
+    show lingning casual happy
 
     l "彼此彼此。"
 
