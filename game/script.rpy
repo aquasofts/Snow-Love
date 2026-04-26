@@ -5056,7 +5056,7 @@ label chapter_7:
     # 【场景三：回宿舍路上 / 宿舍 - 午后】
     # ==========================================
 
-    scene bg campus_road_blur with fade
+    scene bg black with fade
 
     stop sound fadeout 1.0
     play music audio.bgm_campus fadein 1.0
@@ -5064,7 +5064,7 @@ label chapter_7:
 
     hide lingning with dissolve
 
-    show lingning casual normal at left with dissolve
+    show lingning casual normal at center with dissolve
 
     l "她还真是干脆。"
 
