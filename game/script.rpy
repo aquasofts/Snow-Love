@@ -4647,6 +4647,10 @@ label chapter_7:
 
     l "谢了。"
 
+    hide lingning with dissolve
+
+    show suzhi casual normal at center with moveinright
+
     m "那家伙真可怜。"
 
     s "谁让他吊儿郎当。"
