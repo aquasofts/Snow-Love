@@ -6744,3 +6744,2093 @@ label chapter_8:
     centered "{size=60}第八章 完{/size}"
 
     return
+
+
+label chapter_9:
+
+    # 【场景一：宿舍傍晚】
+    scene bg dorm_boys_night with fade
+    play music audio.bgm_daily fadein 1.0
+
+    "傍晚。"
+    "宿舍里的灯还没完全亮起来。"
+    "窗外的天色已经沉了下去。"
+
+    m "几点了。"
+    m "六点二十。"
+    m "土木概论七点上课。"
+    m "还来得及。"
+
+    play sound audio.se_phone
+
+    "手机震了一下。"
+
+    s_phone "醒了吗。"
+    s_phone "别迟到。"
+
+    m_phone "醒着。"
+    m_phone "我看起来像会迟到的人吗。"
+
+    s_phone "像。"
+
+    m_phone "你说话真直接。"
+
+    s_phone "事实。"
+    s_phone "凌宁也没回我消息。"
+    s_phone "你去叫他。"
+
+    m_phone "收到。"
+
+    nvl clear
+
+    m "凌宁。"
+    m "起床。"
+    m "上课了。"
+
+    show lingning casual tired at center with dissolve
+
+    l "再五分钟。"
+    l "贵族需要充足睡眠。"
+
+    m "你下午已经睡了一个小时。"
+
+    show lingning casual depressed
+
+    l "那是预热。"
+    l "真正的睡眠还没开始。"
+
+    m "土木概论也要开始了。"
+
+    show lingning casual surprised
+
+    l "什么。"
+    l "已经这个点了？"
+
+    m "六点二十。"
+
+    show lingning casual tired
+
+    l "完了。"
+    l "我的灵魂还在午睡。"
+
+    m "把灵魂带上。"
+    m "走。"
+
+    stop music fadeout 1.0
+
+    # 【场景二：宿舍楼下】
+    scene bg dorm_room_clean with fade
+    play music audio.bgm_campus fadein 1.0
+
+    show suzhi casual normal at center with dissolve
+
+    s "你们终于下来了。"
+
+    show lingning casual tired at left with moveinleft
+
+    l "不是终于。"
+    l "是准时。"
+
+    show suzhi casual gloomy
+
+    s "距离迟到只差十分钟。"
+
+    m "十分钟也是时间。"
+
+    show suzhi casual angry
+
+    s "你们两个还挺骄傲。"
+
+    show lingning casual pose
+
+    l "压力越大。"
+    l "越能体现贵族从容。"
+
+    show suzhi casual normal
+
+    s "从容地迟到？"
+
+    l "那叫优雅地抵达。"
+
+    m "别优雅了。"
+    m "快走。"
+
+    stop music fadeout 1.0
+
+    # 【场景三：通往教学楼的路】
+    scene cg campus_road_blur with fade
+    play music audio.bgm_school fadein 1.0
+    play sound audio.se_footsteps_crowd volume 0.3
+
+    show lingning casual tired at left with dissolve
+    show suzhi casual normal at center with dissolve
+
+    l "晚上上课。"
+    l "很不人道。"
+
+    s "大学课表就是这样。"
+
+    m "土木概论。"
+    m "听名字应该不难。"
+
+    show suzhi casual gloomy
+
+    s "你最好别这么想。"
+
+    m "为什么。"
+
+    s "越是概论。"
+    s "越容易什么都讲一点。"
+    s "然后什么都考一点。"
+
+    show lingning casual surprised
+
+    l "这不是概论。"
+    l "这是总攻。"
+
+    m "别吓我。"
+
+    show suzhi casual normal
+
+    s "也不一定。"
+    s "先听听看。"
+
+    play sound audio.se_phone
+
+    "手机又震了一下。"
+
+    m "白墨萱发消息了。"
+
+    s "她有你微信？"
+
+    m "下午帮她搬书的时候加的。"
+    m "她说。"
+    m "土木概论教室在哪里。"
+
+    show suzhi casual surprised
+
+    s "她也上这节？"
+
+    l "命运的齿轮开始转动。"
+
+    show suzhi casual gloomy
+
+    s "你少来。"
+
+    m_phone "阶梯教室。"
+    m_phone "三教二楼。"
+    m_phone "跟人流走。"
+
+    b "收到。"
+    b "如果我迷路。"
+    b "说明人流的导向性不足。"
+
+    nvl clear
+
+    m "她说得好正式。"
+
+    s "她一直这样。"
+
+    stop sound fadeout 1.0
+
+    # 【场景四：阶梯教室】
+    scene bg classroom_full with fade
+    play music audio.bgm_classroom fadein 1.0
+    play sound audio.se_bell
+
+    "上课铃响前。"
+    "阶梯教室里已经坐了不少人。"
+
+    show suzhi casual normal at center with dissolve
+    show lingning casual happy at left with dissolve
+
+    l "这里视野不错。"
+    l "像小型议会厅。"
+
+    s "你能不能正常一点。"
+
+    m "坐中间吧。"
+    m "别太靠后。"
+
+    show lingning casual depressed
+
+    l "靠后比较安全。"
+
+    s "安全什么。"
+
+    l "老师点不到。"
+
+    show suzhi casual angry
+
+    s "这就是你所谓的贵族品格？"
+
+    show lingning casual pose
+
+    l "战略纵深。"
+
+    m "行了。"
+    m "就这排。"
+
+    hide lingning with dissolve
+    hide suzhi with dissolve
+
+    "教室前门被推开。"
+
+    show baimoxuan coat crazy at center with moveinright
+
+    b "坐标确认。"
+    b "三教二楼阶梯教室。"
+    b "人类聚集密度较高。"
+    b "空气质量一般。"
+
+    show suzhi casual surprised at right with dissolve
+
+    s "你真的来了。"
+
+    b "当然。"
+    b "土木概论。"
+    b "是所有土木人的共同起源。"
+    b "我不能缺席。"
+
+    m "你实验不做了？"
+
+    b "延期了。"
+    b "加载仪器被老师借走。"
+    b "命运给了我听课的机会。"
+
+    show lingning casual happy at left with dissolve
+
+    l "欢迎加入我们的学习小组。"
+
+    b "学习小组？"
+    b "人员构成。"
+    b "正宫。"
+    b "巨人。"
+    b "自称贵族。"
+    b "很有研究价值。"
+
+    show suzhi casual angry
+
+    s "别乱起代号。"
+
+    b "好的。"
+    b "素织。"
+
+    m "为什么只有我还是巨人。"
+
+    b "因为客观事实不会因为抗议而改变。"
+
+    show lingning casual pose
+
+    l "我对自称贵族这个分类没有意见。"
+
+    show suzhi casual gloomy
+
+    s "你还挺满意。"
+
+    stop music fadeout 1.0
+
+    # 【场景五：土木概论课开始】
+    play music audio.bgm_school fadein 1.0
+
+    "老师走上讲台。"
+
+    show suzhi casual normal at right
+    show lingning casual tired at left
+    show baimoxuan coat crazy at center
+
+    unknown "同学们晚上好。"
+    unknown "我是你们土木概论课的老师。"
+    unknown "这门课不讲太深。"
+    unknown "但会让你们知道。"
+    unknown "土木工程到底是在做什么。"
+
+    m "听起来挺正经。"
+
+    s "安静。"
+
+    unknown "很多人以为土木就是搬砖。"
+    unknown "也有人以为土木就是画图。"
+    unknown "都不准确。"
+    unknown "土木工程。"
+    unknown "是把人的生活空间。"
+    unknown "变成真实结构的学科。"
+
+    show baimoxuan coat crazy:
+        ease 0.3 zoom 1.05
+
+    b "漂亮。"
+
+    show baimoxuan coat crazy:
+        ease 0.3 zoom 1.0
+
+    show suzhi casual surprised
+
+    s "你小声点。"
+
+    b "这句话可以写进序章。"
+
+    l "什么序章。"
+
+    b "我的塔。"
+    b "需要一个序章。"
+
+    m "你连建筑物都有剧情？"
+
+    b "伟大的建筑都需要叙事。"
+
+    unknown "今天先讲三个问题。"
+    unknown "第一。"
+    unknown "建筑为什么不会倒。"
+    unknown "第二。"
+    unknown "桥为什么能跨过河。"
+    unknown "第三。"
+    unknown "工程师为什么不能只靠想象。"
+
+    show lingning casual surprised
+
+    l "第三个问题在针对我。"
+
+    show suzhi casual gloomy
+
+    s "你还有自知之明。"
+
+    # 【场景六：老师提问】
+    unknown "我问一个简单问题。"
+    unknown "如果让你们设计一座高楼。"
+    unknown "最先考虑什么。"
+
+    "教室安静了一瞬。"
+
+    m "最先考虑。"
+    m "地基？"
+
+    s "荷载。"
+
+    l "外观。"
+
+    show suzhi casual gloomy
+
+    s "你果然。"
+
+    b "风。"
+
+    unknown "后排那位同学。"
+    unknown "你说风。"
+    unknown "为什么。"
+
+    show baimoxuan coat crazy:
+        ease 0.2 zoom 1.08
+
+    b "高度增加后。"
+    b "水平风荷载对结构侧移影响显著。"
+    b "如果只考虑竖向承重。"
+    b "会低估整体稳定问题。"
+    b "尤其是高宽比较大的建筑。"
+    b "风致振动会影响舒适度。"
+    b "甚至影响安全储备。"
+
+    show baimoxuan coat crazy:
+        ease 0.2 zoom 1.0
+
+    "教室里安静了。"
+
+    show lingning casual surprised
+
+    l "她真的会。"
+
+    show suzhi casual normal
+
+    s "她不是在开玩笑。"
+
+    unknown "说得不错。"
+    unknown "虽然有些内容超纲。"
+    unknown "但方向是对的。"
+    unknown "高层建筑不能只看它站不站得住。"
+    unknown "还要看它晃不晃。"
+    unknown "人能不能接受。"
+
+    m "原来楼也会晃。"
+
+    s "会。"
+    s "只是幅度很小。"
+
+    l "那住高楼的人。"
+    l "岂不是每天都在坐船。"
+
+    show suzhi casual gloomy
+
+    s "你这个比喻。"
+    s "怪怪的。"
+
+    b "某种程度上。"
+    b "也可以这样理解。"
+
+    show lingning casual happy
+
+    l "看。"
+    l "学术认证。"
+
+    # 【场景七：课堂小作业】
+    unknown "下课前。"
+    unknown "给大家布置一个小作业。"
+    unknown "不用交很多字。"
+    unknown "画一张你理解中的土木工程。"
+    unknown "可以是桥。"
+    unknown "可以是楼。"
+    unknown "也可以是道路。"
+    unknown "下周带来。"
+    unknown "我会抽几份展示。"
+
+    show lingning casual depressed
+
+    l "画画？"
+    l "这不是我的强项吗。"
+
+    show suzhi casual normal
+
+    s "你刚才不是很自信吗。"
+
+    l "我自信。"
+    l "但我画出来的东西。"
+    l "老师不一定看得懂。"
+
+    m "那就是抽象派。"
+
+    show lingning casual pose
+
+    l "土木抽象主义。"
+
+    show suzhi casual angry
+
+    s "别发明新流派。"
+
+    b "我可以画塔。"
+
+    m "巴比伦塔？"
+
+    b "不。"
+    b "概念验证版。"
+    b "比例一比一千。"
+    b "平面。"
+    b "立面。"
+    b "剖面。"
+    b "加结构体系说明。"
+
+    show suzhi casual surprised
+
+    s "老师说不用很多字。"
+
+    b "我可以少写。"
+    b "只写三页。"
+
+    m "这叫少？"
+
+    b "对我的计划来说。"
+    b "是摘要。"
+
+    play sound audio.se_bell
+
+    unknown "今天就到这里。"
+    unknown "下课。"
+
+    stop music fadeout 1.0
+
+    # 【场景八：下课后】
+    scene bg classroom_clean with fade
+    play music audio.bgm_daily_warm fadein 1.0
+
+    show suzhi casual normal at center with dissolve
+    show lingning casual tired at left with dissolve
+    show baimoxuan coat crazy at right with dissolve
+
+    l "我饿了。"
+    l "我的大脑已经被概论抽干。"
+
+    s "你明明睡了一半。"
+
+    show lingning casual surprised
+
+    l "我那叫闭目理解。"
+
+    m "你闭目理解的时候。"
+    m "还点了两次头。"
+
+    show lingning casual pose
+
+    l "说明我认可老师。"
+
+    show suzhi casual gloomy
+
+    s "你那是快睡着了。"
+
+    b "睡眠有助于记忆整合。"
+    b "但课堂睡眠效率不高。"
+    b "建议回宿舍睡。"
+
+    l "白墨萱。"
+    l "你说话有时候很温柔。"
+
+    b "这是生物学建议。"
+    b "不包含感情色彩。"
+
+    show lingning casual depressed
+
+    l "更伤人了。"
+
+    m "去小卖部吗。"
+    m "食堂估计没什么了。"
+
+    s "可以买点面包。"
+
+    b "我不去了。"
+    b "我要去图书馆还一本书。"
+
+    show suzhi casual surprised
+
+    s "你下午刚借。"
+    s "现在就还？"
+
+    b "借错了。"
+    b "那本是道路工程。"
+    b "我现在需要结构动力学。"
+
+    m "跨度太大了吧。"
+
+    b "知识之间没有墙。"
+    b "只有门。"
+
+    show lingning casual happy
+
+    l "这句好。"
+    l "像校训。"
+
+    s "校训不是这个。"
+
+    b "可以当我的个人校训。"
+
+    # 【场景九：夜晚图书馆门口】
+    scene bg library with fade
+    play music audio.bgm_night fadein 1.0
+    play sound audio.se_crickets volume 0.4
+
+    show baimoxuan coat crazy at right with dissolve
+    show suzhi casual normal at center with dissolve
+    show lingning casual tired at left with dissolve
+
+    l "为什么我们也跟来了。"
+
+    m "因为你说顺路买吃的。"
+
+    l "买吃的在小卖部。"
+    l "图书馆没有吃的。"
+
+    s "那你现在可以去。"
+
+    show lingning casual ashamed
+
+    l "一个人去没意思。"
+
+    b "群体行动可以降低夜间移动风险。"
+    b "你的选择合理。"
+
+    show lingning casual happy
+
+    l "你看。"
+    l "她懂我。"
+
+    show suzhi casual gloomy
+
+    s "她只是给你的懒找理论依据。"
+
+    b "准确。"
+
+    l "不要准确。"
+
+    stop sound fadeout 1.0
+
+    # 【场景十：图书馆大厅】
+    scene bg library_counter with fade
+    play music audio.bgm_warm fadein 1.0
+
+    show baimoxuan coat crazy at center with dissolve
+
+    b "还书。"
+    b "借书。"
+    b "流程闭环。"
+
+    play sound audio.se_bell
+
+    "自助借还机发出提示音。"
+
+    show suzhi casual normal at right with dissolve
+
+    s "这次借几本。"
+
+    b "三本。"
+    b "我控制了。"
+
+    m "你管三本叫控制。"
+
+    b "和十二本相比。"
+    b "降幅百分之七十五。"
+
+    show lingning casual pose at left with dissolve
+
+    l "数据很有说服力。"
+
+    show suzhi casual gloomy
+
+    s "你别帮她。"
+
+    b "另外。"
+    b "我想邀请你们参与我的小项目。"
+
+    m "什么项目。"
+
+    b "下周概论作业。"
+    b "我想做一个四人合作版。"
+    b "主题是。"
+    b "我们理解中的校园土木。"
+
+    show suzhi casual surprised
+
+    s "老师不是说个人作业吗。"
+
+    b "可以个人提交。"
+    b "但素材可以共同采集。"
+    b "每个人画自己的理解。"
+    b "最后拼成一个系列。"
+
+    l "听起来很有仪式感。"
+
+    m "具体怎么做。"
+
+    b "明天傍晚。"
+    b "在校园里走一圈。"
+    b "看路。"
+    b "看桥。"
+    b "看楼。"
+    b "看排水沟。"
+
+    show lingning casual surprised
+
+    l "排水沟也算？"
+
+    s "当然算。"
+    s "市政工程。"
+
+    b "素织理解正确。"
+    b "奖励一枚概念徽章。"
+
+    show suzhi casual gloomy
+
+    s "不要奇怪的奖励。"
+
+    m "我觉得可以。"
+    m "反正作业也要做。"
+
+    show lingning casual tired
+
+    l "明天傍晚。"
+    l "那我晚饭怎么办。"
+
+    s "走完再吃。"
+
+    l "太残忍了。"
+
+    b "可以携带能量补给。"
+    b "面包。"
+    b "牛奶。"
+    b "巧克力。"
+
+    show lingning casual happy
+
+    l "我批准这个项目。"
+
+    show suzhi casual angry
+
+    s "你批准有什么用。"
+
+    l "增加士气。"
+
+    # 【场景十一：素织的小提醒】
+    scene bg rest_area_sunset with fade
+    play music audio.bgm_warm_guitar fadein 1.0
+
+    show suzhi casual normal at center with dissolve
+
+    "从图书馆出来后。"
+    "凌宁跑去小卖部买夜宵。"
+    "白墨萱抱着书。"
+    "先一步回了宿舍。"
+
+    m "明天你真的要去吗。"
+
+    s "去。"
+    s "作业总得做。"
+
+    m "我还以为你会嫌麻烦。"
+
+    show suzhi casual gloomy
+
+    s "我是嫌麻烦。"
+    s "但白墨萱说得也没错。"
+    s "多看看。"
+    s "总比坐在宿舍瞎画好。"
+
+    m "你对她印象变好了？"
+
+    show suzhi casual normal
+
+    s "她很奇怪。"
+    s "但不是坏人。"
+    s "而且她认真。"
+
+    m "你也很认真。"
+
+    show suzhi casual surprised
+
+    s "我？"
+
+    m "嗯。"
+    m "下午借书也是。"
+    m "刚才听课也是。"
+    m "你都很认真。"
+
+    show suzhi casual shy
+
+    s "只是正常上课。"
+    s "别乱夸。"
+
+    m "我说实话。"
+
+    show suzhi casual gloomy
+
+    s "那也别说得这么突然。"
+
+    m "哦。"
+
+    pause 0.5
+
+    s "不过。"
+    s "谢谢。"
+
+    m "不用谢。"
+
+    show suzhi casual normal
+
+    s "明天记得带笔。"
+    s "还有速写本。"
+
+    m "我没有速写本。"
+
+    show suzhi casual gloomy
+
+    s "那就买。"
+
+    m "知道了。"
+
+    s "还有。"
+    s "别只顾着看热闹。"
+    s "真要画。"
+
+    m "我会画的。"
+
+    show suzhi casual smile
+
+    s "最好是。"
+
+    stop music fadeout 1.0
+
+    # 【场景十二：凌宁归来】
+    scene bg shop with fade
+    play music audio.bgm_break_time fadein 1.0
+
+    show lingning casual happy at left with dissolve
+    show suzhi casual normal at center with dissolve
+
+    l "我回来了。"
+    l "战利品丰富。"
+    l "烤肠。"
+    l "饭团。"
+    l "还有酸奶。"
+
+    m "你买这么多。"
+
+    show lingning casual pose
+
+    l "为明天的项目提前储备。"
+
+    s "你明天就吃完了。"
+
+    l "那就明天再买。"
+    l "储备是动态的。"
+
+    show suzhi casual gloomy
+
+    s "你只是想吃。"
+
+    l "不要拆穿贵族的后勤体系。"
+
+    m "给我一个饭团。"
+
+    l "十块。"
+
+    m "小卖部卖六块。"
+
+    l "包含跑腿费。"
+
+    show suzhi casual angry
+
+    s "他就在你旁边。"
+    s "你跑什么腿。"
+
+    l "精神跑腿。"
+
+    m "算了。"
+    m "我自己买。"
+
+    show lingning casual depressed
+
+    l "别啊。"
+    l "八块。"
+
+    s "六块。"
+
+    l "成交。"
+
+    show lingning casual happy
+
+    l "素织砍价好厉害。"
+
+    s "不是砍价。"
+    s "是纠正。"
+
+    # 【场景十三：回宿舍路上】
+    scene bg playground_night with fade
+    play music audio.bgm_night fadein 1.0
+    play sound audio.se_crickets volume 0.4
+
+    show lingning casual happy at left with dissolve
+    show suzhi casual normal at center with dissolve
+
+    l "明天校园采集。"
+    l "听起来像社团活动。"
+
+    m "我们没有社团。"
+
+    l "那就叫临时土木观察社。"
+
+    s "不要随便成立社团。"
+
+    l "社长我来当。"
+
+    m "你先把作业画完再说。"
+
+    show lingning casual pose
+
+    l "社长负责方向。"
+    l "细节交给成员。"
+
+    show suzhi casual gloomy
+
+    s "那你什么都不干。"
+
+    l "我负责精神建设。"
+
+    m "白墨萱负责理论。"
+    m "素织负责认真。"
+    m "你负责精神建设。"
+    m "那我负责什么。"
+
+    show lingning casual surprised
+
+    l "负责长得高。"
+
+    show suzhi casual smile
+
+    s "负责搬东西。"
+
+    m "怎么又回到巨人了。"
+
+    show lingning casual happy
+
+    l "团队定位清晰。"
+    l "这是好事。"
+
+    s "你别笑太大声。"
+    s "晚上操场有人。"
+
+    l "好。"
+    l "低调。"
+
+    pause 0.5
+
+    play sound audio.se_phone
+
+    "手机屏幕亮起。"
+
+    b "临时土木观察社。"
+    b "名称不错。"
+    b "我已记录。"
+
+    m "她怎么知道。"
+
+    show suzhi casual surprised
+
+    s "群消息。"
+    s "凌宁刚才发群里了。"
+
+    show lingning casual ashamed
+
+    l "手滑。"
+
+    m "你把社名发出去了？"
+
+    l "还有成员分工。"
+
+    show suzhi casual angry
+
+    s "你发了什么。"
+
+    l "理论担当白墨萱。"
+    l "纪律担当素织。"
+    l "搬运担当木子米。"
+    l "灵魂担当凌宁。"
+
+    m "搬运担当。"
+
+    show suzhi casual gloomy
+
+    s "还挺准确。"
+
+    m "别认可啊。"
+
+    b "补充。"
+    b "巨人担当更准确。"
+
+    m "她还补刀。"
+
+    show lingning casual happy
+
+    l "今晚的群聊很有活力。"
+
+    s "把手机收起来。"
+    s "走路看路。"
+
+    m "嗯。"
+
+    stop sound fadeout 1.0
+    stop music fadeout 1.0
+
+    # 【场景十四：夜色收束】
+    scene bg dorm_boys_night with fade
+    play music audio.bgm_warm fadein 1.0
+
+    "回到宿舍。"
+    "桌上的CAD教材还摊着。"
+    "下午借来的书压在一边。"
+    "书页边缘带着图书馆淡淡的灰尘味。"
+
+    m "土木观察社。"
+    m "听起来还真像那么回事。"
+
+    play sound audio.se_phone
+
+    "手机屏幕上。"
+    "群聊又跳出一条消息。"
+
+    s_phone "明天傍晚五点半。"
+    s_phone "宿舍楼下集合。"
+    s_phone "别迟到。"
+
+    b "收到。"
+    b "我会携带测距工具。"
+
+    l "我会携带能量补给。"
+
+    m_phone "我携带自己。"
+
+    s_phone "你携带速写本。"
+
+    m_phone "知道了。"
+
+    nvl clear
+
+    m "速写本。"
+    m "测距工具。"
+    m "能量补给。"
+    m "还有一个奇怪的临时社团。"
+
+    "我把手机扣在桌面上。"
+    "窗外的操场灯还亮着。"
+    "远处偶尔传来笑声。"
+    "大学生活好像就是这样。"
+    "一节课。"
+    "一次偶遇。"
+    "一句玩笑。"
+    "就能把明天变成新的事件。"
+
+    m "那就看看吧。"
+    m "我们理解中的土木工程。"
+    m "到底会画成什么样。"
+
+    stop music fadeout 2.0
+
+    # 第九章 完
+    scene black with fade
+    centered "{size=60}第九章 完{/size}"
+
+    return
+# ==========================================
+# 第十章新增：社团百团大战 / 临时占位素材
+# ==========================================
+# 角色新增
+# 小北：动漫社社员，cos装登场。后续可以替换正式立绘。
+define kb = Character("小北", color="#ba68c8")
+define club_senior = Character("社团学长", color="#ffb74d")
+define club_sister = Character("社团学姐", color="#f06292")
+define anime_senior = Character("动漫社学姐", color="#ce93d8")
+
+# 临时占位立绘：先保证脚本能跑，正式素材到位后把 Text 替换成图片 Transform 即可。
+image xiaobei cosplay normal = Transform(Text("小北\ncosplay normal", size=64, color="#ffffff", outlines=[(3, "#5e3570", 0, 0)]), xalign=0.5, yalign=0.5)
+image xiaobei cosplay smile = Transform(Text("小北\ncosplay smile", size=64, color="#ffffff", outlines=[(3, "#5e3570", 0, 0)]), xalign=0.5, yalign=0.5)
+image xiaobei cosplay pose = Transform(Text("小北\ncosplay pose", size=64, color="#ffffff", outlines=[(3, "#5e3570", 0, 0)]), xalign=0.5, yalign=0.5)
+image xiaobei cosplay shy = Transform(Text("小北\ncosplay shy", size=64, color="#ffffff", outlines=[(3, "#5e3570", 0, 0)]), xalign=0.5, yalign=0.5)
+
+# 素织下午换装用新形态，占位。正式图建议放：images/char/suzhi/suzhi cosplay *.png
+image suzhi cosplay normal = Transform(Text("素织\ncosplay normal", size=64, color="#ffffff", outlines=[(3, "#ef5350", 0, 0)]), xalign=0.5, yalign=0.5)
+image suzhi cosplay shy = Transform(Text("素织\ncosplay shy", size=64, color="#ffffff", outlines=[(3, "#ef5350", 0, 0)]), xalign=0.5, yalign=0.5)
+image suzhi cosplay angry = Transform(Text("素织\ncosplay angry", size=64, color="#ffffff", outlines=[(3, "#ef5350", 0, 0)]), xalign=0.5, yalign=0.5)
+image suzhi cosplay smile = Transform(Text("素织\ncosplay smile", size=64, color="#ffffff", outlines=[(3, "#ef5350", 0, 0)]), xalign=0.5, yalign=0.5)
+
+# 集邮卡CG占位：正式可以替换成拍照图或重绘图。
+image cg stamp_card = Transform(Text("2026社团文化节集邮卡", size=70, color="#ffffff", outlines=[(3, "#1565c0", 0, 0)]), xalign=0.5, yalign=0.5)
+
+label chapter_10:
+
+    # 【场景一：周末上午】
+    scene bg dorm_room_morning with fade
+    play music audio.bgm_daily fadein 1.0
+
+    "周末上午。"
+    "窗帘缝里挤进来的光。"
+    "像一条强制开机的进度条。"
+
+    play sound audio.se_phone
+
+    "手机连续震了三下。"
+
+    s_phone "起床。"
+    s_phone "五点半集合。"
+    s_phone "现在已经九点了。"
+
+    m_phone "你这提醒跨度是不是有点大。"
+
+    s_phone "怕你睡到下午。"
+
+    m_phone "我没有那么离谱。"
+
+    s_phone "你昨天说要早起画桥。"
+
+    m_phone "桥会理解我的。"
+
+    s_phone "桥不会。"
+    s_phone "桥只会受力。"
+
+    m_phone "你已经被土木概论污染了。"
+
+    nvl clear
+
+    m "昨天说好的。"
+    m "今天要去校园里找土木素材。"
+    m "但现在。"
+    m "我只想找枕头素材。"
+
+    play sound audio.se_phone
+
+    l "重大情报。"
+    l "今天操场百团大战。"
+    l "有集邮卡。"
+    l "盖满能抽奖。"
+
+    m_phone "什么奖。"
+
+    l "未知。"
+    l "但未知本身就是贵族的浪漫。"
+
+    s_phone "你只是想凑热闹。"
+
+    l "准确。"
+
+    m_phone "那土木观察社怎么办。"
+
+    s_phone "先观察社团。"
+    s_phone "也是观察。"
+
+    m "她说得好有道理。"
+    m "我甚至没办法反驳。"
+
+    stop music fadeout 1.0
+
+    # 【场景二：操场入口】
+    scene bg playground_morning with fade
+    play music audio.bgm_school fadein 1.0
+    play sound audio.se_footsteps_crowd volume 0.4
+
+    "操场入口。"
+    "横幅从主席台一路拉到跑道边。"
+    "人群像被风吹散的便利贴。"
+    "每个摊位前都挤着不同颜色的热闹。"
+
+    show suzhi casual normal at center with dissolve
+
+    s "这边。"
+
+    show lingning casual happy at left with moveinleft
+
+    l "百团大战。"
+    l "听起来像大学版本的群雄割据。"
+
+    m "其实就是社团招新。"
+
+    show lingning casual pose
+
+    l "不要破坏史诗感。"
+
+    show suzhi casual gloomy
+
+    s "你先把报名表从脸上拿下来。"
+
+    l "刚刚被风糊上的。"
+    l "这说明我与社团活动有缘。"
+
+    m "也可能说明你站得太靠前。"
+
+    show suzhi casual normal
+
+    s "先去领集邮卡。"
+    s "盖几个章就走。"
+
+    m "几个？"
+
+    s "看情况。"
+
+    l "不。"
+    l "既然是集邮。"
+    l "就要全收集。"
+
+    m "你这种人玩开放世界很可怕。"
+
+    stop sound fadeout 1.0
+
+    # 【场景三：集邮卡】
+    scene cg stamp_card with fade
+    play music audio.bgm_daily_funny fadein 1.0
+
+    "入口处的志愿者递来一张浅蓝色的卡片。"
+    "卡片上印着社团文化节集邮格。"
+    "每个格子旁边都有小小的社团名。"
+    "天文社。"
+    "音乐社。"
+    "心理社。"
+    "书法社。"
+    "话剧社。"
+    "动漫社。"
+    "电竞社。"
+    "魔方社。"
+    "手工社。"
+    "志愿者协会。"
+    "足球社。"
+    "羽毛球社。"
+    "乒乓球社。"
+    "健美操社。"
+    "还有一些被印章和光反射挡住的名字。"
+
+    m "好多。"
+
+    show lingning casual happy at left with dissolve
+    show suzhi casual normal at center with dissolve
+
+    l "这是命运清单。"
+
+    s "这是集邮卡。"
+
+    l "差不多。"
+    l "盖满它。"
+    l "我们就完成了大学第一项伟业。"
+
+    m "我以为第一项伟业是不要挂科。"
+
+    show suzhi casual gloomy
+
+    s "那个难度更高。"
+
+    m "别这么诚实。"
+
+    show lingning casual pose
+
+    l "出发。"
+    l "第一站。"
+    l "离我们最近的摊位。"
+
+    stop music fadeout 1.0
+
+    # 【场景四：天文社】
+    scene bg playground with fade
+    play music audio.bgm_campus fadein 1.0
+
+    "最近的摊位摆着小型望远镜。"
+    "桌布上贴着星空图。"
+    "旁边还放着几张月球照片。"
+
+    club_senior "同学。"
+    club_senior "对宇宙感兴趣吗？"
+
+    show lingning casual happy at left with dissolve
+
+    l "当然。"
+    l "我一直认为我的精神起源于更高维度。"
+
+    club_senior "呃。"
+    club_senior "我们主要晚上观星。"
+
+    m "他晚上主要睡觉。"
+
+    show lingning casual depressed
+
+    l "睡眠也是一种深空探索。"
+
+    show suzhi casual normal at center with dissolve
+
+    s "盖章。"
+    s "谢谢。"
+
+    play sound audio.se_splat
+
+    "红色印章落在卡片左上角。"
+
+    m "第一枚。"
+
+    l "宇宙承认了我们。"
+
+    s "只是天文社承认你来过。"
+
+    # 【场景五：音乐社与书法社】
+    scene bg rest_area with fade
+    play sound audio.se_footsteps_crowd volume 0.4
+
+    "再往前走。"
+    "左边是音乐社。"
+    "吉他声和键盘声混在一起。"
+    "右边是书法社。"
+    "墨香在风里轻轻散开。"
+
+    show suzhi casual normal at center with dissolve
+    show lingning casual happy at left with dissolve
+
+    club_sister "音乐社了解一下。"
+    club_sister "可以学吉他。"
+    club_sister "也可以一起排练。"
+
+    l "我会。"
+
+    m "你会什么。"
+
+    l "欣赏。"
+
+    club_sister "也可以。"
+
+    s "你别把人家学姐整不会了。"
+
+    play sound audio.se_splat
+
+    "第二枚章。"
+
+    m "音乐社。"
+
+    "旁边书法社的学长正低头写字。"
+    "宣纸上落下两个大字。"
+    "加油。"
+
+    club_senior "同学。"
+    club_senior "要不要写一个？"
+
+    s "他写字一般。"
+
+    m "你为什么直接替我评价。"
+
+    s "节省时间。"
+
+    l "让我来。"
+
+    "凌宁拿起毛笔。"
+    "沉思三秒。"
+    "在纸上写下一个歪歪扭扭的‘贵’。"
+
+    club_senior "这是……"
+
+    l "贵族的贵。"
+
+    s "像虫子爬过。"
+
+    m "挺抽象的。"
+
+    play sound audio.se_splat
+
+    "第三枚章。"
+    "书法社。"
+
+    stop sound fadeout 1.0
+
+    # 【场景六：心理社】
+    scene bg library with fade
+    play music audio.bgm_warm fadein 1.0
+
+    "心理社的摊位很安静。"
+    "桌上摆着彩色卡片。"
+    "每张卡片上都有一个问题。"
+
+    club_sister "抽一张吧。"
+    club_sister "看看你现在最需要什么。"
+
+    show suzhi casual normal at center with dissolve
+    show lingning casual tired at left with dissolve
+
+    m "我抽到了。"
+    m "睡眠。"
+
+    s "很准。"
+
+    l "我抽到了。"
+    l "勇气。"
+
+    s "你需要的是常识。"
+
+    l "常识会限制贵族。"
+
+    club_sister "那这位同学呢？"
+
+    show suzhi casual surprise
+
+    s "我？"
+
+    "素织低头抽了一张。"
+    "卡片上写着。"
+    "偶尔也可以依赖别人。"
+
+    show suzhi casual shy
+
+    s "这个不准。"
+
+    m "我觉得挺准。"
+
+    show suzhi casual angry
+
+    s "闭嘴。"
+
+    play sound audio.se_splat
+
+    "第四枚章。"
+    "心理社。"
+
+    stop music fadeout 1.0
+
+    # 【场景七：电竞社与魔方社】
+    scene bg computer_lab with fade
+    play music audio.bgm_daily_funny fadein 1.0
+
+    "电竞社摊位前围着一圈人。"
+    "屏幕上角色技能乱飞。"
+    "旁边魔方社的桌子上。"
+    "一排魔方被拧得整整齐齐。"
+
+    show lingning casual happy at left with dissolve
+    show suzhi casual normal at center with dissolve
+
+    club_senior "电竞社。"
+    club_senior "五分钟solo。"
+    club_senior "赢了送贴纸。"
+
+    l "让我来。"
+
+    m "你会玩？"
+
+    l "不会。"
+    l "但气势不能输。"
+
+    scene bg computer_lab with hpunch
+
+    "五分钟后。"
+
+    show lingning casual ashamed at left with dissolve
+    show suzhi casual gloomy at center with dissolve
+
+    l "对方不讲武德。"
+
+    m "你开局走进防御塔。"
+
+    s "塔很讲武德。"
+    s "它一直打你。"
+
+    play sound audio.se_splat
+
+    "第五枚章。"
+    "电竞社。"
+
+    "魔方社的学长递来一个三阶魔方。"
+
+    club_senior "试试？"
+
+    m "我可以。"
+
+    "我接过魔方。"
+    "转了三下。"
+    "把一面也打乱了。"
+
+    s "你是怎么做到越复原越乱的。"
+
+    m "这叫结构重组。"
+
+    l "很土木。"
+
+    play sound audio.se_splat
+
+    "第六枚章。"
+    "魔方社。"
+
+    # 【场景八：体育区】
+    scene bg stadium_grandstand with fade
+    play music audio.bgm_break_time fadein 1.0
+    play sound audio.se_footsteps_crowd volume 0.4
+
+    "体育类社团集中在跑道另一侧。"
+    "足球社在颠球。"
+    "羽毛球社在拉高远球。"
+    "乒乓球社的桌子被围得水泄不通。"
+    "健美操社的音响放得很响。"
+
+    show suzhi casual normal at center with dissolve
+    show lingning casual happy at left with dissolve
+
+    club_senior "足球社了解一下。"
+
+    l "我擅长战略部署。"
+
+    m "翻译一下。"
+
+    s "他不跑。"
+
+    club_senior "守门也行。"
+
+    show lingning casual surprised
+
+    l "守门？"
+    l "以一人之躯面对全场火力。"
+    l "这不是守门。"
+    l "这是王城最后的城墙。"
+
+    m "你要是真这么有觉悟。"
+    m "体育课就不会请假了。"
+
+    play sound audio.se_splat
+
+    "第七枚章。"
+    "足球社。"
+
+    "羽毛球社的学姐把球拍递给素织。"
+
+    club_sister "同学要不要试一下？"
+
+    show suzhi casual smile
+
+    s "可以。"
+
+    "她轻轻一挥。"
+    "羽毛球越过球网。"
+    "准确落在线内。"
+
+    m "好标准。"
+
+    show suzhi casual normal
+
+    s "以前打过一点。"
+
+    l "一点。"
+    l "等于人类高质量一点。"
+
+    play sound audio.se_splat
+
+    "第八枚章。"
+    "羽毛球社。"
+
+    "乒乓球社和健美操社的章也很快盖上。"
+    "卡片上的红色印记越来越密。"
+
+    m "已经一半了吧。"
+
+    l "不。"
+    l "真正的战斗才刚刚开始。"
+
+    s "你能不能别每十分钟就热血一次。"
+
+    stop sound fadeout 1.0
+
+    # 【场景九：志愿者协会与手工社】
+    scene bg rest_area_sunset with fade
+    play music audio.bgm_warm_guitar fadein 1.0
+
+    "中午过后。"
+    "阳光开始变得偏白。"
+    "我们在志愿者协会摊位领了宣传册。"
+    "又在手工社摊位前停下。"
+
+    show suzhi casual normal at center with dissolve
+    show lingning casual tired at left with dissolve
+
+    club_sister "可以做一个小挂件。"
+    club_sister "做好了就能盖章。"
+
+    m "这个听起来简单。"
+
+    "十分钟后。"
+    "我手里出现了一个看不出物种的毛绒球。"
+
+    s "这是猫吗？"
+
+    m "本来是。"
+
+    l "现在像土豆。"
+
+    m "至少它很稳定。"
+
+    s "别什么都往土木上靠。"
+
+    play sound audio.se_splat
+
+    "第十一枚章。"
+    "手工社。"
+
+    "志愿者协会的章在旁边。"
+    "红色的‘奉献’两个字印得很正。"
+
+    m "还差几个？"
+
+    show lingning casual happy
+
+    l "话剧社。"
+    l "还有。"
+    l "动漫社。"
+
+    show suzhi casual gloomy
+
+    s "你为什么说动漫社的时候停顿了。"
+
+    l "因为那是最终关卡。"
+
+    m "不就是动漫社吗。"
+
+    l "你不懂。"
+    l "那是另一个次元的大门。"
+
+    s "你今天中二浓度超标。"
+
+    # 【场景十：话剧社】
+    scene bg classroom_clean with fade
+    play music audio.bgm_awkward fadein 1.0
+
+    "话剧社占了教学楼一楼的空教室。"
+    "门口贴着手写海报。"
+    "即兴表演体验。"
+    "体验后盖章。"
+
+    show lingning casual surprised at left with dissolve
+    show suzhi casual normal at center with dissolve
+
+    m "体验？"
+
+    club_sister "对。"
+    club_sister "抽一个题目。"
+    club_sister "三十秒表演。"
+
+    l "这种场合。"
+    l "正适合我。"
+
+    s "我有种不好的预感。"
+
+    "凌宁抽出纸条。"
+    "上面写着。"
+    "被雨淋湿的王子。"
+
+    show lingning casual pose
+
+    l "为什么。"
+    l "为什么命运要在今日将我放逐。"
+    l "这雨。"
+    l "不是落在我的肩上。"
+    l "是落在王国的心脏。"
+
+    "教室安静了。"
+
+    m "他进入状态了。"
+
+    show suzhi casual gloomy
+
+    s "不如说他平时就这样。"
+
+    club_sister "很好。"
+    club_sister "情绪很足。"
+
+    play sound audio.se_splat
+
+    "第十二枚章。"
+    "话剧社。"
+
+    show lingning casual happy
+
+    l "我感觉被认可了。"
+
+    s "你不要被错误地鼓励。"
+
+    stop music fadeout 1.0
+
+    # 【场景十一：动漫社门口】
+    scene bg library with fade
+    play music audio.bgm_stealth_happy fadein 1.0
+    play sound audio.se_footsteps_crowd volume 0.4
+
+    "动漫社的摊位在活动室门口。"
+    "门框上挂着彩色纸花。"
+    "桌上摆着立牌、徽章和手绘海报。"
+    "走廊里比操场还热闹。"
+
+    show suzhi casual normal at center with dissolve
+    show lingning casual happy at left with dissolve
+
+    s "盖完这个就结束。"
+
+    l "不。"
+    l "结束往往意味着开始。"
+
+    m "你能不能先用人类语言说话。"
+
+    unknown "欢迎来到动漫社。"
+
+    hide suzhi
+    hide lingning
+
+    show xiaobei cosplay normal at center with dissolve
+
+    "声音从门内传来。"
+    "一个穿着cos服的女生站在活动室门口。"
+    "衣摆随着她转身的动作轻轻晃了一下。"
+    "阳光从窗边斜着落下来。"
+    "刚好落在她的发饰和眼角。"
+
+    kb "你们是来集邮的吗？"
+
+    m "啊。"
+    m "是。"
+
+    show xiaobei cosplay smile
+
+    kb "那先盖章。"
+    kb "然后可以进来看看。"
+    kb "今天有社团展示。"
+
+    play sound audio.se_splat
+
+    "最后一枚章落下。"
+    "动漫社。"
+
+    m "谢谢。"
+
+    kb "不用谢。"
+    kb "你们也可以报名。"
+
+    m "报名？"
+
+    show xiaobei cosplay pose
+
+    kb "动漫社不只是看动画。"
+    kb "也有绘画、剪辑、配音、cos、摄影、后期。"
+    kb "还有社团展演。"
+
+    "她说话的时候很自然。"
+    "像是在介绍一件自己真的喜欢的事。"
+    "我原本只是想把集邮卡盖满。"
+    "可视线却一直没能从她身上移开。"
+
+    m "摄影。"
+    m "后期。"
+
+    kb "嗯。"
+    kb "如果会拍照或者修图。"
+    kb "很欢迎。"
+
+    "我忽然想起昨天的土木作业。"
+    "观察。"
+    "记录。"
+    "把看见的东西变成作品。"
+    "这好像也不是完全无关。"
+
+    show suzhi casual gloomy at right with dissolve
+    show lingning casual happy at left with dissolve
+
+    s "你看得太认真了。"
+
+    m "我是在了解社团方向。"
+
+    l "方向很明确。"
+    l "他已经被异世界召唤了。"
+
+    show xiaobei cosplay shy
+
+    kb "也没有那么夸张啦。"
+
+    m "我可以看看报名表吗？"
+
+    show suzhi casual surprise
+
+    s "你真要加？"
+
+    m "先看看。"
+
+    l "一般说先看看的人。"
+    l "已经输了。"
+
+    stop sound fadeout 1.0
+
+    # 【场景十二：动漫社活动室】
+    scene bg classroom_desk with fade
+    play music audio.bgm_warm fadein 1.0
+
+    "活动室里摆着几张拼在一起的桌子。"
+    "墙上贴着往届活动照片。"
+    "角落里堆着道具箱。"
+    "几套cos服被整齐地挂在衣架上。"
+
+    show xiaobei cosplay normal at center with dissolve
+
+    kb "这个是报名表。"
+    kb "填专业、联系方式和想参加的方向就行。"
+
+    m "方向。"
+
+    kb "摄影也可以写。"
+    kb "新生不用马上确定。"
+    kb "先来玩也行。"
+
+    show lingning casual happy at left with dissolve
+
+    l "听起来很适合我。"
+
+    m "你想参加什么方向。"
+
+    show lingning casual pose
+
+    l "精神领袖。"
+
+    kb "欸？"
+
+    show suzhi casual gloomy at right with dissolve
+
+    s "不用管他。"
+    s "他平时就这样。"
+
+    m "我填摄影和后期吧。"
+
+    "笔尖落在纸上。"
+    "动漫社。"
+    "摄影。"
+    "后期。"
+    "写下去的时候。"
+    "我居然有一点紧张。"
+
+    kb "欢迎加入。"
+
+    show xiaobei cosplay smile
+
+    "小北把一枚社团徽章放到我手心。"
+
+    kb "下午有一个小型cos体验。"
+    kb "如果你们有时间。"
+    kb "可以来帮忙拍照。"
+
+    m "下午？"
+
+    s "我们不是还要画土木作业吗。"
+
+    l "素材来源增加了。"
+    l "二次元建筑与现实结构的交汇。"
+
+    s "你别乱给作业升华。"
+
+    m "下午来看看也行。"
+    m "拍两张就走。"
+
+    show suzhi casual gloomy
+
+    s "你每次说两张。"
+    s "最后都不是两张。"
+
+    m "这次一定。"
+
+    "素织看了我一眼。"
+    "叹了口气。"
+
+    show suzhi casual normal
+
+    s "行。"
+    s "但别影响作业。"
+
+    m "知道。"
+
+    # 【场景十三：下午再访】
+    scene bg classroom_full with fade
+    play music audio.bgm_bright_violin fadein 1.0
+
+    "下午。"
+    "动漫社活动室外的人比上午更多。"
+    "有人举着反光板。"
+    "有人整理假发。"
+    "还有人在角落里检查道具。"
+
+    show xiaobei cosplay smile at center with dissolve
+
+    kb "你们来了。"
+
+    m "说好来拍照。"
+
+    kb "正好。"
+    kb "我们缺一个临时摄影。"
+
+    show lingning casual happy at left with dissolve
+
+    l "看。"
+    l "命运开始结算了。"
+
+    show suzhi casual normal at right with dissolve
+
+    s "你不要给别人添麻烦。"
+
+    kb "不会。"
+    kb "其实还有一套备用服。"
+    kb "如果有人愿意试试的话。"
+
+    "小北的视线落到素织身上。"
+
+    show suzhi casual surprise
+
+    s "我？"
+
+    kb "嗯。"
+    kb "你的气质很合适。"
+
+    m "确实。"
+
+    show suzhi casual angry
+
+    s "你确实什么。"
+
+    l "我同意。"
+    l "素织拥有成为主角的压迫感。"
+
+    s "你们两个闭嘴。"
+
+    kb "只是试穿。"
+    kb "不想的话也没关系。"
+
+    "素织低头看着那套服装。"
+    "沉默了一会儿。"
+
+    show suzhi casual shy
+
+    s "只拍几张。"
+    s "不要乱传。"
+
+    m "当然。"
+
+    l "我以贵族之名保证。"
+
+    s "你的保证最不可靠。"
+
+    # 【场景十四：素织cos占位登场】
+    scene bg classroom_desk with fade
+    play music audio.bgm_love fadein 1.0
+
+    "十分钟后。"
+    "活动室的门被轻轻推开。"
+
+    show suzhi cosplay normal at center with dissolve
+
+    "素织换好了衣服。"
+    "和平时利落的样子不太一样。"
+    "多了一点不自然的拘谨。"
+    "也多了一点让人移不开眼的明亮。"
+
+    s "看什么。"
+
+    m "没。"
+    m "挺合适的。"
+
+    show suzhi cosplay shy
+
+    s "别说这种奇怪的话。"
+
+    show xiaobei cosplay smile at left with dissolve
+
+    kb "很好看。"
+    kb "真的很适合。"
+
+    show lingning casual surprised at right with dissolve
+
+    l "这是。"
+    l "现实世界的隐藏剧情。"
+
+    show suzhi cosplay angry
+
+    s "凌宁。"
+
+    l "我什么都没说。"
+
+    m "你已经说了很多。"
+
+    kb "那我们去窗边拍吧。"
+    kb "光线比较好。"
+
+    "我举起相机。"
+    "取景框里。"
+    "素织站在窗边。"
+    "午后的光落在她肩上。"
+    "她有些不自在地移开视线。"
+    "但嘴角却没有真的生气。"
+
+    m "看这边。"
+
+    show suzhi cosplay shy
+
+    s "快点拍。"
+
+    play sound audio.se_phone
+
+    "快门声响起。"
+
+    m "好了。"
+
+    s "给我看看。"
+
+    "她凑过来看屏幕。"
+    "距离突然变近。"
+    "空气也像被按下了暂停键。"
+
+    s "……还行。"
+
+    m "只是还行？"
+
+    show suzhi cosplay smile
+
+    s "比你平时靠谱。"
+
+    m "那评价还挺高。"
+
+    show xiaobei cosplay smile
+
+    kb "这张可以做社团宣传图。"
+
+    show suzhi cosplay angry
+
+    s "不行。"
+    s "至少要先给我审核。"
+
+    kb "当然。"
+
+    show lingning casual happy
+
+    l "我宣布。"
+    l "今日百团大战。"
+    l "最大收获。"
+    l "不是印章。"
+    l "是新世界的大门。"
+
+    m "你这么说也没错。"
+
+    show suzhi cosplay shy
+
+    s "你也别跟着他乱说。"
+
+    # 【场景十五：傍晚收束】
+    scene bg playground_sunset with fade
+    play music audio.bgm_warm_guitar fadein 1.0
+
+    "傍晚。"
+    "百团大战慢慢收摊。"
+    "操场上的音响声小了下去。"
+    "集邮卡上的红章已经盖满。"
+    "我的口袋里多了一枚动漫社徽章。"
+    "相机里多了几十张照片。"
+    "还有几张。"
+    "我没敢多看。"
+
+    show suzhi cosplay normal at center with dissolve
+    show lingning casual happy at left with dissolve
+    show xiaobei cosplay smile at right with dissolve
+
+    kb "今天辛苦啦。"
+    kb "之后社团群里会发活动通知。"
+
+    m "嗯。"
+    m "我会看。"
+
+    s "作业也要看。"
+
+    m "知道。"
+    m "土木观察社不会倒闭。"
+
+    l "今天的观察成果很丰富。"
+    l "社团摊位结构。"
+    l "人流组织。"
+    l "临时建筑。"
+    l "以及cos服装与个体气质之间的复杂关系。"
+
+    show suzhi cosplay angry
+
+    s "最后一个删掉。"
+
+    kb "你们关系真好。"
+
+    show suzhi cosplay shy
+
+    s "没有。"
+
+    m "一般好。"
+
+    l "非常好。"
+
+    s "你闭嘴。"
+
+    "风从操场另一头吹过来。"
+    "把横幅吹得轻轻晃动。"
+    "我低头看着盖满章的卡片。"
+    "从天文社到动漫社。"
+    "从只是路过到写下报名表。"
+    "今天好像什么都没计划。"
+    "却又什么都发生了。"
+
+    m "大学生活。"
+    m "还真容易被一张集邮卡改变方向。"
+
+    show xiaobei cosplay smile
+
+    kb "那就下次社团见。"
+
+    m "下次见。"
+
+    stop music fadeout 2.0
+
+    # 第十章 完
+    scene black with fade
+    centered "{size=60}第十章 完{/size}"
+
+    return
